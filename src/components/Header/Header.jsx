@@ -6,7 +6,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <header>
-        <Link >
+        <Link to="/" >
             <img src={Logo} alt="FunConnect Logo" />
         </Link>
     </header>
