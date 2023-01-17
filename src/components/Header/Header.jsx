@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {GrClose, GrMenu} from "react-icons/gr";
+import {GrClose} from "react-icons/gr";
+import {FiMenu} from "react-icons/fi";
+import AppStore from "../../assets/images/AppleVector.svg";
+import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Header.scss";
 
 export default function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+    const isActive = () => {
+        setShowMenu(!showMenu);
+        console.log("clicked");
+    }
+
     return (
         <header>
 
@@ -38,10 +47,10 @@ export default function Header() {
                     <img src={Logo} alt="FunConnect Logo" />
                 </Link>
                 <div className="menuButton">
-                    <GrMenu size={24} />
+                    <FiMenu size={32} stroke="white" fill="white"  onClick={isActive}/>
                 </div>
 
-                <nav className="navbar">
+                <nav className={`navbar ${showMenu ? "show-navbar" : "navbar"}`}>
                     <div className="closeMenu">
                         <GrClose />
                     </div>
@@ -82,6 +91,18 @@ export default function Header() {
                             </h6>
                         </li>
                     </ul>
+                    <div className="downloadApp">
+                        <a href="/" className="appStore">
+                            <img src={AppStore} alt="Apple Logo" className="appleLogo" />
+                            <p className="downloadText">Download on the</p>
+                            <p className="appText">App Store</p>
+                        </a>
+                        <a href="/" className="googlePlay">
+                            <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
+                            <p className="downloadText">Download on the</p>
+                            <p className="appText">App Store</p>
+                        </a>
+                    </div>
                 </nav>
             </div>
         </header>
