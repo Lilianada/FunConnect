@@ -1,9 +1,10 @@
 @use "sass:string";
 $headFont: "Inter", sans-serif;
 $textFont: "Work Sans", sans-serif;
+$altFont: "Tajawal", sans-serif;
 
 /*------------ [Font] -----------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
 
 /*------------ [Root]-----------*/
 $white: #ffffff;
@@ -34,6 +35,7 @@ $navText: #E8F8F8;
     /* FontStyle*/
     --font-head: #{$headFont};
     --font-text: #{$textFont};
+    --font-alt: #{$altFont};
 
     /* Font Sizes */
     --sixty: 40px;
@@ -121,6 +123,7 @@ p {
     font-weight: 400;
     line-height: 1.5rem;
     color: var(--whiteText);
+    text-transform: none;
 }
 
 h1 {

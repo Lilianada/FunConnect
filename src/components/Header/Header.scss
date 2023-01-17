@@ -78,34 +78,47 @@ header {
                 }
 
             }
+            
             .downloadApp{
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 align-items: center;
-                justify-content: space-between;
                 margin-top: 2rem;
-
-                .appStore{
+                
+                .appStore, .googlePlay{
                     height: 64px;
-                    width: fit-content;
-                    padding: 8px 24px;
+                    width: 168px;
+                    padding: 8px 20px;
                     background: var(--black);
                     border-radius: 5px;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    margin-right: 1rem;
+                    margin-bottom: .5rem;
+
+                    .appleLogo{
+                        margin-right: 16px;
+                    }
+                    
+                    .downloadText{
+                        font-family: var(--font-alt);
+                        font-size: var(--ten);
+                        font-weight: 600;
+                        line-height: 13px;
+                    }
+                    
+                    .appText{
+                        font-family: var(--font-alt);
+                        font-size: var(--sixteen);
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        line-height: 13px;
+                    }
                 }
-
-                .googlePlay{
-                    height: 64px;
-                    width: fit-content;
-                    padding: 8px 24px;
-                    background: var(--black);
-                    border-radius: 5px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                
+                .appStore{
+                    margin-right: 1rem;
                 }
             }
         }
