@@ -1,4 +1,4 @@
-header{
+header {
     background-color: var(--black);
     padding: 10px;
     text-align: center;
@@ -6,20 +6,85 @@ header{
     font-weight: bold;
     text-transform: uppercase;
 
-    .desktop-header{
-        display: none;
-        margin: 1rem 3rem;
+    .mobileHeader {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        .navbar {
             display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            background: var(--secondaryBg);
+            text-align: left;
+            padding: 1rem;
+
+            .closeMenu {
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #F8F8F8;
+                border-radius: 5px;
+                align-self: flex-end;
+                margin-bottom: 2rem;
+            }
+
+            .navList{
+                margin-top: 2rem;
+
+                &:last-child{
+                    margin-top: 3rem;
+                }
+
+                .navItem{
+                    padding-bottom: 1.5rem;
+                    
+                    .navTitle{
+                        color: var(--navText);
+                        font-size: var(--sixteen);
+                        font-family: var(--font-text);
+                        font-weight: 500;
+                        text-transform: none;
+                    }
+                    
+                    .navLink{
+                        color: var(--whiteText);
+                        font-size: calc(var(--twentyFour) + 4px);
+                        font-family: var(--font-head);
+                        font-weight: 500;
+                        text-transform: capitalize;
+
+                        &:hover{
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
         }
     }
 
-    .mobile-header{
-        display: flex;
+    .desktopHeader {
+        display: none;
 
-        @media screen and (min-width: 768px){
-            display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin: 1rem 3rem;
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
