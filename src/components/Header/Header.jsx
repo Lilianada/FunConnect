@@ -59,8 +59,8 @@ export default function Header() {
         </button>
 
         <nav className={`navbar ${showMenu ? "show-navbar" : "navbar"}`}>
-          <button type="button" className="closeMenu">
-            <GrClose onClick={closeMenu} />
+          <button type="button" className="closeMenu" onClick={closeMenu}>
+            <GrClose />
           </button>
           <ul className="navList">
             <li className="navItem">

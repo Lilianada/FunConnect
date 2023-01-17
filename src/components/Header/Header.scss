@@ -8,7 +8,7 @@ header {
     .mobileHeader {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         margin: 1rem;
 
         @media screen and (min-width: 768px) {
@@ -94,7 +94,7 @@ header {
                     width: 168px;
                     padding: 8px 20px;
                     background: var(--black);
-                    border-radius: 5px;
+                    border-radius: 10px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -140,7 +140,7 @@ header {
             align-items: center;
             justify-content: space-evenly;
             width: 100%;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
 
             .navbar {
                 
