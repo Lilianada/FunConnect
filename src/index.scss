@@ -1,35 +1,32 @@
 @use "sass:string";
-$headFont: "butlermedium";
-$textFont: "Karla", sans-serif;
+$headFont: "Inter", sans-serif;
+$textFont: "Work Sans", sans-serif;
 
 /*------------ [Font] -----------*/
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap");
 
 /*------------ [Root]-----------*/
 $white: #ffffff;
-$text: #555555;
-$purple: #d1c3fe;
-$litePurple: #eadaf0;
-$pink: #ebcce9;
-$hotPink: #893583;
-$litePink: #fffbff;
-$black: #050205;
-$grey: #b8b8b8;
-$greyPro: #dedddd;
-$assets: rgba(137, 53, 131, 0.3);
+$black: #000000;
+$gray: #e5e5e5;
+$primary: #ff9100;
+$secondary: #cccccc;
+$whiteText: #d9d9d9;
+$darkText: #0e0e0e;
+$primaryBg: #ffedd5;
+$secondaryBg: #202020;
+$assets: #333333;
 
 :root {
     /* Colors */
     --white: #{$white};
-    --text: #{$text};
-    --purple: #{$purple};
-    --litePurple: #{$litePurple};
-    --pink: #{$pink};
-    --hotPink: #{$hotPink};
-    --litePink: #{$litePink};
     --black: #{$black};
-    --grey: #{$grey};
-    --greyPro: #{$greyPro};
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --whiteText: #{$whiteText};
+    --darkText: #{$darkText};
+    --primaryBg: #{$primaryBg};
+    --secondaryBg: #{$secondaryBg};
     --assets: #{$assets};
 
     /* FontStyle*/
@@ -37,32 +34,36 @@ $assets: rgba(137, 53, 131, 0.3);
     --font-text: #{$textFont};
 
     /* Font Sizes */
-    --fourty: 2rem;
-    --thirtyEight: 1.95rem;
-    --thirtyTwo: 1.75rem;
-    --twentyFour: 1.25rem;
-    --twenty: 1.15rem;
-    --eighteen: 1.0625rem;
-    --sixteen: 1rem;
-    --fourteen: 0.88rem;
-    --twelve: 0.75rem;
-    --ten: 0.625rem;
+    --sixty: 40px;
+    --fiftySeven: 32px;
+    --fourty: 20px;
+    --thirtySix: 32px;
+    --thirtyTwo: 28px;
+    --twentyFour: 20px;
+    --twenty: 18px;
+    --eighteen: 17px;
+    --sixteen: 16px;
+    --fourteen: 14px;
+    --twelve: 12px;
+    --ten: 10px;
 }
 
 @media screen and (min-width: 900px) {
     :root {
-        --fourty: 2.5rem;
-        --thirtyEight: 2.375rem;
-        --thirtyTwo: 2rem;
-        --thirty: 1.875rem;
-        --twentyEight: 1.75rem;
-        --twentyFour: 1.5rem;
-        --twenty: 1.25rem;
-        --eighteen: 1.125rem;
-        --sixteen: 1rem;
-        --fourteen: 0.88rem;
-        --twelve: 0.75rem;
-        --ten: 0.625rem;
+        --sixty: 60px;
+        --fiftySeven: 57px;
+        --fourty: 40px;
+        --thirtySix: 36px;
+        --thirtyTwo: 32px;
+        --thirty: 30px;
+        --twentyEight: 28px;
+        --twentyFour: 24px;
+        --twenty: 20px;
+        --eighteen: 18px;
+        --sixteen: 16px;
+        --fourteen: 14px;
+        --twelve: 12px;
+        --ten: 10px;
     }
 }
 
@@ -85,12 +86,12 @@ html {
 /*--------------- [_Utility] -------------*/
 /*========================================*/
 body {
-    max-width: 100vw;
+    max-width: 2560px;
     height: 100vh;
     background: var(--black);
     font-family: var(--font-text);
     color: var(--white);
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
 }
 
 p,
@@ -109,7 +110,6 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--black);
     font-family: var(--font-head);
 }
 
@@ -118,32 +118,31 @@ p {
     font-size: var(--sixteen);
     font-weight: 400;
     line-height: 1.5rem;
-    color: var(--white);
+    color: var(--whiteText);
 }
 
 h1 {
-    font-size: var(--eighty);
+    font-size: var(--sixty);
     font-style: normal;
-    font-weight: 500;
-    line-height: 40px;
-    color: var(--white);
-    letter-spacing: 0px;
+    font-weight: 700;
+    line-height: 66px;
+    color: var(--darkText);
 }
 
 h2 {
-    font-size: var(--sixty);
-    line-height: 2rem;
+    font-size: var(--fiftySeven);
+    line-height: 64px;
     font-weight: 700;
 }
 
 h3 {
-    font-size: var(--fiftyEight);
-    line-height: 2rem;
+    font-size: var(--fourty);
+    line-height: 52px;
     font-weight: 600;
 }
 
 h4 {
-    font-size: var(--fourtyEight);
+    font-size: var(--thirtyTwo);
     line-height: 2.5rem;
     font-weight: 600;
 }
@@ -182,7 +181,10 @@ ul li {
     list-style: none;
 }
 
-/*==================[Button]======================*/
+
+/*=====================================*/
+/*-------------[Button] -------------*/
+/*=====================================*/
 button {
     font-family: var(--font-text);
     cursor: pointer;
@@ -191,4 +193,21 @@ button {
     &:hover {
         transform: scale(0.9, 0.9);
     }
+}
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 18px;
+    width: fit-content;
+    // height: 44.28px;
+
+    background: var(--primary);
+    color: var(--black);
+    border: none;
+    font-size: var(--sixteen);
+    font-weight: 500;
+    border-radius: 6.5px;
+    transition: all 0.3s;
 }
