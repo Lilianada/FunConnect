@@ -14,6 +14,10 @@ export default function Header() {
     console.log("clicked");
   };
 
+  const closeMenu = () => {
+    setShowMenu(false);
+    };
+
   return (
     <header>
         {/* Desktop Menu */}
@@ -40,6 +44,9 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <a href="/" className="downloadApp">
+            Download Now
+        </a>
       </div>
 
       {/* Mobile Menu */}
@@ -47,14 +54,14 @@ export default function Header() {
         <Link to="/">
           <img src={Logo} alt="FunConnect Logo" />
         </Link>
-        <div className="menuButton">
+        <button type="button" className="menuButton">
           <FiMenu size={32} stroke="white" fill="white" onClick={isActive} />
-        </div>
+        </button>
 
         <nav className={`navbar ${showMenu ? "show-navbar" : "navbar"}`}>
-          <div className="closeMenu">
-            <GrClose />
-          </div>
+          <button type="button" className="closeMenu">
+            <GrClose onClick={closeMenu} />
+          </button>
           <ul className="navList">
             <li className="navItem">
               <h6 className="navTitle">Menu</h6>

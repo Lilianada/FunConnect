@@ -17,6 +17,9 @@ header {
 
         .menuButton{
             height: fit-content;
+            background: none;
+            border: none;
+            outline: none;
         }
 
         .navbar {
@@ -30,7 +33,7 @@ header {
             left: 0;
             background: var(--secondaryBg);
             text-align: left;
-            padding: 1rem;
+            padding: 1.5rem 1rem 1rem;
             transition: all 300ms ease-in-out;
 
             .closeMenu {
@@ -42,12 +45,12 @@ header {
                 background: #F8F8F8;
                 border-radius: 5px;
                 align-self: flex-end;
-                margin-bottom: 2rem;
-                margin-top: 2rem;
+                border: none;
+                outline: none;
             }
 
             .navList{
-                margin-top: 2rem;
+                margin-top: 2.5rem;
 
                 &:last-child{
                     margin-top: 3rem;
@@ -78,7 +81,7 @@ header {
                 }
 
             }
-            
+
             .downloadApp{
                 display: flex;
                 flex-direction: row;
@@ -133,11 +136,45 @@ header {
 
         @media screen and (min-width: 768px) {
             display: flex;
-            margin: 1rem 3rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 2rem 0;
 
             .navbar {
+                
+                
+                .navList{
+                    display: flex;
+                    
+                    .navLink{
+                        color: var(--whiteText);
+                        font-size: var(--sixteen);
+                        font-family: var(--font-head);
+                        font-weight: 500;
+                        text-transform: none;
+                        padding: 0 1rem;
+                        transition: all 300ms ease-in-out;
+
+                        &:hover{
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+
+            .downloadApp{
+                width: 197px;
+                height: 53px;
                 display: flex;
-                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: var(--eighteen);
+                background: var(--primary);
+                color: var(--black);
+                text-transform: capitalize;
+                border-radius: 8px;
             }
         }
     }
