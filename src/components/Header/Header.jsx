@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {GrClose} from "react-icons/gr";
+import {GrClose, GrMenu} from "react-icons/gr";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Header.scss";
 
@@ -37,7 +37,9 @@ export default function Header() {
                 <Link to="/">
                     <img src={Logo} alt="FunConnect Logo" />
                 </Link>
-
+                <div className="menuButton">
+                    <GrMenu size={24} />
+                </div>
 
                 <nav className="navbar">
                     <div className="closeMenu">

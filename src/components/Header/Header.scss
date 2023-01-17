@@ -9,14 +9,19 @@ header {
     .mobileHeader {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 1rem;
 
         @media screen and (min-width: 768px) {
             display: none;
         }
 
+        .menuButton{
+            height: fit-content;
+        }
+
         .navbar {
-            display: flex;
+            display: none;
             flex-direction: column;
             height: 100vh;
             width: 100vw;
