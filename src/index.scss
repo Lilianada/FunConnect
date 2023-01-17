@@ -205,6 +205,8 @@ button {
     flex-direction: row;
     align-items: center;
     padding: 12px 18px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     // height: 44.28px;
 
