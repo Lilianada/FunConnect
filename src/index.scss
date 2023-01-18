@@ -208,8 +208,6 @@ button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    // height: 44.28px;
-
     background: var(--primary);
     color: var(--black);
     border: none;
@@ -228,4 +226,8 @@ button {
     height: 100vh;
     display: grid;
     overflow-x: hidden;
+}
+
+.primaryText{
+    color: var(--primary);
 }
