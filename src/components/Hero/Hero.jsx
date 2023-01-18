@@ -1,7 +1,8 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { FaPlay } from "react-icons/fa";
 import AppStore from "../../assets/images/AppleVector-colored.svg";
 import GooglePlay from "../../assets/images/GoogleVector-colored.svg";
-
 import "./Hero.scss";
 
 export default function Hero() {
@@ -10,8 +11,19 @@ export default function Hero() {
       <div className="heroContent">
         <div className="heroTexts">
           <h1 className="heroTitle">
-            <span className="primaryText">Explore </span>
-            amazing places near you
+            {/* Typewriter Effect */}
+            <span className="primaryText">
+              <Typewriter
+                words={["Explore", "Discover", "Sightsee"]}
+                loop={false}
+                cursor
+                cursorStyle="|"
+                typeSpeed={200}
+                deleteSpeed={180}
+                delaySpeed={1000}
+              />
+            </span>
+            amazing <br /> places near you
           </h1>
           <p className="heroSubtitle">
             Whether you're a thrill-seeker or a free spirit, our app has
@@ -35,6 +47,16 @@ export default function Hero() {
               </div>
             </a>
           </div>
+          {/* Learn more */}
+          <a href="/" className="learnMore">
+            <div className="learnMoreIcon">
+                <div className="learnMoreIcon_black">
+                  <FaPlay fill="#FF9100" size={20} />
+                </div>
+              <div className="learnMoreIcon_grey"></div>
+            </div>
+            <div className="learnMoreText">Learn more about us</div>
+          </a>
         </div>
       </div>
     </section>
