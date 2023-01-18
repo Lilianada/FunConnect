@@ -109,7 +109,7 @@ export default function Header() {
               <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
               <div className="textWrap">
                 <p className="downloadText">Download on the</p>
-                <h5 className="appText">App Store</h5>
+                <h5 className="appText">Google Play</h5>
               </div>
             </a>
           </div>
