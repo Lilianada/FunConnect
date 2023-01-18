@@ -7,7 +7,7 @@ import "./Hero.scss";
 
 export default function Hero() {
   return (
-    <section className="heroSection">
+    <section className="sectionWrap">
       <div className="heroContent">
         <div className="heroTexts">
           <h1 className="heroTitle">
