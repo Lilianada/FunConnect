@@ -6,7 +6,12 @@ export default function Blog() {
     <section className="blogSection">
         <div className="blogContent">
             <h3 className="blogTitle">Our Latest Blog Posts</h3>
-            <p className="blogSubtitle">Explore amazing places in your neighbourhood Lorem ipsum dolor sit amet, consectetur</p>
+            <p className="blogSubtitle">
+                Explore amazing places in your neighbourhood Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <div className="blogArticle_wrap">
+
+            </div>
         </div>
     </section>
   );
