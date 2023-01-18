@@ -1,15 +1,15 @@
-.exploreSection{
+.blogSection{
     width: 100%;
     height: 100%;
     padding: 2rem;
     margin-bottom: 2rem;
     background-color: var(--black);
 
-    .exploreContent{
+    .blogContent{
         width: 90%;
         margin: 0 auto;
 
-        .exploreTitle{
+        .blogTitle{
             text-align: center;
             color: var(--white);
             margin-bottom: .5rem;
@@ -19,7 +19,7 @@
             }
         }
 
-        .exploreSubtitle{
+        .blogSubtitle{
             font-size: var(--eighteen);
             color: var(--white);
             text-align: center;

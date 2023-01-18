@@ -8,8 +8,7 @@
     .featureContent{
         width: 90%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+        display: block;
     
         .featuresTitle{
             font-size: var(--twentyFour);
@@ -17,17 +16,36 @@
             color: var(--white);
             margin: 3rem 0 2rem;
         }
-    
-        .featuresList{
-            margin-top: 1rem;
-    
-            .featuresItem{
+
+        .featureFlex{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .featuresList{
+                margin-top: 1rem;
+                
                 @media screen and (min-width: 768px) {
-                    margin-bottom: 1rem;
+                    width: 65%;
                 }
-    
-                .feature{
-                    color: var(--primary);
+        
+                .featuresItem{
+                    @media screen and (min-width: 768px) {
+                        margin-bottom: 1rem;
+                    }
+        
+                    .feature{
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            .featureImage{
+                display: none;
+
+                @media screen and (min-width: 900px) {
+                    display: block;
+                    width: 35%;
                 }
             }
         }

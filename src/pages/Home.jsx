@@ -1,5 +1,6 @@
 import React from "react";
 import Benefits from "../components/Benefits/Benefits";
+import Blog from "../components/Blog/Blog";
 import Explore from "../components/Explore/Explore";
 import Features from "../components/Features/Features";
 import Header from "../components/Header/Header";
@@ -13,6 +14,7 @@ export default function Home() {
         <Benefits/>
         <Features/>
         <Explore/>
+        <Blog/>
     </main>
   );
 }
