@@ -58,6 +58,11 @@ export default function Hero() {
             <div className="learnMoreText">Learn more about us</div>
           </a>
         </div>
+        
+        {/* Animated Image */}
+        <div className="animatedImage">
+
+        </div>
       </div>
     </section>
   );
