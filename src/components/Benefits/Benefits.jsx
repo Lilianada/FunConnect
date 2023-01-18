@@ -4,7 +4,7 @@ import "./Benefits.scss";
 
 export default function Benefits() {
   return (
-    <section className="sectionWrap">
+    <section className="benefitSection">
       <div className="benefitSection__container">
         <h5 className="benefitTitle">
           <span className="primaryText">Funconnect </span> allows you to do what
