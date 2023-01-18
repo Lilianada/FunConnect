@@ -4,11 +4,14 @@
     width: 100%;
 
     .heroContent{
+        width: 85%;
+        margin: 0 auto;
         display: flex;
-        padding: 2rem;
+        padding: 2rem 0;
 
         .heroTexts{
             width: 50%;
+            background: url(../../assets/images/HeroBg.svg) no-repeat cover center;
 
             .heroTitle{
 
