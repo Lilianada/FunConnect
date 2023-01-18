@@ -19,10 +19,12 @@
         }
     
         .featuresList{
-            margin-top: 2rem;
+            margin-top: 1rem;
     
             .featuresItem{
-                margin-bottom: 1rem;
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 1rem;
+                }
     
                 .feature{
                     color: var(--primary);
