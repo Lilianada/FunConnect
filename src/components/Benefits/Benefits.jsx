@@ -2,5 +2,11 @@ import React from "react";
 import "./Benefits.scss";
 
 export default function Benefits() {
-  return <div>Benefits</div>;
+  return (
+    <section className="benefitSection">
+        <div className="benefitSection__container">
+
+        </div>
+    </section>
+  );
 }

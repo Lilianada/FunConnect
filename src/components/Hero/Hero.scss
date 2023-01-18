@@ -1,6 +1,6 @@
 .heroSection {
     background: var(--white);
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     .heroContent {
@@ -16,7 +16,7 @@
             
             @media screen and (min-width: 768px) {
                 width: 50%;
-                padding: 5% 0 5% 5%;
+                padding: 5% 0 0 5%;
                 
             }
 

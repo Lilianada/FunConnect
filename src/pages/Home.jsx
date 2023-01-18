@@ -1,4 +1,5 @@
 import React from "react";
+import Benefits from "../components/Benefits/Benefits";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="mainContainer">
         <Header/>
         <Hero/>
+        <Benefits/>
     </main>
   );
 }
