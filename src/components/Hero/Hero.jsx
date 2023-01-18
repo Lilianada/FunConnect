@@ -8,7 +8,7 @@ import "./Hero.scss";
 export default function Hero() {
   return (
     <section className="sectionWrap">
-      <div className="heroContent">
+      <div className="heroSection">
         <div className="heroTexts">
           <h1 className="heroTitle">
             {/* Typewriter Effect */}
