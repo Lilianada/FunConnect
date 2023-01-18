@@ -1,0 +1,22 @@
+.exploreSection{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--black);
+
+    .exploreContent{
+        width: 90%;
+        margin: 0 auto;
+
+        .exploreTitle{
+            text-align: center;
+            color: var(--white);
+        }
+
+        .exploreSubtitle{
+            font-size: var(--twentyFour);
+            color: var(--white);
+        }
+    }
+}

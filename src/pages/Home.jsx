@@ -1,5 +1,6 @@
 import React from "react";
 import Benefits from "../components/Benefits/Benefits";
+import Explore from "../components/Explore/Explore";
 import Features from "../components/Features/Features";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero/>
         <Benefits/>
         <Features/>
+        <Explore/>
     </main>
   );
 }
