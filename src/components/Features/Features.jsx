@@ -11,6 +11,18 @@ export default function Features() {
                 <li className="featuresItem">
                     <h4 className="feature">Beach Houses</h4>
                 </li>
+                <li className="featuresItem">
+                    <h4 className="feature">Fusion Spots</h4>
+                </li>
+                <li className="featuresItem">
+                    <h4 className="feature">Plan meetups</h4>
+                </li>
+                <li className="featuresItem">
+                    <h4 className="feature">Exquisite Parks</h4>
+                </li>
+                <li className="featuresItem">
+                    <h4 className="feature">Cocktail & Mocktails Spots </h4>
+                </li>
             </ul>
         </div>
     </section>

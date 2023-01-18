@@ -13,11 +13,13 @@
     
         .featuresTitle{
             font-size: var(--twentyFour);
+            font-family: var(--font-text);
             color: var(--white);
+            margin: 3rem 0 2rem;
         }
     
         .featuresList{
-            margin-top: 1rem;
+            margin-top: 2rem;
     
             .featuresItem{
                 margin-bottom: 1rem;
