@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react"; 
 import BlogImage from "../../assets/images/Blog-Image.png"
 import { BlogArticles } from "../Data";
@@ -17,7 +18,7 @@ export default function Blog() {
               return (
                 <div className="blogArticle" key={article.id}>
                   <div className="articleImage">
-                    <img src={BlogImage} alt="" />
+                    <img src={BlogImage} alt="Blog Image"  />
                   </div>
                   <h3 className="articleTitle"> {article.title} </h3>
                   <p className="articleContent"> {article.content} </p>
@@ -25,6 +26,7 @@ export default function Blog() {
                     Read more
                   </a>
                 </div>
+                
               );
             })
           }

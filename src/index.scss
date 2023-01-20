@@ -7,20 +7,20 @@ $altFont: "Tajawal", sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
 
 /*------------ [Root]-----------*/
-$white: #ffffff;
-$black: #000000;
-$gray: #e5e5e5;
-$primary: #ff9100;
-$secondary: #cccccc;
-$whiteText: #d9d9d9;
-$darkText: #0e0e0e;
-$primaryBg: #ffedd5;
-$secondaryBg: #202020;
-$assets: #333333;
-$navText: #E8F8F8;
 
 
 :root {
+    $white: #ffffff;
+    $black: #000000;
+    $gray: #e5e5e5;
+    $primary: #ff9100;
+    $secondary: #cccccc;
+    $whiteText: #d9d9d9;
+    $darkText: #0e0e0e;
+    $primaryBg: #ffedd5;
+    $secondaryBg: #202020;
+    $assets: #333333;
+    $navText: #E8F8F8;
     /* Colors */
     --white: #{$white};
     --black: #{$black};
