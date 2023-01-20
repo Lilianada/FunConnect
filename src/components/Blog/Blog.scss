@@ -31,10 +31,14 @@
             justify-content: center;
             margin-top: 2rem;
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 900px) {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 550px);
+            }
+
+            @media screen and (min-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .blogArticle {
