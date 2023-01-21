@@ -37,7 +37,7 @@
                 grid-template-rows: repeat(2, 550px);
             }
 
-            @media screen and (min-width: 1024px) {
+            @media screen and (maxg-width: 1024px) {
                 grid-template-columns: repeat(2, 1fr);
             }
 
