@@ -1,7 +1,7 @@
 import React from "react";
 import { BsLinkedin, BsTelegram } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Footer.scss";
 
