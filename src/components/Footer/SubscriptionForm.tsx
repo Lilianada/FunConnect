@@ -5,9 +5,8 @@ import "./Footer.scss";
 const SubscribeForm = () => {
     const [status, setStatus] = useState<string | null>(null)
     const [email, setEmail] = useState("")
-    const [name, setName] = useState("")
   
-    const FORM_URL = `the URL you created in the previous section`
+    const FORM_URL = `https://app.convertkit.com/forms/4786902/subscriptions`
   
     const handleSubmit = async (event: React.FormEvent) => {
       event.preventDefault()
@@ -46,7 +45,7 @@ const SubscribeForm = () => {
         {status === "SUCCESS" && (
             <>
             <p>
-              Welcome aboard{name ? `, ${name}` : ""}{" "}
+              Welcome aboard{email ? `, ${email}` : ""}{" "}
               <span role="img" aria-label="Ship">
                 🚢
               </span>
@@ -59,7 +58,7 @@ const SubscribeForm = () => {
             <p>Oops, something went wrong...</p>
             <p>
               Please,{" "}
-              <button className="btn" onClick={() => setStatus(null)}>try again.</button>
+              <button className="btnPrimary" onClick={() => setStatus(null)}>try again.</button>
             </p>
             </>
         )}
