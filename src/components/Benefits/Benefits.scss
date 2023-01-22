@@ -27,10 +27,9 @@
         }
 
         .benefitFlex_container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.5rem;
 
             .benefitFlex_item {
                 display: flex;

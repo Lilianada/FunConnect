@@ -1,8 +1,9 @@
 import React from "react";
-import { BsLinkedin, BsTelegram } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { RiInstagramFill } from "react-icons/ri";
+import { BsTelegram } from "react-icons/bs";
+import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
 import Logo from "../../assets/images/Funconnect-logo.svg";
+import SubscribeForm from "./SubscriptionForm.tsx";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -35,25 +36,25 @@ export default function Footer() {
           <h5 className="footerFlex_head">Be Social</h5>
           <div className="footerFlex_body">
             <div className="footerFlex_listTwo">
-                <a href="/" className="footerFlex_icon">
-                  <BsTelegram fill="#FFF1DD" size={24} />
-                </a>
-                <a href="/" className="footerFlex_icon">
-                  <AiFillTwitterCircle fill="#FFF1DD" size={24}/>
-                </a>
-                <a href="/" className="footerFlex_icon">
-                  <BsLinkedin fill="#FFF1DD"  />
-                </a>
-                <a href="/" className="footerFlex_icon">
-                  <RiInstagramFill fill="#FFF1DD" size={24}/>
-                </a>
+              <a href="/" className="footerFlex_icon">
+                <BsTelegram fill="#FFF1DD" size={24} />
+              </a>
+              <a href="/" className="footerFlex_icon">
+                <AiFillTwitterCircle fill="#FFF1DD" size={24} />
+              </a>
+              <a href="/" className="footerFlex_icon linkedinIcon">
+                <RiLinkedinFill size={16} fill="#000" />
+              </a>
+              <a href="/" className="footerFlex_icon">
+                <RiInstagramFill fill="#FFF1DD" size={24} />
+              </a>
             </div>
           </div>
         </div>
         <div className="footerFlex_item">
           <h5 className="footerFlex_head">Subscribe to Newletter</h5>
           <div className="footerFlex_body">
-            <input type="email" name="" className="footerFlex_input" />
+            <SubscribeForm/>
           </div>
         </div>
       </div>
