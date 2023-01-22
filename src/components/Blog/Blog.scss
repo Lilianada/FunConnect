@@ -1,9 +1,11 @@
+@import "../../index.scss";
+
 .blogSection {
     width: 100%;
     height: 100%;
     padding: 2rem;
     margin-bottom: 2rem;
-    background-color: var(--black);
+    background-color: $black;
 
     .blogContent {
         width: 90%;
@@ -11,7 +13,7 @@
 
         .blogTitle {
             text-align: center;
-            color: var(--white);
+            color: $white;
             margin-bottom: 0.5rem;
 
             @media screen and (min-width: 768px) {
@@ -20,8 +22,8 @@
         }
 
         .blogSubtitle {
-            font-size: var(--eighteen);
-            color: var(--white);
+            font-size: $eighteen;
+            color: $white;
             text-align: center;
         }
 
@@ -80,11 +82,11 @@
                 }
 
                 .articleTitle {
-                    font-size: var(--twentyFour);
+                    font-size: $twentyFour;
                 }
 
                 .articleContent {
-                    font-size: var(--sixteen);
+                    font-size: $sixteen;
                 }
 
                 .readMore {
@@ -92,10 +94,11 @@
                     height: 38px;
                     padding: 10px 15px;
                     margin-top: 0.5rem;
-                    background: var(--primary);
+                    background: $primary;
                     border-radius: 5px;
-                    color: var(--black);
-                    font-size: var(--sixteen);cursor: pointer;
+                    color: $black;
+                    font-size: $sixteen;
+                    cursor: pointer;
                     transition: all 0.3s;
                 
                     &:hover {

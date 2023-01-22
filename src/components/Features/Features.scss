@@ -1,5 +1,7 @@
+@import "../../index.scss";
+
 .featureSection{
-    background: var(--whblackite);
+    background: $black;
     height: 100%;
     width: 100%;
     padding: 2rem;
@@ -11,9 +13,9 @@
         display: block;
     
         .featuresTitle{
-            font-size: var(--twentyFour);
-            font-family: var(--font-text);
-            color: var(--white);
+            font-size: $twentyFour;
+            font-family: $textFont;
+            color: $white;
             margin: 3rem 0 2rem;
         }
 
@@ -35,7 +37,7 @@
                     }
         
                     .feature{
-                        color: var(--primary);
+                        color: $primary;
                     }
                 }
             }

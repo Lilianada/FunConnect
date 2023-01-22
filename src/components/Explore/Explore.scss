@@ -1,9 +1,11 @@
+@import "../../index.scss";
+
 .exploreSection{
     width: 100%;
     height: 100%;
     padding: 2rem;
     margin-bottom: 2rem;
-    background-color: var(--black);
+    background-color: $black;
 
     .exploreContent{
         width: 90%;
@@ -11,7 +13,7 @@
 
         .exploreTitle{
             text-align: center;
-            color: var(--white);
+            color: $white;
             margin-bottom: .5rem;
             
             @media screen and (min-width: 768px) {
@@ -20,8 +22,8 @@
         }
 
         .exploreSubtitle{
-            font-size: var(--eighteen);
-            color: var(--white);
+            font-size: $eighteen;
+            color: $white;
             text-align: center;
         }
     }

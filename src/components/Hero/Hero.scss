@@ -1,5 +1,7 @@
+@import "../../index.scss";
+
 .heroSection {
-    background: var(--white);
+    background: $white;
     height: 100%;
     width: 100%;
     padding: 2rem;
@@ -22,13 +24,13 @@
             }
 
             .heroTitle {
-                color: var(--darkText);
-                font-family: var(--font-head);
+                color: $darkText;
+                font-family: $headFont;
             }
 
             .heroSubtitle {
-                font-size: var(--twenty);
-                color: var(--darkText);
+                font-size: $twenty;
+                color: $darkText;
                 margin-top: 1.5rem;
             }
 
@@ -44,7 +46,7 @@
                     height: 64px;
                     width: 200px;
                     padding: 8px 20px;
-                    background: var(--black);
+                    background: $black;
                     border-radius: 10px;
                     display: flex;
                     justify-content: space-evenly;
@@ -52,15 +54,15 @@
                     margin-bottom: 0.5rem;
 
                     .downloadText {
-                        font-family: var(--font-alt);
-                        font-size: var(--twelve);
+                        font-family: $altFont;
+                        font-size: $twelve;
                         font-weight: 600;
                         line-height: 16px;
                     }
 
                     .appText {
-                        font-family: var(--font-alt);
-                        font-size: var(--eighteen);
+                        font-family: $altFont;
+                        font-size: $eighteen;
                         font-weight: 800;
                         text-transform: capitalize;
                         line-height: 20px;
@@ -80,9 +82,9 @@
                 position: relative;
 
                 .learnMoreText {
-                    font-size: var(--twenty);
+                    font-size: $twenty;
                     font-weight: 600;
-                    color: var(--secondaryBg);
+                    color: $secondaryBg;
                     margin-left: 1rem;
                 }
 
@@ -99,7 +101,7 @@
                         height: 65px;
                         width: 65px;
                         border-radius: 50%;
-                        background: var(--assets);
+                        background: $assets;
                         display: grid;
                         place-items: center;
                         position: absolute;
@@ -123,7 +125,7 @@
                             width: 45px;
                             height: 45px;
                             border-radius: 50%;
-                            background: var(--secondaryBg);
+                            background: $secondaryBg;
                             display: grid;
                             place-items: center;
                             position: relative;
