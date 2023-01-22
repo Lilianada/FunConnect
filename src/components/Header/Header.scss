@@ -1,7 +1,7 @@
 @import "../../variable/variable.scss";
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: $black;
     text-align: center;
     font-size: 20px;
@@ -142,7 +142,7 @@ header {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 85%;
+            width: 90%;
             margin: 1.5rem auto;
 
             .navbar {
