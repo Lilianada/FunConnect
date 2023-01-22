@@ -59,7 +59,7 @@ const SubscribeForm = () => {
             <p>Oops, something went wrong...</p>
             <p>
               Please,{" "}
-              <button onClick={() => setStatus(null)}>try again.</button>
+              <button className="btn" onClick={() => setStatus(null)}>try again.</button>
             </p>
             </>
         )}

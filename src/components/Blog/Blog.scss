@@ -57,7 +57,7 @@
                 align-items: flex-start;
                 padding: 1rem;
                 // margin-top: 2rem;
-
+                
                 @media screen and (min-width: 768px) {
                     width: 100%;
                     &:nth-child(6n + 2),
@@ -93,6 +93,7 @@
 
                 .articleContent {
                     font-size: $sixteen;
+                    max-width: 410px;
                 }
 
                 .readMore {

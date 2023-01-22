@@ -13,10 +13,13 @@ footer {
 
         @media screen and (min-width: 768px) {
             width: 90%;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 900px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 2rem;
-            margin: 0 auto;
         }
 
         .footerFlex_item {
@@ -24,11 +27,12 @@ footer {
 
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
-                &:nth-child(2), &:last-child{
+                &:nth-child(2),
+                &:last-child {
                     margin-top: 1.8rem;
                 }
             }
-            
+
             .footerFlex_head {
                 color: $primary;
                 font-size: $twentyTwo;
@@ -41,17 +45,18 @@ footer {
                 font-size: $eighteen;
                 font-weight: 400;
                 margin-bottom: 1rem;
+                max-width: 410px;
 
                 .footerFlex_listOne {
                     display: flex;
                     flex-direction: column;
 
-                    .footerFlex_link{
+                    .footerFlex_link {
                         margin-bottom: 1rem;
                         color: $footerText;
                     }
 
-                    .footerFlex_text{
+                    .footerFlex_text {
                         color: $footerText;
                     }
                 }
@@ -60,22 +65,21 @@ footer {
                     display: flex;
                     align-items: center;
 
-                    .footerFlex_icon{
+                    .footerFlex_icon {
                         display: grid;
                         place-items: center;
                         padding: 3px;
                         margin-right: 1rem;
-                        
                     }
-                    .linkedinIcon{
+                    .linkedinIcon {
                         width: 1.5rem;
                         height: 1.5rem;
-                        background: #FFF1DD;
+                        background: #fff1dd;
                         border-radius: 50%;
                     }
                 }
 
-                .footeFlex_form{
+                .footeFlex_form {
                     width: 280px;
                     height: 50px;
                     display: flex;
@@ -83,7 +87,7 @@ footer {
                     justify-content: flex-start;
                     margin-bottom: 1rem;
 
-                    .footerFlex_input{
+                    .footerFlex_input {
                         width: 80%;
                         height: 100%;
                         outline: none;
@@ -91,14 +95,14 @@ footer {
                         border-radius: 8px 0 0 8px;
                         padding: 0 1rem;
 
-                        &::placeholder{
+                        &::placeholder {
                             font-size: $fourteen;
                             font-family: $textFont;
-                            color: #4D4D4D;
+                            color: #4d4d4d;
                         }
                     }
 
-                    .footerFlex_btn{
+                    .footerFlex_btn {
                         width: 20%;
                         height: 100%;
                         border: none;
@@ -109,7 +113,7 @@ footer {
                         place-items: center;
                         position: relative;
 
-                        .submitBtn{
+                        .submitBtn {
                             height: 100%;
                             width: 100%;
                             position: absolute;

@@ -36,12 +36,13 @@
                 }
         
                 .featuresItem{
+                    
                     @media screen and (min-width: 768px) {
                         margin-bottom: 1rem;
                     }
         
                     .feature{
-                        color: $primary;
+                        color: $yellowText;
                     }
                 }
             }

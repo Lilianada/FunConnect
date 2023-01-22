@@ -12,7 +12,7 @@
         margin: 0 auto;
         display: grid;
         place-items: center;
-        
+
         @media screen and (min-width: 768px) {
             width: 90%;
         }
@@ -27,9 +27,16 @@
         }
 
         .benefitFlex_container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (min-width: 900px) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 1.5rem;
+            }
 
             .benefitFlex_item {
                 display: flex;
@@ -49,7 +56,6 @@
 
                 @media screen and (min-width: 768px) {
                     align-items: flex-start;
-                    
                 }
 
                 .benefitFlex_title {
