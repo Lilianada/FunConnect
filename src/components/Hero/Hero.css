@@ -1,0 +1,133 @@
+.heroSection {
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.heroSection .heroContent {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.heroSection .heroContent .heroTexts {
+  background: url(../../assets/images/HeroBg.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .heroSection .heroContent .heroTexts {
+    width: 50%;
+    padding: 5% 0 0 5%;
+  }
+}
+.heroSection .heroContent .heroTexts .heroTitle {
+  color: var(--darkText);
+  font-family: var(--font-head);
+}
+.heroSection .heroContent .heroTexts .heroSubtitle {
+  font-size: var(--twenty);
+  color: var(--darkText);
+  margin-top: 1.5rem;
+}
+.heroSection .heroContent .heroTexts .downloadApp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.heroSection .heroContent .heroTexts .downloadApp .appStore,
+.heroSection .heroContent .heroTexts .downloadApp .googlePlay {
+  height: 64px;
+  width: 200px;
+  padding: 8px 20px;
+  background: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.heroSection .heroContent .heroTexts .downloadApp .appStore .downloadText,
+.heroSection .heroContent .heroTexts .downloadApp .googlePlay .downloadText {
+  font-family: var(--font-alt);
+  font-size: var(--twelve);
+  font-weight: 600;
+  line-height: 16px;
+}
+.heroSection .heroContent .heroTexts .downloadApp .appStore .appText,
+.heroSection .heroContent .heroTexts .downloadApp .googlePlay .appText {
+  font-family: var(--font-alt);
+  font-size: var(--eighteen);
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+.heroSection .heroContent .heroTexts .downloadApp .appStore {
+  margin-right: 1rem;
+}
+.heroSection .heroContent .heroTexts .learnMore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.heroSection .heroContent .heroTexts .learnMore .learnMoreText {
+  font-size: var(--twenty);
+  font-weight: 600;
+  color: var(--secondaryBg);
+  margin-left: 1rem;
+}
+.heroSection .heroContent .heroTexts .learnMore .learnMoreIcon {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.heroSection .heroContent .heroTexts .learnMore .learnMoreIcon .learnMoreIcon_grey {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background: var(--assets);
+  display: grid;
+  place-items: center;
+  position: absolute;
+  opacity: 1;
+  -webkit-animation: scaleIn 2s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+          animation: scaleIn 2s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+@-webkit-keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+.heroSection .heroContent .heroTexts .learnMore .learnMoreIcon .learnMoreIcon_black {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--secondaryBg);
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+}/*# sourceMappingURL=Hero.css.map */

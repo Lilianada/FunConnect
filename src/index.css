@@ -1,0 +1,208 @@
+/*------------ [Font] -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap");
+/*------------ [Root]-----------*/
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #ff9100;
+  --secondary: #cccccc;
+  --whiteText: #d9d9d9;
+  --darkText: #0e0e0e;
+  --primaryBg: #ffedd5;
+  --secondaryBg: #202020;
+  --assets: #333333;
+  /* FontStyle*/
+  --font-head: Inter, sans-serif;
+  --font-text: Work Sans, sans-serif;
+  --font-alt: Tajawal, sans-serif;
+  /* Font Sizes */
+  --sixty: 40px;
+  --fiftySeven: 32px;
+  --fourty: 24px;
+  --thirtySix: 32px;
+  --thirtyTwo: 28px;
+  --twentyFour: 20px;
+  --twenty: 18px;
+  --eighteen: 17px;
+  --sixteen: 16px;
+  --fourteen: 14px;
+  --twelve: 12px;
+  --ten: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    --sixty: 60px;
+    --fiftySeven: 57px;
+    --fourty: 40px;
+    --thirtySix: 36px;
+    --thirtyTwo: 32px;
+    --thirty: 30px;
+    --twentyEight: 28px;
+    --twentyFour: 24px;
+    --twenty: 20px;
+    --eighteen: 18px;
+    --sixteen: 16px;
+    --fourteen: 14px;
+    --twelve: 12px;
+    --ten: 10px;
+  }
+}
+/*========================================*/
+/*------------ [_Reset_Styles] -----------*/
+/*========================================*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+body {
+  max-width: 2560px;
+  height: 100vh;
+  background: var(--black);
+  font-family: var(--font-text);
+  color: var(--white);
+  letter-spacing: 0px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-head);
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: var(--sixteen);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--whiteText);
+  text-transform: none;
+}
+
+h1 {
+  font-size: var(--sixty);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  color: var(--darkText);
+}
+
+h2 {
+  font-size: var(--fiftySeven);
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--fourty);
+  line-height: 52px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--thirtyTwo);
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--twentyFour);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: var(--eighteen);
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--font-text);
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*=====================================*/
+/*-------------[Button] -------------*/
+/*=====================================*/
+button {
+  font-family: var(--font-text);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: var(--primary);
+  color: var(--black);
+  border: none;
+  font-size: var(--sixteen);
+  font-weight: 500;
+  border-radius: 6.5px;
+  transition: all 0.3s;
+}
+
+/*=====================================*/
+/*-------------[Body Style] -------------*/
+/*=====================================*/
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  overflow-x: hidden;
+}
+
+.primaryText {
+  color: var(--primary);
+}/*# sourceMappingURL=index.css.map */

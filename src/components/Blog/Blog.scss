@@ -37,8 +37,8 @@
                 grid-template-rows: repeat(2, 550px);
             }
 
-            @media screen and (maxg-width: 1024px) {
-                grid-template-columns: repeat(2, 1fr);
+            @media screen and (min-width: 1024px) {
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .blogArticle {
@@ -69,7 +69,7 @@
 
                         &:hover {
                             opacity: 0.7;
-                            transform: scale(1.1, 1.1) rotateZ(35deg);
+                            // transform: scale(1.1, 1.1) rotateZ(35deg);
                         }
 
                         @media screen and (min-width: 768px) {
@@ -95,7 +95,12 @@
                     background: var(--primary);
                     border-radius: 5px;
                     color: var(--black);
-                    font-size: var(--sixteen);
+                    font-size: var(--sixteen);cursor: pointer;
+                    transition: all 0.3s;
+                
+                    &:hover {
+                        transform: scale(0.9, 0.9);
+                    }
                 }
             }
         }

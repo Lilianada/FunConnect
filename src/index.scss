@@ -8,67 +8,48 @@ $altFont: "Tajawal", sans-serif;
 
 /*------------ [Root]-----------*/
 
+/* Colors */
+$white: #ffffff;
+$blackColor: #000000;
+$gray: #e5e5e5;
+$primary: #ff9100;
+$secondary: #cccccc;
+$whiteText: #d9d9d9;
+$darkText: #0e0e0e;
+$primaryBg: #ffedd5;
+$secondaryBg: #202020;
+$assets: #333333;
+$navText: #E8F8F8;
 
-:root {
-    $white: #ffffff;
-    $black: #000000;
-    $gray: #e5e5e5;
-    $primary: #ff9100;
-    $secondary: #cccccc;
-    $whiteText: #d9d9d9;
-    $darkText: #0e0e0e;
-    $primaryBg: #ffedd5;
-    $secondaryBg: #202020;
-    $assets: #333333;
-    $navText: #E8F8F8;
-    /* Colors */
-    --white: #{$white};
-    --black: #{$black};
-    --primary: #{$primary};
-    --secondary: #{$secondary};
-    --whiteText: #{$whiteText};
-    --darkText: #{$darkText};
-    --primaryBg: #{$primaryBg};
-    --secondaryBg: #{$secondaryBg};
-    --assets: #{$assets};
-
-    /* FontStyle*/
-    --font-head: #{$headFont};
-    --font-text: #{$textFont};
-    --font-alt: #{$altFont};
-
-    /* Font Sizes */
-    --sixty: 40px;
-    --fiftySeven: 32px;
-    --fourty: 24px;
-    --thirtySix: 32px;
-    --thirtyTwo: 28px;
-    --twentyFour: 20px;
-    --twenty: 18px;
-    --eighteen: 17px;
-    --sixteen: 16px;
-    --fourteen: 14px;
-    --twelve: 12px;
-    --ten: 10px;
-}
+/* Font Sizes */
+$sixty: 40px;
+$fiftySeven: 32px;
+$fourty: 24px;
+$thirtySix: 32px;
+$thirtyTwo: 28px;
+$twentyFour: 20px;
+$twenty: 18px;
+$eighteen: 17px;
+$sixteen: 16px;
+$fourteen: 14px;
+$twelve: 12px;
+$ten: 10px;
 
 @media screen and (min-width: 900px) {
-    :root {
-        --sixty: 60px;
-        --fiftySeven: 57px;
-        --fourty: 40px;
-        --thirtySix: 36px;
-        --thirtyTwo: 32px;
-        --thirty: 30px;
-        --twentyEight: 28px;
-        --twentyFour: 24px;
-        --twenty: 20px;
-        --eighteen: 18px;
-        --sixteen: 16px;
-        --fourteen: 14px;
-        --twelve: 12px;
-        --ten: 10px;
-    }
+    $sixty: 60px;
+    $fiftySeven: 57px;
+    $fourty: 40px;
+    $thirtySix: 36px;
+    $thirtyTwo: 32px;
+    $thirty: 30px;
+    $twentyEight: 28px;
+    $twentyFour: 24px;
+    $twenty: 20px;
+    $eighteen: 18px;
+    $sixteen: 16px;
+    $fourteen: 14px;
+    $twelve: 12px;
+    $ten: 10px;
 }
 
 /*========================================*/

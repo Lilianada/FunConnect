@@ -1,0 +1,48 @@
+.featureSection {
+  background: var(--whblackite);
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.featureSection .featureContent {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.featureSection .featureContent .featuresTitle {
+  font-size: var(--twentyFour);
+  font-family: var(--font-text);
+  color: var(--white);
+  margin: 3rem 0 2rem;
+}
+.featureSection .featureContent .featureFlex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.featureSection .featureContent .featureFlex .featuresList {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .featureSection .featureContent .featureFlex .featuresList {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .featureSection .featureContent .featureFlex .featuresList .featuresItem {
+    margin-bottom: 1rem;
+  }
+}
+.featureSection .featureContent .featureFlex .featuresList .featuresItem .feature {
+  color: var(--primary);
+}
+.featureSection .featureContent .featureFlex .featureImage {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .featureSection .featureContent .featureFlex .featureImage {
+    display: block;
+    width: 35%;
+  }
+}/*# sourceMappingURL=Features.css.map */

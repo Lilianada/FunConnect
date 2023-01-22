@@ -1,0 +1,26 @@
+.exploreSection {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--black);
+}
+.exploreSection .exploreContent {
+  width: 90%;
+  margin: 0 auto;
+}
+.exploreSection .exploreContent .exploreTitle {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .exploreSection .exploreContent .exploreTitle {
+    margin-bottom: 1rem;
+  }
+}
+.exploreSection .exploreContent .exploreSubtitle {
+  font-size: var(--eighteen);
+  color: var(--white);
+  text-align: center;
+}/*# sourceMappingURL=Explore.css.map */
