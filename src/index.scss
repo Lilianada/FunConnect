@@ -10,7 +10,7 @@ $altFont: "Tajawal", sans-serif;
 
 /* Colors */
 $white: #ffffff;
-$blackColor: #000000;
+$black: #000000;
 $gray: #e5e5e5;
 $primary: #ff9100;
 $secondary: #cccccc;
@@ -73,9 +73,9 @@ html {
 body {
     max-width: 2560px;
     height: 100vh;
-    background: var(--black);
-    font-family: var(--font-text);
-    color: var(--white);
+    background: $black;
+    font-family: $textFont;
+    color: $white;
     letter-spacing: 0px;
 }
 
@@ -95,52 +95,52 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-head);
+    font-family: $headFont;
 }
 
 p {
-    font-family: var(--font-text);
-    font-size: var(--sixteen);
+    font-family: $textFont;
+    font-size: $sixteen;
     font-weight: 400;
     line-height: 1.5rem;
-    color: var(--whiteText);
+    color: $whiteText;
     text-transform: none;
 }
 
 h1 {
-    font-size: var(--sixty);
+    font-size: $sixty;
     font-style: normal;
     font-weight: 700;
     line-height: 66px;
-    color: var(--darkText);
+    color: $darkText;
 }
 
 h2 {
-    font-size: var(--fiftySeven);
+    font-size: $fiftySeven;
     line-height: 64px;
     font-weight: 700;
 }
 
 h3 {
-    font-size: var(--fourty);
+    font-size: $fourty;
     line-height: 52px;
     font-weight: 600;
 }
 
 h4 {
-    font-size: var(--thirtyTwo);
+    font-size: $thirtyTwo;
     line-height: 2.5rem;
     font-weight: 600;
 }
 
 h5 {
-    font-size: var(--twentyFour);
+    font-size: $twentyFour;
     font-weight: 500;
     line-height: 1.5rem;
 }
 
 h6 {
-    font-size: var(--eighteen);
+    font-size: $eighteen;
     line-height: 1.2rem;
     font-weight: 600;
 }
@@ -148,7 +148,7 @@ h6 {
 a {
     text-decoration: none;
     color: inherit;
-    font-family: var(--font-text);
+    font-family: $textFont;
 }
 
 img {
@@ -172,7 +172,7 @@ ul li {
 /*-------------[Button] -------------*/
 /*=====================================*/
 button {
-    font-family: var(--font-text);
+    font-family: $textFont;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -189,10 +189,10 @@ button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background: var(--primary);
-    color: var(--black);
+    background: $primary;
+    color: $black;
     border: none;
-    font-size: var(--sixteen);
+    font-size: $sixteen;
     font-weight: 500;
     border-radius: 6.5px;
     transition: all 0.3s;
@@ -210,5 +210,5 @@ button {
 }
 
 .primaryText{
-    color: var(--primary);
+    color: $primary;
 }

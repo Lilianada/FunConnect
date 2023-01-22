@@ -1,6 +1,8 @@
+@import "../../index.scss";
+
 header {
     width: 100%;
-    background-color: var(--black);
+    background-color: $black;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -32,7 +34,7 @@ header {
             z-index: 2;
             top: 0;
             left: 0;
-            background: var(--secondaryBg);
+            background: $secondaryBg;
             text-align: left;
             padding: 1.5rem 1rem 1rem;
             transition: all 300ms ease-in-out;
@@ -61,22 +63,22 @@ header {
                     padding-bottom: 1.5rem;
                     
                     .navTitle{
-                        color: var(--navText);
-                        font-size: var(--sixteen);
-                        font-family: var(--font-text);
+                        color: $navText;
+                        font-size: $sixteen;
+                        font-family: $textFont;
                         font-weight: 500;
                         text-transform: none;
                     }
                     
                     .navLink{
-                        color: var(--whiteText);
-                        font-size: calc(var(--twentyFour) + 4px);
-                        font-family: var(--font-head);
+                        color: $whiteText;
+                        font-size: calc($twentyFour + 4px);
+                        font-family: $headFont;
                         font-weight: 500;
                         text-transform: capitalize;
 
                         &:hover{
-                            color: var(--primary);
+                            color: $primary;
                         }
                     }
                 }
@@ -94,7 +96,7 @@ header {
                     height: 64px;
                     width: 168px;
                     padding: 8px 20px;
-                    background: var(--black);
+                    background: $black;
                     border-radius: 10px;
                     display: flex;
                     justify-content: space-between;
@@ -106,15 +108,15 @@ header {
                     }
                     
                     .downloadText{
-                        font-family: var(--font-alt);
-                        font-size: var(--ten);
+                        font-family: $altFont;
+                        font-size: $ten;
                         font-weight: 600;
                         line-height: 13px;
                     }
                     
                     .appText{
-                        font-family: var(--font-alt);
-                        font-size: var(--sixteen);
+                        font-family: $altFont;
+                        font-size: $sixteen;
                         font-weight: 700;
                         text-transform: capitalize;
                         line-height: 13px;
@@ -150,16 +152,16 @@ header {
                     display: flex;
                     
                     .navLink{
-                        color: var(--whiteText);
-                        font-size: var(--sixteen);
-                        font-family: var(--font-head);
+                        color: $whiteText;
+                        font-size: $sixteen;
+                        font-family: $headFont;
                         font-weight: 500;
                         text-transform: none;
                         padding: 0 1rem;
                         transition: all 300ms ease-in-out;
 
                         &:hover{
-                            color: var(--primary);
+                            color: $primary;
                         }
                     }
                 }
@@ -171,9 +173,9 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: var(--eighteen);
-                background: var(--primary);
-                color: var(--black);
+                font-size: $eighteen;
+                background: $primary;
+                color: $black;
                 text-transform: capitalize;
                 border-radius: 8px;
             }
