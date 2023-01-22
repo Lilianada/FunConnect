@@ -1,6 +1,7 @@
 @import "../../variable/variable.scss";
 
 footer {
+    width: 100vw;
     background: $black;
     padding: 2rem;
 
@@ -15,6 +16,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 2rem;
+            margin: 0 auto;
         }
 
         .footerFlex_item {

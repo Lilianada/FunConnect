@@ -9,14 +9,16 @@ import Hero from "../components/Hero/Hero";
 
 export default function Home() {
   return (
-    <main className="mainContainer">
-        <Header/>
-        <Hero/>
-        <Benefits/>
-        <Features/>
-        <Explore/>
-        <Blog/>
-        <Footer/>
-    </main>
+    <>
+      <Header />
+      <main className="mainContainer">
+        <Hero />
+        <Benefits />
+        <Features />
+        <Explore />
+        <Blog />
+      </main>
+      <Footer />
+    </>
   );
 }
