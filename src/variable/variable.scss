@@ -91,6 +91,7 @@ p {
 
 h1 {
   font-size: $sixty;
+  font-family: $headFont;
   font-style: normal;
   font-weight: 700;
   line-height: 66px;
@@ -99,6 +100,7 @@ h1 {
 
 h2 {
   font-size: $fiftySeven;
+  font-family: $headFont;
   line-height: 64px;
   font-weight: 700;
 }

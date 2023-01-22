@@ -1,0 +1,84 @@
+@import "../../variable/variable.scss";
+
+.faqSection{
+    width: 100vw;
+    height: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: $white;
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem;
+    }
+    
+    .faqContent{
+        width: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 90%;
+        }
+
+        .faqContent_head{
+            display: grid;
+            place-items: center;
+            position: relative;
+
+            .faqTitle{
+                font-weight: 700;
+                color: $secondaryBg;
+                margin-bottom: 1rem;
+                z-index: 1;
+                text-align: center;
+
+                .primaryText{
+                    color: $primary;
+
+                    @media screen and (min-width: 768px) {
+                        color: $secondaryBg;
+                    }
+                }
+
+            }
+
+            .blob{
+                display: none;
+                position: absolute;
+                left: -20px;
+                top: -15px;
+                z-index: 0;
+                width: 75px;
+                height: 80px;
+
+                @media screen and (min-width: 768px) {
+                   display: block; 
+                }
+            }
+        }
+
+        .faqContent_body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+
+            .faqContent_item{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
+                margin-top: 1rem;
+                border: 1.5px solid $secondaryBg;
+                border-radius: 8px;
+                gap: 1rem;
+
+                .faqContent_text{
+                    font-size: $eighteen;
+                    font-weight: 700;
+                    color: $secondaryBg;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
