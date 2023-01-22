@@ -8,9 +8,13 @@
     margin-bottom: 2rem;
 
     .heroContent {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
+
+        @media screen and (min-width: 768px) {
+            width: 90%;
+        }
 
         .heroTexts {
             background: url(../../assets/images/HeroBg.svg) no-repeat;

@@ -8,10 +8,14 @@
     margin-bottom: 2rem;
 
     .benefitSection__container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: grid;
         place-items: center;
+        
+        @media screen and (min-width: 768px) {
+            width: 90%;
+        }
 
         .benefitTitle {
             font-size: $thirtySix;
