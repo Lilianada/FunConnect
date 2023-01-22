@@ -1,0 +1,56 @@
+@use "sass:string";
+$headFont: "Inter", sans-serif;
+$textFont: "Work Sans", sans-serif;
+$altFont: "Tajawal", sans-serif;
+
+/*------------ [Font] -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+/*------------ [Root]-----------*/
+
+/* Colors */
+$white: #ffffff;
+$black: #000000;
+$gray: #e5e5e5;
+$primary: #ff9100;
+$secondary: #cccccc;
+$whiteText: #d9d9d9;
+$darkText: #0e0e0e;
+$primaryBg: #ffedd5;
+$secondaryBg: #202020;
+$assets: #333333;
+$navText: #E8F8F8;
+$footerText: #A3A3A3;
+
+/* Font Sizes */
+$sixty: 40px;
+$fiftySeven: 32px;
+$fourty: 24px;
+$thirtySix: 32px;
+$thirtyTwo: 28px;
+$twentyFour: 20px;
+$twentyTwo: 22px;
+$twenty: 18px;
+$eighteen: 17px;
+$sixteen: 16px;
+$fourteen: 14px;
+$twelve: 12px;
+$ten: 10px;
+
+@media screen and (min-width: 900px) {
+    $sixty: 60px;
+    $fiftySeven: 57px;
+    $fourty: 40px;
+    $thirtySix: 36px;
+    $thirtyTwo: 32px;
+    $thirty: 30px;
+    $twentyEight: 28px;
+    $twentyFour: 24px;
+    $twentyTwo: 22px;
+    $twenty: 20px;
+    $eighteen: 18px;
+    $sixteen: 16px;
+    $fourteen: 14px;
+    $twelve: 12px;
+    $ten: 10px;
+}

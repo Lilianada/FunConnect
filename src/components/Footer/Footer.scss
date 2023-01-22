@@ -22,8 +22,11 @@ footer {
 
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
+                &:nth-child(2), &:last-child{
+                    margin-top: 1.8rem;
+                }
             }
-
+            
             .footerFlex_head {
                 color: $primary;
                 font-size: $twentyTwo;
@@ -37,9 +40,30 @@ footer {
                 font-weight: 400;
                 margin-bottom: 1rem;
 
-                .footerFlex_list {
-                    li{
+                .footerFlex_listOne {
+                    display: flex;
+                    flex-direction: column;
+
+                    .footerFlex_link{
                         margin-bottom: 1rem;
+                        color: $footerText;
+                    }
+
+                    .footerFlex_text{
+                        color: $footerText;
+                    }
+                }
+
+                .footerFlex_listTwo {
+                    display: flex;
+                    align-items: center;
+
+                    .footerFlex_icon{
+                        display: grid;
+                        place-items: center;
+                        padding: 3px;
+                        margin-right: 1rem;
+                        // background: #FFF1DD;
                     }
                 }
             }

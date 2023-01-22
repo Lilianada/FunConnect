@@ -1,5 +1,7 @@
 import React from "react";
-import { BsInstagram, BsLinkedin, BsTelegram, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsTelegram } from "react-icons/bs";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Footer.scss";
 
@@ -12,7 +14,7 @@ export default function Footer() {
             <img src={Logo} alt="FunConnect Logo" />
           </div>
           <div className="footerFlex_body">
-            <p>
+            <p className="footerFlex_text">
               Funconnect is a modern way of exploring fun places, a social way
               to connect like-minds, and a space to share experiences.
             </p>
@@ -21,43 +23,31 @@ export default function Footer() {
         <div className="footerFlex_item">
           <h5 className="footerFlex_head">Legal</h5>
           <div className="footerFlex_body">
-            <ul className="footerFlex_list">
-              <li>
+            <ul className="footerFlex_listOne">
+              <li className="footerFlex_link">
                 <a href="/">Privacy Policy</a>
               </li>
-              <li>
+              <li className="footerFlex_link">
                 <a href="/">Terms and condition</a>
               </li>
             </ul>
           </div>
           <h5 className="footerFlex_head">Be Social</h5>
           <div className="footerFlex_body">
-            <ul className="footerFlex_list">
-              <li>
-                <a href="/">
-                  {" "}
-                  <BsTelegram />{" "}
+            <div className="footerFlex_listTwo">
+                <a href="/" className="footerFlex_icon">
+                  <BsTelegram fill="#FFF1DD" size={24} />
                 </a>
-              </li>
-              <li>
-                <a href="/">
-                  {" "}
-                  <BsTwitter />{" "}
+                <a href="/" className="footerFlex_icon">
+                  <AiFillTwitterCircle fill="#FFF1DD" size={24}/>
                 </a>
-              </li>
-              <li>
-                <a href="/">
-                  {" "}
-                  <BsLinkedin />{" "}
+                <a href="/" className="footerFlex_icon">
+                  <BsLinkedin fill="#FFF1DD"  />
                 </a>
-              </li>
-              <li>
-                <a href="/">
-                  {" "}
-                  <BsInstagram />{" "}
+                <a href="/" className="footerFlex_icon">
+                  <RiInstagramFill fill="#FFF1DD" size={24}/>
                 </a>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
         <div className="footerFlex_item">
