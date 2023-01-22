@@ -4,8 +4,12 @@
     background: $white;
     height: 100%;
     width: 100vw;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem;
+    }
 
     .heroContent {
         width: 100%;
