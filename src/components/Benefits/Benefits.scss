@@ -1,5 +1,7 @@
+@import "../../index.scss";
+
 .benefitSection {
-    background: var(--white);
+    background: $white;
     height: 100%;
     width: 100%;
     padding: 2rem;
@@ -12,9 +14,9 @@
         place-items: center;
 
         .benefitTitle {
-            font-size: var(--thirtySix);
+            font-size: $thirtySix;
             font-weight: 700;
-            color: var(--darkText);
+            color: $darkText;
             text-align: center;
             line-height: 40px;
             margin-bottom: 1rem;
@@ -37,7 +39,7 @@
                 padding: 28px 16px;
                 margin: 1rem;
                 gap: 24px;
-                background: var(--white);
+                background: $white;
                 border: 1px solid #1a213b;
                 box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
                 border-radius: 16px;
@@ -48,9 +50,9 @@
                 }
 
                 .benefitFlex_title {
-                    font-size: var(--twentyFour);
-                    font-family: var(--font-text);
-                    color: var(--black);
+                    font-size: $twentyFour;
+                    font-family: $textFont;
+                    color: $black;
                 }
 
                 .benefitFlex_icon {
@@ -63,9 +65,9 @@
                 }
 
                 .benefitFlex_text {
-                    font-size: var(--sixteen);
-                    font-family: var(--font-text);
-                    color: var(--assets);
+                    font-size: $sixteen;
+                    font-family: $textFont;
+                    color: $assets;
                     line-height: 24px;
                 }
             }

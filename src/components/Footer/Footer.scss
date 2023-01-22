@@ -1,38 +1,47 @@
 @import "../../index.scss";
 
-footer{
+footer {
     background: $black;
     padding: 2rem;
 
-    .footerContent{
+    .footerContent {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
 
         @media screen and (min-width: 768px) {
-            width: 70%;
+            width: 90%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
         }
-        .footerFlex_item
-        {
+
+        .footerFlex_item {
             margin-bottom: 1.5rem;
+
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
             }
-            .footerFlex_head{
+
+            .footerFlex_head {
                 color: $primary;
-                font-size: calc($twenty + 2px);
+                font-size: $twentyTwo;
                 font-weight: 600;
                 margin-bottom: 1rem;
             }
 
-            .footerFlex_body{
+            .footerFlex_body {
                 color: $white;
                 font-size: $eighteen;
                 font-weight: 400;
                 margin-bottom: 1rem;
+
+                .footerFlex_list {
+                    li{
+                        margin-bottom: 1rem;
+                    }
+                }
             }
         }
     }

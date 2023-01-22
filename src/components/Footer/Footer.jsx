@@ -30,7 +30,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div><div className="footerFlex_item">
           <h5 className="footerFlex_head">Be Social</h5>
           <div className="footerFlex_body">
             <ul className="footerFlex_list">
