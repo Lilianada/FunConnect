@@ -23,7 +23,7 @@
             display: grid;
             place-items: center;
             position: relative;
-            width: auto;
+            width: fit-content;
             margin: 0 auto;
 
             .faqTitle{
@@ -79,6 +79,14 @@
                     font-weight: 700;
                     color: $secondaryBg;
                     width: 90%;
+                }
+
+                .openBtn{
+                    border: none;
+                    outline: none;
+                    background: none;
+                    cursor: pointer;
+                    
                 }
             }
         }

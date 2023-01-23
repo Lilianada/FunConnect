@@ -1,9 +1,9 @@
 import React from "react";
-import { BsPlusLg } from "react-icons/bs";
 import Blob from "../../assets/images/Blob.png";
 import "./FAQ.scss";
 
 export default function FAQ() {
+
   return (
     <section className="faqSection">
         <div className="faqContent">
@@ -14,29 +14,9 @@ export default function FAQ() {
                 <img src={Blob} alt="Blob" className="blob" />
             </div>
             <div className="faqContent_body">
-                <div className="faqContent_item">
-                    <p className="faqContent_text">What is Funconnect?</p>
-                    <BsPlusLg size={24} fill="#202020"/>
-                </div>
-                <div className="faqContent_item">
-                    <p className="faqContent_text">How can I download the Funconnect app?</p>
-                    <BsPlusLg size={24} fill="#202020"/>
-                </div>
-                <div className="faqContent_item">
-                    <p className="faqContent_text">Will I pay to use the Funconnect app?</p>
-                    <BsPlusLg size={24} fill="#202020"/>
-                </div>
-                <div className="faqContent_item">
-                    <p className="faqContent_text">What type of events will be featured on Funconnect?</p>
-                    <BsPlusLg size={24} fill="#202020"/>
-                </div>
-                <div className="faqContent_item">
-                    <p className="faqContent_text">Can I book an event?</p>
-                    <BsPlusLg size={24} fill="#202020"/>
-                </div>
+                
             </div>
         </div>
     </section>
   );
 }
-
