@@ -1,5 +1,7 @@
 import React from "react";
 import Blob from "../../assets/images/Blob.png";
+import { Accordion } from "../Data";
+import FAQAccordion from "./FAQ-Accordion";
 import "./FAQ.scss";
 
 export default function FAQ() {
@@ -13,8 +15,19 @@ export default function FAQ() {
                 </h2>
                 <img src={Blob} alt="Blob" className="blob" />
             </div>
-            <div className="faqContent_body">
-                
+            <div>
+                {
+                    // Map through the data and render the FAQ-Accordion component
+                    Accordion.map((item) => {
+                        return (
+                            <FAQAccordion 
+                                key={item.id}
+                                title={item.title}
+                                description={item.description}
+                            />
+                        )
+                    })
+                }
             </div>
         </div>
     </section>
