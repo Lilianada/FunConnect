@@ -15,7 +15,7 @@ export default function FAQ() {
                 </h2>
                 <img src={Blob} alt="Blob" className="blob" />
             </div>
-            <div>
+            <div className="faqContent_body" >
                 {
                     // Map through the data and render the FAQ-Accordion component
                     Accordion.map((item) => {
@@ -23,7 +23,7 @@ export default function FAQ() {
                             <FAQAccordion 
                                 key={item.id}
                                 title={item.title}
-                                description={item.description}
+                                description={item.content}
                             />
                         )
                     })

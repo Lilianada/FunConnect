@@ -66,13 +66,17 @@
             margin: 0 auto;
 
             .faqContent_item{
-                display: flex;
-                justify-content: space-between;
-                padding: 1.5rem 1rem;
                 margin-top: 1rem;
+                padding: 1.5rem 1rem;
                 border: 1.5px solid $secondaryBg;
                 border-radius: 8px;
-                gap: 1rem;
+                row-gap: 1rem;
+                
+                .faqContent_header{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                }
 
                 .faqContent_text{
                     font-size: $eighteen;
@@ -86,7 +90,12 @@
                     outline: none;
                     background: none;
                     cursor: pointer;
-                    
+
+                }
+
+                .faqContent_description{
+                    font-size: $sixteen;
+                    color: #4D4D4D;
                 }
             }
         }

@@ -40,21 +40,21 @@ export const Accordion=[
     {
         id: 2,
         title: "How can I download the Funconnect app?",
-        content: "Funconnect is a modern way of exploring fun places, a social way to connect like-minds, and a space to share experiences. "
+        content: "The mobile app is available for Apple and Android devices on the App Store and on Play Store"
     },
     {
         id: 3,
         title: "Will I pay to use the Funconnect app?",
-        content: "Funconnect is a modern way of exploring fun places, a social way to connect like-minds, and a space to share experiences."
+        content: "No. The app is completely FREE on Apple Store and Google Play Store."
     },
     {
         id: 4,
         title: "What type of events will be featured on Funconnect?",
-        content: "Funconnect is a modern way of exploring fun places, a social way to connect like-minds, and a space to share experiences."
+        content: "Concerts, Fiestas, Sip & Paint, Fashion Shows, Standups, Food Festivals, and many more."
     },
     {
         id: 5,
         title: "Can I book an event?",
-        content: "Funconnect is a modern way of exploring fun places, a social way to connect like-minds, and a space to share experiences.",
+        content: "Yes. You would be able to book public events or private events that you have been invited to attend.periences.",
     },
 ]
