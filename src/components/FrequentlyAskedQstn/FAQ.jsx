@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlinePlus } from "react-icons/ai";
 import { BsPlusLg } from "react-icons/bs";
 import Blob from "../../assets/images/Blob.png";
 import "./FAQ.scss";
