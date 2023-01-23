@@ -70,11 +70,11 @@
                 padding: 1.5rem 1rem;
                 border: 1.5px solid $secondaryBg;
                 border-radius: 8px;
-                row-gap: 1rem;
                 
                 .faqContent_header{
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-start;
                     gap: 1rem;
                 }
 
@@ -94,8 +94,9 @@
                 }
 
                 .faqContent_description{
-                    font-size: $sixteen;
-                    color: #4D4D4D;
+                    font-size: $eighteen;
+                    color: #3a3a3a;
+                    letter-spacing: .5px;
                 }
             }
         }

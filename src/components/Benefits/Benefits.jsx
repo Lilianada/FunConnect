@@ -32,7 +32,7 @@ export default function Benefits() {
             </p>
           </div>
           <div className="benefitFlex_item">
-            <div className="benefitFlex_icon">
+            <div className="benefitFlex_icon"  style={{background: "#EDEFF7"}}>
               <BsStars size={32} fill="#000" />
             </div>
             <h6 className="benefitFlex_title">Organized Trip Planner</h6>
