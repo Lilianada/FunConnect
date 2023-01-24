@@ -1,9 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { FaPlay } from "react-icons/fa";
-import AppStore from "../../assets/images/AppleVector-colored.svg";
-import GooglePlay from "../../assets/images/GoogleVector-colored.svg";
-import "./Hero.scss";
+import { FaPlay } from "react-icons/fa";import "./Hero.scss";
+import DownloadButtons from "../DownloadButtons/DownloadButtons";
 
 export default function Hero() {
   return (
@@ -31,22 +29,7 @@ export default function Hero() {
             Unlock a world of possibilities with our app.
           </p>
           {/* Download Buttons */}
-          <div className="downloadApp">
-            <a href="/" className="appStore">
-              <img src={AppStore} alt="Apple Logo" className="appleLogo" />
-              <div className="textWrap">
-                <p className="downloadText">Download on the</p>
-                <h5 className="appText">App Store</h5>
-              </div>
-            </a>
-            <a href="/" className="googlePlay">
-              <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
-              <div className="textWrap">
-                <p className="downloadText">Det it on</p>
-                <h5 className="appText">Google Play</h5>
-              </div>
-            </a>
-          </div>
+          <DownloadButtons/>
           {/* Learn more */}
           <a href="/" className="learnMore">
             <div className="learnMoreIcon">

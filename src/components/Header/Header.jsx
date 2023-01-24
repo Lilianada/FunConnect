@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
+import AppStore from "../../assets/images/AppleVector.svg";
+import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Header.scss";
 
@@ -95,7 +97,22 @@ export default function Header() {
           </ul>
 
           {/* Download Buttons */}
-          
+          <div className="downloadApp">
+            <a href="/" className="appStore">
+              <img src={AppStore} alt="Apple Logo" className="appleLogo" />
+              <div className="textWrap">
+                <p className="downloadText">Download on the</p>
+                <h5 className="appText">App Store</h5>
+              </div>
+            </a>
+            <a href="/" className="googlePlay">
+              <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
+              <div className="textWrap">
+                <p className="downloadText">Download on the</p>
+                <h5 className="appText">Google Play</h5>
+              </div>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
