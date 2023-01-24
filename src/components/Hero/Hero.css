@@ -1,14 +1,142 @@
+/*------------ [Font] -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap");
+/*------------ [Root]-----------*/
+/* Colors */
+/* Font Sizes */
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #d9d9d9;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  color: #0e0e0e;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Work Sans", sans-serif;
+}
+
+/*=====================================*/
+/*-------------[Button] -------------*/
+/*=====================================*/
+button {
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.btnPrimary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ff9100;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6.5px;
+  transition: all 0.3s;
+}
+
+/*=====================================*/
+/*-------------[Body Style] -------------*/
+/*=====================================*/
+.primaryText {
+  color: #ff9100;
+} /*# sourceMappingURL=index.css.map */
 .heroSection {
-  background: var(--white);
+  background: #ffffff;
   height: 100%;
-  width: 100%;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  width: 100vw;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .heroSection {
+    padding: 2rem;
+  }
 }
 .heroSection .heroContent {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 2rem;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .heroSection .heroContent {
+    width: 90%;
+  }
 }
 .heroSection .heroContent .heroTexts {
   background: url(../../assets/images/HeroBg.svg) no-repeat;
@@ -18,22 +146,22 @@
 @media screen and (min-width: 768px) {
   .heroSection .heroContent .heroTexts {
     width: 50%;
-    padding: 5% 0 0 5%;
+    padding: 3rem 0 0;
   }
 }
 .heroSection .heroContent .heroTexts .heroTitle {
-  color: var(--darkText);
-  font-family: var(--font-head);
+  color: #0e0e0e;
+  font-family: "Inter", sans-serif;
 }
 .heroSection .heroContent .heroTexts .heroSubtitle {
-  font-size: var(--twenty);
-  color: var(--darkText);
+  font-size: 18px;
+  color: #0e0e0e;
   margin-top: 1.5rem;
 }
 .heroSection .heroContent .heroTexts .downloadApp {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 1.5rem;
 }
@@ -42,7 +170,7 @@
   height: 64px;
   width: 200px;
   padding: 8px 20px;
-  background: var(--black);
+  background: #000000;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -51,15 +179,15 @@
 }
 .heroSection .heroContent .heroTexts .downloadApp .appStore .downloadText,
 .heroSection .heroContent .heroTexts .downloadApp .googlePlay .downloadText {
-  font-family: var(--font-alt);
-  font-size: var(--twelve);
+  font-family: "Tajawal", sans-serif;
+  font-size: 12px;
   font-weight: 600;
   line-height: 16px;
 }
 .heroSection .heroContent .heroTexts .downloadApp .appStore .appText,
 .heroSection .heroContent .heroTexts .downloadApp .googlePlay .appText {
-  font-family: var(--font-alt);
-  font-size: var(--eighteen);
+  font-family: "Tajawal", sans-serif;
+  font-size: 17px;
   font-weight: 800;
   text-transform: capitalize;
   line-height: 20px;
@@ -75,9 +203,9 @@
   position: relative;
 }
 .heroSection .heroContent .heroTexts .learnMore .learnMoreText {
-  font-size: var(--twenty);
+  font-size: 18px;
   font-weight: 600;
-  color: var(--secondaryBg);
+  color: #202020;
   margin-left: 1rem;
 }
 .heroSection .heroContent .heroTexts .learnMore .learnMoreIcon {
@@ -93,7 +221,7 @@
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  background: var(--assets);
+  background: #333333;
   display: grid;
   place-items: center;
   position: absolute;
@@ -125,7 +253,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: var(--secondaryBg);
+  background: #202020;
   display: grid;
   place-items: center;
   position: relative;

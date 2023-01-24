@@ -1,29 +1,165 @@
+/*------------ [Font] -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap");
+/*------------ [Root]-----------*/
+/* Colors */
+/* Font Sizes */
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #d9d9d9;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  color: #0e0e0e;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Work Sans", sans-serif;
+}
+
+/*=====================================*/
+/*-------------[Button] -------------*/
+/*=====================================*/
+button {
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.btnPrimary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ff9100;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6.5px;
+  transition: all 0.3s;
+}
+
+/*=====================================*/
+/*-------------[Body Style] -------------*/
+/*=====================================*/
+.primaryText {
+  color: #ff9100;
+} /*# sourceMappingURL=index.css.map */
 .benefitSection {
-  background: var(--white);
+  background: #ffffff;
   height: 100%;
-  width: 100%;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  width: 100vw;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .benefitSection {
+    padding: 2rem;
+  }
 }
 .benefitSection .benefitSection__container {
-  width: 90%;
-  margin: 0 auto;
   display: grid;
   place-items: center;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+@media screen and (min-width: 768px) {
+  .benefitSection .benefitSection__container {
+    width: 90%;
+  }
 }
 .benefitSection .benefitSection__container .benefitTitle {
-  font-size: var(--thirtySix);
+  font-size: 32px;
   font-weight: 700;
-  color: var(--darkText);
+  color: #0e0e0e;
   text-align: center;
   line-height: 40px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .benefitSection .benefitSection__container .benefitFlex_container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .benefitSection .benefitSection__container .benefitFlex_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
 }
 .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item {
   display: flex;
@@ -32,24 +168,27 @@
   align-items: center;
   width: 100%;
   max-width: 384px;
-  height: 205px;
-  padding: 28px 16px;
-  margin: 1rem;
-  gap: 24px;
-  background: var(--white);
+  height: 218px;
+  padding: 16px;
+  margin-top: 1rem;
+  gap: 16px;
+  background: #ffffff;
   border: 1px solid #1a213b;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
 }
 @media screen and (min-width: 768px) {
   .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item {
+    height: 244px;
+    padding: 28px 16px;
+    gap: 24px;
     align-items: flex-start;
   }
 }
 .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item .benefitFlex_title {
-  font-size: var(--twentyFour);
-  font-family: var(--font-text);
-  color: var(--black);
+  font-size: 24px;
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
 }
 .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item .benefitFlex_icon {
   width: 3rem;
@@ -60,8 +199,14 @@
   text-align: center;
 }
 .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item .benefitFlex_text {
-  font-size: var(--sixteen);
-  font-family: var(--font-text);
-  color: var(--assets);
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: #333333;
   line-height: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefitSection .benefitSection__container .benefitFlex_container .benefitFlex_item .benefitFlex_text {
+    text-align: left;
+  }
 }/*# sourceMappingURL=Benefits.css.map */

@@ -55,12 +55,11 @@
                 width: 385px;
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-evenly;
                 align-items: flex-start;
                 padding: 1rem;
 
                 @media screen and (min-width: 768px) {
-                    width: 100%;
+                    // width: 100%;
                     &:nth-child(6n + 2),
                     &:nth-child(6n + 5) {
                         margin-top: 4rem;
@@ -69,27 +68,28 @@
 
                 .articleImage {
                     cursor: pointer;
+                    height: 180px;
+                    border-radius: 16px 16px 0px 0px;
+                    overflow: hidden;
+                    
+                    @media screen and (min-width: 800px) {
+                        height: 275px;
+                    }
 
                     img {
-                        width: 364px;
-                        height: 180px;
-                        transition: all 0.3s;
-                        border-radius: 16px 16px 0px 0px;
+                        height: 100%;
+                        transition: transform 0.5s ease-in-out;
+                    }
 
-                        &:hover {
-                            opacity: 0.7;
-                            // transform: scale(1.1, 1.1) rotateZ(35deg);
-                        }
-
-                        @media screen and (min-width: 800px) {
-                            width: 384px;
-                            height: 275px;
-                        }
+                    &:hover img{
+                        transform: scale(1.2) rotate(-5deg);
+                        opacity: 0.8;
                     }
                 }
 
                 .articleContent {
                     display: grid;
+                    width: 100%;
                     row-gap: 16px;
                     padding: 24px 16px;
                     background: #111111;

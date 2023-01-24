@@ -1,6 +1,124 @@
+/*------------ [Font] -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap");
+/*------------ [Root]-----------*/
+/* Colors */
+/* Font Sizes */
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #d9d9d9;
+  text-transform: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  color: #0e0e0e;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 17px;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Work Sans", sans-serif;
+}
+
+/*=====================================*/
+/*-------------[Button] -------------*/
+/*=====================================*/
+button {
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.btnPrimary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ff9100;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6.5px;
+  transition: all 0.3s;
+}
+
+/*=====================================*/
+/*-------------[Body Style] -------------*/
+/*=====================================*/
+.primaryText {
+  color: #ff9100;
+} /*# sourceMappingURL=index.css.map */
 header {
-  width: 100%;
-  background-color: var(--black);
+  width: 100vw;
+  background-color: #000000;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -30,11 +148,11 @@ header .mobileHeader .navbar {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
-  background: var(--secondaryBg);
+  background: #202020;
   text-align: left;
   padding: 1.5rem 1rem 1rem;
   transition: all 300ms ease-in-out;
@@ -61,21 +179,21 @@ header .mobileHeader .navbar .navList .navItem {
   padding-bottom: 1.5rem;
 }
 header .mobileHeader .navbar .navList .navItem .navTitle {
-  color: var(--navText);
-  font-size: var(--sixteen);
-  font-family: var(--font-text);
+  color: #e8f8f8;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   text-transform: none;
 }
 header .mobileHeader .navbar .navList .navItem .navLink {
-  color: var(--whiteText);
-  font-size: calc(var(--twentyFour) + 4px);
-  font-family: var(--font-head);
+  color: #d9d9d9;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   text-transform: capitalize;
 }
 header .mobileHeader .navbar .navList .navItem .navLink:hover {
-  color: var(--primary);
+  color: #ff9100;
 }
 header .mobileHeader .navbar .downloadApp {
   display: flex;
@@ -88,7 +206,7 @@ header .mobileHeader .navbar .downloadApp .appStore, header .mobileHeader .navba
   height: 64px;
   width: 168px;
   padding: 8px 20px;
-  background: var(--black);
+  background: #000000;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -99,14 +217,14 @@ header .mobileHeader .navbar .downloadApp .appStore .appleLogo, header .mobileHe
   margin-right: 16px;
 }
 header .mobileHeader .navbar .downloadApp .appStore .downloadText, header .mobileHeader .navbar .downloadApp .googlePlay .downloadText {
-  font-family: var(--font-alt);
-  font-size: var(--ten);
+  font-family: "Tajawal", sans-serif;
+  font-size: 10px;
   font-weight: 600;
   line-height: 13px;
 }
 header .mobileHeader .navbar .downloadApp .appStore .appText, header .mobileHeader .navbar .downloadApp .googlePlay .appText {
-  font-family: var(--font-alt);
-  font-size: var(--sixteen);
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 13px;
@@ -126,23 +244,23 @@ header .desktopHeader {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     margin: 1.5rem auto;
   }
   header .desktopHeader .navbar .navList {
     display: flex;
   }
   header .desktopHeader .navbar .navList .navLink {
-    color: var(--whiteText);
-    font-size: var(--sixteen);
-    font-family: var(--font-head);
+    color: #d9d9d9;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     text-transform: none;
     padding: 0 1rem;
     transition: all 300ms ease-in-out;
   }
   header .desktopHeader .navbar .navList .navLink:hover {
-    color: var(--primary);
+    color: #ff9100;
   }
   header .desktopHeader .downloadApp {
     width: 197px;
@@ -150,9 +268,9 @@ header .desktopHeader {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--eighteen);
-    background: var(--primary);
-    color: var(--black);
+    font-size: 17px;
+    background: #ff9100;
+    color: #000000;
     text-transform: capitalize;
     border-radius: 8px;
   }

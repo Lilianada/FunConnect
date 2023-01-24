@@ -1,6 +1,7 @@
 import React from "react";
 import Benefits from "../components/Benefits/Benefits";
 import Blog from "../components/Blog/Blog";
+import Discover from "../components/Discover/Discover";
 import Explore from "../components/Explore/Explore";
 import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
@@ -19,6 +20,7 @@ export default function Home() {
         <Explore />
         <Blog />
         <FAQ/>
+        <Discover/>
       </main>
       <Footer />
     </>

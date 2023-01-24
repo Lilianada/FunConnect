@@ -116,67 +116,98 @@ button:hover {
 .primaryText {
   color: #ff9100;
 } /*# sourceMappingURL=index.css.map */
-.featureSection {
-  background: #000000;
-  height: 100%;
+.faqSection {
   width: 100vw;
+  height: 100%;
   padding: 1rem;
+  background: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .featureSection {
+  .faqSection {
     padding: 2rem;
   }
 }
-.featureSection .featureContent {
-  display: block;
+.faqSection .faqContent {
   width: 100%;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .featureSection .featureContent {
+  .faqSection .faqContent {
     width: 90%;
   }
 }
-.featureSection .featureContent .featuresTitle {
-  font-size: 18px;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
-  color: #ffffff;
-  margin-top: 3rem;
+.faqSection .faqContent .faqContent_head {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.faqSection .faqContent .faqContent_head .faqTitle {
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 1rem;
+  z-index: 1;
+  text-align: center;
+}
+.faqSection .faqContent .faqContent_head .faqTitle .primaryText {
+  color: #ff9100;
 }
 @media screen and (min-width: 768px) {
-  .featureSection .featureContent .featuresTitle {
-    font-size: 20px;
-    margin: 3rem 0 1rem;
+  .faqSection .faqContent .faqContent_head .faqTitle .primaryText {
+    color: #202020;
   }
 }
-.featureSection .featureContent .featureFlex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.featureSection .featureContent .featureFlex .featuresList {
-  margin-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .featureSection .featureContent .featureFlex .featuresList {
-    width: 65%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .featureSection .featureContent .featureFlex .featuresList .featuresItem {
-    margin-bottom: 1rem;
-  }
-}
-.featureSection .featureContent .featureFlex .featuresList .featuresItem .feature {
-  color: #ffb53e;
-}
-.featureSection .featureContent .featureFlex .featureImage {
+.faqSection .faqContent .faqContent_head .blob {
   display: none;
+  position: absolute;
+  left: -20px;
+  top: -15px;
+  z-index: 0;
+  width: 75px;
+  height: 80px;
 }
-@media screen and (min-width: 900px) {
-  .featureSection .featureContent .featureFlex .featureImage {
+@media screen and (min-width: 768px) {
+  .faqSection .faqContent .faqContent_head .blob {
     display: block;
-    width: 35%;
   }
-}/*# sourceMappingURL=Features.css.map */
+}
+.faqSection .faqContent .faqContent_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faqSection .faqContent .faqContent_body .faqContent_item {
+  margin-top: 1rem;
+  padding: 1.5rem 1rem;
+  border: 1.5px solid #202020;
+  border-radius: 8px;
+}
+.faqSection .faqContent .faqContent_body .faqContent_item .faqContent_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.faqSection .faqContent .faqContent_body .faqContent_item .faqContent_text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #202020;
+  width: 90%;
+}
+.faqSection .faqContent .faqContent_body .faqContent_item .openBtn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.faqSection .faqContent .faqContent_body .faqContent_item .faqContent_description {
+  font-size: 17px;
+  color: #3a3a3a;
+  letter-spacing: 0.5px;
+}/*# sourceMappingURL=FAQ.css.map */
