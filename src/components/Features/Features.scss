@@ -21,14 +21,15 @@
         }
     
         .featuresTitle{
-            font-size: $twentyFour;
+            font-size: $twenty;
             font-family: $textFont;
             font-weight: 500;
             color: $white;
             margin-top: 3rem;
 
             @media screen and (min-width: 768px) {
-                margin: 3rem 0 2rem;
+                font-size: $twentyFour;
+                margin: 3rem 0 1rem;
             }
         }
 

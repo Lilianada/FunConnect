@@ -1,12 +1,11 @@
 @use "sass:string";
+/*------------ [Font] -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap");
+
+/*------------ [Root]-----------*/
 $headFont: "Inter", sans-serif;
 $textFont: "Work Sans", sans-serif;
 $altFont: "Tajawal", sans-serif;
-
-/*------------ [Font] -----------*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
-
-/*------------ [Root]-----------*/
 
 /* Colors */
 $white: #ffffff;
@@ -14,14 +13,14 @@ $black: #000000;
 $gray: #e5e5e5;
 $primary: #ff9100;
 $secondary: #cccccc;
-$yellowText: #FFB53E;
+$yellowText: #ffb53e;
 $whiteText: #d9d9d9;
 $darkText: #0e0e0e;
 $primaryBg: #ffedd5;
 $secondaryBg: #202020;
 $assets: #333333;
-$navText: #E8F8F8;
-$footerText: #A3A3A3;
+$navText: #e8f8f8;
+$footerText: #a3a3a3;
 
 /* Font Sizes */
 $sixty: 40px;
@@ -36,7 +35,8 @@ $eighteen: 17px;
 $sixteen: 16px;
 $fourteen: 14px;
 $twelve: 12px;
-$ten: 10px;
+$ten: 10px;  
+
 
 @media screen and (min-width: 900px) {
     $sixty: 60px;
@@ -59,7 +59,6 @@ $ten: 10px;
 /*========================================*/
 /*--------------- [_Utility] -------------*/
 /*========================================*/
-
 
 p,
 h1,
@@ -135,7 +134,6 @@ a {
   font-family: $textFont;
 }
 
-
 /*=====================================*/
 /*-------------[Button] -------------*/
 /*=====================================*/
@@ -170,7 +168,6 @@ button:hover {
 /*-------------[Body Style] -------------*/
 /*=====================================*/
 
-
 .primaryText {
   color: $primary;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
