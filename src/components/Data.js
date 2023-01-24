@@ -2,32 +2,44 @@ export const BlogArticles = [
     {
         id: 1,
         title: "5 things to do on a first date",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... ",
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
     {
         id: 2,
         title: "Fun places to catch late night",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... "
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
     {
         id: 3,
         title: "9 tips to spice up your tech ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... "
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
     {
         id: 4,
         title: "9 tips to spice up your tech ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... "
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
     {
         id: 5,
         title: "5 things to do on a first date",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... ",
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
     {
         id: 6,
         title: "Fun places to catch late night",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel nis Vel nisl faucibus enim, mauris... "
+        writer: "Harriet Tumbman",
+        date: "11 Jan 2023",
+        time: 5
     },
 ]
 

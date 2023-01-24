@@ -20,17 +20,24 @@ export default function Blog() {
                   <div className="articleImage">
                     <img src={BlogImage} alt="Blog Image"  />
                   </div>
-                  <h3 className="articleTitle"> {article.title} </h3>
-                  <p className="articleContent"> {article.content} </p>
-                  <a href="/" className="readMore">
-                    Read more
-                  </a>
+                  <div className="articleContent">
+                    <p className="articleSubtitle"> Category </p>
+                    <h3 className="articleTitle"> {article.title} </h3>
+                    <div className="articleDescription">
+                      <img src={BlogImage} alt="Profile Picture" />
+                      <div className="articleTimeline">
+                        <p>{article.writer}</p>
+                        <p> {article.date} . {article.time} min read </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
               );
             })
           }
         </div>
+        <a href="/" className="viewMore">View all</a>
       </div>
     </section>
   );

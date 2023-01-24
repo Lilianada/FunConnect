@@ -25,9 +25,9 @@ export default function Features() {
                         <h3 className="feature">Cocktail & Mocktails Spots </h3>
                     </li>
                 </ul>
-                <div className="featureImage">
+                {/* <div className="featureImage">
                     <img src={TransparentLogo} alt="FunConnect Transparent Background Logo" />
-                </div>
+                </div> */}
             </div>
         </div>
     </section>

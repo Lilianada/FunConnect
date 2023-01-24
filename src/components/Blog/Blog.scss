@@ -5,19 +5,20 @@
     height: 100%;
     padding: 1rem;
     background-color: $black;
-    
+
     @media screen and (min-width: 768px) {
         padding: 2rem;
     }
 
     .blogContent {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin: 0 auto 2rem;
 
         @media screen and (min-width: 768px) {
             width: 90%;
         }
-
 
         .blogTitle {
             text-align: center;
@@ -54,10 +55,10 @@
                 width: 385px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                // justify-content: space-evenly;
                 align-items: flex-start;
                 padding: 1rem;
-                
+
                 @media screen and (min-width: 768px) {
                     width: 100%;
                     &:nth-child(6n + 2),
@@ -72,46 +73,86 @@
                     img {
                         width: 364px;
                         height: 180px;
-                        border-radius: 25px;
                         transition: all 0.3s;
+                        border-radius: 16px 16px 0px 0px;
 
                         &:hover {
                             opacity: 0.7;
                             // transform: scale(1.1, 1.1) rotateZ(35deg);
                         }
 
-                        @media screen and (min-width: 768px) {
+                        @media screen and (min-width: 800px) {
                             width: 384px;
                             height: 275px;
                         }
                     }
                 }
 
-                .articleTitle {
-                    font-size: $twentyFour;
-                }
-
                 .articleContent {
-                    font-size: $sixteen;
-                    max-width: 410px;
-                }
+                    display: grid;
+                    row-gap: 16px;
+                    padding: 24px 16px;
+                    background: #111111;
+                    border-radius: 0px 0px 16px 16px;
 
-                .readMore {
-                    width: 120px;
-                    height: 38px;
-                    padding: 10px 15px;
-                    margin-top: 0.5rem;
-                    background: $primary;
-                    border-radius: 5px;
-                    color: $black;
-                    font-size: $sixteen;
-                    cursor: pointer;
-                    transition: all 0.3s;
-                
-                    &:hover {
-                        transform: scale(0.9, 0.9);
+                    .articleTitle {
+                        font-size: $twentyFour;
+                        line-height: 24px;
+                    }
+
+                    .articleSubtitle {
+                        font-size: $fourteen;
+                        font-weight: 600;
+                        color: $white;
+                    }
+
+                    .articleDescription {
+                        display: flex;
+                        font-size: $sixteen;
+                        color: $white;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            margin-right: 0.75rem;
+                            border: 1.5px solid $primary;
+                            border-radius: 50%;
+                        }
+
+                        .articleTimeline {
+                            p {
+                                font-size: $fourteen;
+                                color: $white;
+                                line-height: 21px;
+
+                                &:first-child {
+                                    font-weight: 600;
+                                    margin-bottom: 0.25rem;
+                                }
+                            }
+                        }
                     }
                 }
+            }
+        }
+
+        .viewMore {
+            width: 120px;
+            height: 38px;
+            align-self: center;
+            padding: 10px 15px;
+            margin-top: 2rem;
+            background: $primary;
+            border-radius: 8px;
+            color: $black;
+            font-size: $sixteen;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(0.9, 0.9);
             }
         }
     }
