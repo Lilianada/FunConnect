@@ -1,0 +1,44 @@
+@import "../../variable/variable.scss";
+
+.downloadApp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    
+    .appStore, .googlePlay{
+        height: 64px;
+        width: 168px;
+        padding: 8px 20px;
+        background: $black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .5rem;
+
+        .appleLogo{
+            margin-right: 16px;
+        }
+        
+        .downloadText{
+            font-family: $altFont;
+            font-size: $ten;
+            font-weight: 600;
+            line-height: 13px;
+        }
+        
+        .appText{
+            font-family: $altFont;
+            font-size: $sixteen;
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 13px;
+        }
+    }
+    
+    .appStore{
+        margin-right: 1rem;
+    }
+}

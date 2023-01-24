@@ -1,4 +1,5 @@
 import React from "react";
+import Phone from "../../assets/images/PhoneGroup.png";
 import "./Discover.scss";
 
 export default function Discover() {
@@ -6,7 +7,7 @@ export default function Discover() {
     <section className="discoverSection">
       <div className="discoverContent">
         <div className="discoverImage">
-            <img src="https://i.imgur.com/1ZQ2Z1u.png" alt="discover" />
+            <img src={Phone} alt="discover" />
         </div>
         <div className="discoverText">
         <h2 className="discoverTitle">

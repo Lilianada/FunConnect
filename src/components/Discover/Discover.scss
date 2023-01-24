@@ -12,14 +12,13 @@
 
     .discoverContent{
         display: flex;
-        flex-direction: column;
         width: 100%;
         margin: 0 auto 2rem;
         
         @media screen and (min-width: 768px) {
             height: 100%;
             background: url('../../assets/images/DiscoverBackground.png') no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: top;
             width: 90%;
         }
