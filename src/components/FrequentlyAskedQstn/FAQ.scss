@@ -3,10 +3,9 @@
 .faqSection{
     width: 100vw;
     height: 100%;
-    margin-bottom: 2rem;
     padding: 1rem;
     background: $white;
-
+    
     @media screen and (min-width: 768px) {
         padding: 2rem;
     }
@@ -14,6 +13,7 @@
     .faqContent{
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 2rem;
 
         @media screen and (min-width: 768px) {
             width: 90%;

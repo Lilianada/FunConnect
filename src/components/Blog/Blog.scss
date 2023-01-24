@@ -4,9 +4,8 @@
     width: 100vw;
     height: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
     background-color: $black;
-
+    
     @media screen and (min-width: 768px) {
         padding: 2rem;
     }
@@ -14,6 +13,7 @@
     .blogContent {
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 2rem;
         
         @media screen and (min-width: 768px) {
             width: 90%;
