@@ -11,9 +11,11 @@
   }
 
   .iconStyle{
-    background-color: $primary;
+    display: grid;
+    place-items: center;
     height: 52px;
     width: 52px;
+    background-color: $primary;
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
@@ -32,13 +34,13 @@
       transform: translateY(0px);
     }
     25%{
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     50%{
       transform: translateY(0px);
     }
     75%{
-      transform: translateY(-20px);
+      transform: translateY(-10px);
     }
     100%{
       transform: translateY(0px);

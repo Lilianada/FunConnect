@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <section className="blogSection">
       <div className="blogContent">
-        <h3 className="blogTitle">Our Latest Blog Posts</h3>
+        <h2 className="blogTitle">Our Latest Blog Posts</h2>
         <p className="blogSubtitle">
           Explore amazing places in your neighbourhood Lorem ipsum dolor sit
           amet, consectetur

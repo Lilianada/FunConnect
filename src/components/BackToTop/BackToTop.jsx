@@ -22,7 +22,9 @@ export default function BackToTop() {
     
   return (
     <div className="backToTop">
-        <BsArrowUpShort className="iconPosition iconStyle" onClick={goToTop} />
+        <div className="iconPosition iconStyle" onClick={goToTop} >
+            <BsArrowUpShort size={32} />
+        </div>
     </div>
   );
 }

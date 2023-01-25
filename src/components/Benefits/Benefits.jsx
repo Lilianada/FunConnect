@@ -6,10 +6,10 @@ export default function Benefits() {
   return (
     <section className="benefitSection">
       <div className="benefitSection__container">
-        <h5 className="benefitTitle">
+        <h4 className="benefitTitle">
           <span className="primaryText">Funconnect </span> allows you to do what
           you want.
-        </h5>
+        </h4>
         <div className="benefitFlex_container">
           <div className="benefitFlex_item">
             <div className="benefitFlex_icon" style={{ background: "#F0EEF7" }}>

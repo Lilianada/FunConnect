@@ -23,23 +23,19 @@ $navText: #e8f8f8;
 $footerText: #a3a3a3;
 
 /* Font Sizes */
-$sixty: 40px;
-$fiftySeven: 32px;
-$fourty: 24px;
-$thirtySix: 32px;
-$thirtyTwo: 28px;
-$twentyFour: 20px;
-$twentyTwo: 22px;
-$twenty: 18px;
-$eighteen: 17px;
-$sixteen: 16px;
-$fourteen: 14px;
-$twelve: 12px;
-$ten: 10px;  
-
-
-@media screen and (min-width: 900px) {
-}
+// $sixty: 40px;
+// $fiftySeven: 32px;
+// $fourty: 24px;
+// $thirtySix: 32px;
+// $thirtyTwo: 28px;
+// $twentyFour: 20px;
+// $twentyTwo: 22px;
+// $twenty: 18px;
+// $eighteen: 17px;
+// $sixteen: 16px;
+// $fourteen: 14px;
+// $twelve: 12px;
+// $ten: 10px;  
 
 $sixty: 60px;
 $fiftySeven: 57px;
@@ -90,7 +86,7 @@ p {
 }
 
 h1 {
-  font-size: $sixty;
+  font-size: $fourty;
   font-family: $headFont;
   font-style: normal;
   font-weight: 700;
@@ -99,32 +95,32 @@ h1 {
 }
 
 h2 {
-  font-size: $fiftySeven;
+  font-size: $thirtyTwo;
   font-family: $headFont;
   line-height: 64px;
   font-weight: 700;
 }
 
 h3 {
-  font-size: $fourty;
+  font-size: $twentyFour;
   line-height: 52px;
   font-weight: 600;
 }
 
 h4 {
-  font-size: $thirtyTwo;
+  font-size: $twentyEight;
   line-height: 2.5rem;
   font-weight: 600;
 }
 
 h5 {
-  font-size: $twentyFour;
+  font-size: $twenty;
   font-weight: 500;
   line-height: 1.5rem;
 }
 
 h6 {
-  font-size: $eighteen;
+  font-size: $sixteen;
   line-height: 1.2rem;
   font-weight: 600;
 }
@@ -135,29 +131,30 @@ a {
   font-family: $textFont;
 }
 
-// @media screen and (min-width: 900px) {
-//   p {
-//     font-size: $twenty;
-//   }
-//   h1 {
-//     font-size: $sixty;
-//   }
-//   h2 {
-//     font-size: $fiftySeven;
-//   }
-//   h3 {
-//     font-size: $fourty;
-//   }
-//   h4 {
-//     font-size: $thirtyTwo;
-//   }
-//   h5 {
-//     font-size: $twentyFour;
-//   }
-//   h6 {
-//     font-size: $eighteen;
-//   }
-// }
+@media screen and (min-width: 900px) {
+  p {
+    font-size: $sixteen;
+  }
+
+  h1 {
+    font-size: $sixty;
+  }
+  h2 {
+    font-size: $fiftySeven;
+  }
+  h3 {
+    font-size: $fourty;
+  }
+  h4 {
+    font-size: $thirtyTwo;
+  }
+  h5 {
+    font-size: $twentyFour;
+  }
+  h6 {
+    font-size: $eighteen;
+  }
+}
 
 /*=====================================*/
 /*-------------[Button] -------------*/
