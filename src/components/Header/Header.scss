@@ -85,7 +85,7 @@ header {
 
             }
 
-            .downloadApp{
+            .downloadApp_btns{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -147,7 +147,6 @@ header {
 
             .navbar {
                 
-                
                 .navList{
                     display: flex;
                     
@@ -167,7 +166,7 @@ header {
                 }
             }
 
-            .downloadApp{
+            .headerDownload_btn{
                 width: 197px;
                 height: 53px;
                 display: flex;

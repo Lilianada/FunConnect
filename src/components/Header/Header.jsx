@@ -44,7 +44,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <a href="/" className="downloadApp">
+        <a href="/" className="headerDownload_btn">
             Download Now
         </a>
       </div>
@@ -97,7 +97,7 @@ export default function Header() {
           </ul>
 
           {/* Download Buttons */}
-          <div className="downloadApp">
+          <div className="downloadApp_btns">
             <a href="/" className="appStore">
               <img src={AppStore} alt="Apple Logo" className="appleLogo" />
               <div className="textWrap">

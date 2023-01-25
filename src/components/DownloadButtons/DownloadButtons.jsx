@@ -5,7 +5,7 @@ import "./DownloadButtons.scss";
 
 export default function DownloadButtons() {
   return (
-    <div className="downloadApp">
+    <div className="downloadApp_btns">
       <a href="/" className="appStore">
         <img src={AppStore} alt="Apple Logo" className="appleLogo" />
         <div className="textWrap">

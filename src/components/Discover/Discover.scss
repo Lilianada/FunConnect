@@ -2,7 +2,7 @@
 
 .discoverSection{
     display: none;
-    
+
     @media screen and (min-width: 900px) {
         display: block;
         width: 100vw;
@@ -22,25 +22,29 @@
         width: 90%;
         margin: 0 auto 2rem;
         
+        .discoverImage{
+            margin-left: 4rem;
+        }
 
-        .discoverTitle{
-            line-height: 40px;
-            text-align: left;
-            color: $black;
-            margin-bottom: 0.5rem;
+        .discoverText{
+            margin-right: 4rem;
 
-            .whiteText{
-                color: $white;
+            .discoverTitle{
+                line-height: 40px;
+                text-align: left;
+                color: $black;
+                margin-bottom: 0.5rem;
+    
+                .whiteText{
+                    color: $white;
+                }
+            }
+    
+            .discoverDescription{
+                color: $black;
+                font-size: $eighteen;
+                text-align: left;
             }
         }
-
-        .discoverDescription{
-            color: $black;
-            font-size: $eighteen;
-            text-align: left;
-        }
-
-        
     }
-
 }
