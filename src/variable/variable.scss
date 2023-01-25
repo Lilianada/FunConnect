@@ -39,22 +39,23 @@ $ten: 10px;
 
 
 @media screen and (min-width: 900px) {
-    $sixty: 60px;
-    $fiftySeven: 57px;
-    $fourty: 40px;
-    $thirtySix: 36px;
-    $thirtyTwo: 32px;
-    $thirty: 30px;
-    $twentyEight: 28px;
-    $twentyFour: 24px;
-    $twentyTwo: 22px;
-    $twenty: 20px;
-    $eighteen: 18px;
-    $sixteen: 16px;
-    $fourteen: 14px;
-    $twelve: 12px;
-    $ten: 10px;
 }
+
+$sixty: 60px;
+$fiftySeven: 57px;
+$fourty: 40px;
+$thirtySix: 36px;
+$thirtyTwo: 32px;
+$thirty: 30px;
+$twentyEight: 28px;
+$twentyFour: 24px;
+$twentyTwo: 22px;
+$twenty: 20px;
+$eighteen: 18px;
+$sixteen: 16px;
+$fourteen: 14px;
+$twelve: 12px;
+$ten: 10px;
 
 /*========================================*/
 /*--------------- [_Utility] -------------*/
@@ -133,6 +134,30 @@ a {
   color: inherit;
   font-family: $textFont;
 }
+
+// @media screen and (min-width: 900px) {
+//   p {
+//     font-size: $twenty;
+//   }
+//   h1 {
+//     font-size: $sixty;
+//   }
+//   h2 {
+//     font-size: $fiftySeven;
+//   }
+//   h3 {
+//     font-size: $fourty;
+//   }
+//   h4 {
+//     font-size: $thirtyTwo;
+//   }
+//   h5 {
+//     font-size: $twentyFour;
+//   }
+//   h6 {
+//     font-size: $eighteen;
+//   }
+// }
 
 /*=====================================*/
 /*-------------[Button] -------------*/

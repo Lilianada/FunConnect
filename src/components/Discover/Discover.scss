@@ -4,7 +4,8 @@
     display: none;
 
     @media screen and (min-width: 900px) {
-        display: block;
+        display: grid;
+        place-items: center;
         width: 100vw;
         height: 100%;
         padding: 2rem;
@@ -13,24 +14,20 @@
 
     .discoverContent{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 70%;
         background: url('../../assets/images/DiscoverBackground.png') no-repeat;
         background-size: contain;
         background-position: top;
         width: 90%;
         margin: 0 auto 2rem;
         
-        .discoverImage{
-            margin-left: 4rem;
-        }
-
         .discoverText{
+            width: 510px;
             margin-right: 4rem;
 
             .discoverTitle{
-                line-height: 40px;
                 text-align: left;
                 color: $black;
                 margin-bottom: 0.5rem;
@@ -44,6 +41,11 @@
                 color: $black;
                 font-size: $eighteen;
                 text-align: left;
+                line-height: 28px;
+            }
+
+            .downloadApp_btns{
+                margin-top: 1rem;
             }
         }
     }
