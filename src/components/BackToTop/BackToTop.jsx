@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaAngleUp } from "react-icons/fa";
+import { BsArrowUpShort } from "react-icons/bs";
 import "./BackToTop.scss";
 
 export default function BackToTop() {
@@ -21,7 +21,7 @@ export default function BackToTop() {
     };
   return (
     <div className="backToTop">
-        <FaAngleUp className="iconPosition iconStyle" />
+        <BsArrowUpShort className="iconPosition iconStyle" onClick={goToTop} />
     </div>
   );
 }

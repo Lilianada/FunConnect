@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTop from "../components/BackToTop/BackToTop";
 import Benefits from "../components/Benefits/Benefits";
 import Blog from "../components/Blog/Blog";
 import Discover from "../components/Discover/Discover";
@@ -22,6 +23,7 @@ export default function Home() {
         <FAQ/>
         <Discover/>
       </main>
+      <BackToTop/>
       <Footer />
     </>
   );
