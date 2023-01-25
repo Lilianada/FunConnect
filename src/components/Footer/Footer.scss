@@ -74,7 +74,13 @@ footer {
                         place-items: center;
                         padding: 3px;
                         margin-right: 1rem;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            transform: scale(.9, .9);
+                        }
                     }
+
                     .linkedinIcon {
                         width: 1.5rem;
                         height: 1.5rem;

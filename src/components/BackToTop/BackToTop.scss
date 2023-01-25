@@ -4,9 +4,9 @@
     position: relative;
   
   .iconPosition{
-    position: fixed;
+    position: absolute;
     bottom: 40px;
-    right: 25px;
+    right: 3rem;
     z-index: 20;
   }
 
@@ -23,6 +23,7 @@
     &:hover{
       animation: none;
       background: $yellowText;
+      color: $black;
     }
   }
 

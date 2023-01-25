@@ -13,8 +13,8 @@ import Hero from "../components/Hero/Hero";
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="mainContainer">
+      <Header />
         <Hero />
         <Benefits />
         <Features />
@@ -22,9 +22,9 @@ export default function Home() {
         <Blog />
         <FAQ/>
         <Discover/>
-      </main>
-      <BackToTop/>
       <Footer />
+      <BackToTop/>
+      </main>
     </>
   );
 }
