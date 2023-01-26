@@ -19,7 +19,7 @@
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
-    animation: movebtn 3s ease-in-out infinite;
+    animation: scrollTop 3s ease-in-out infinite;
     transition: all .5s ease-in-out;
     
     &:hover{
@@ -29,7 +29,7 @@
     }
   }
 
-  @keyframes movebtn {
+  @keyframes scrollTop {
     0%{
       transform: translateY(0px);
     }
