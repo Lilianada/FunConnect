@@ -23,7 +23,8 @@ footer {
         @media screen and (min-width: 900px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 2rem;
+            -moz-column-gap: 2rem;
+                 column-gap: 2rem;
         }
 
         .footerFlex_item {
@@ -109,6 +110,30 @@ footer {
                         border: none;
                         border-radius: 8px 0 0 8px;
                         padding: 0 1rem;
+
+                        &::-webkit-input-placeholder {
+                            font-size: $fourteen;
+                            font-family: $textFont;
+                            color: #4d4d4d;
+                        }
+
+                        &::-moz-placeholder {
+                            font-size: $fourteen;
+                            font-family: $textFont;
+                            color: #4d4d4d;
+                        }
+
+                        &:-ms-input-placeholder {
+                            font-size: $fourteen;
+                            font-family: $textFont;
+                            color: #4d4d4d;
+                        }
+
+                        &::-ms-input-placeholder {
+                            font-size: $fourteen;
+                            font-family: $textFont;
+                            color: #4d4d4d;
+                        }
 
                         &::placeholder {
                             font-size: $fourteen;

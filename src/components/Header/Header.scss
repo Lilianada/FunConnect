@@ -19,6 +19,8 @@ header {
         }
 
         .menuButton{
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
             height: fit-content;
             background: none;
             border: none;
