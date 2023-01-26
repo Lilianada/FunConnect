@@ -1,0 +1,61 @@
+@import "../../variable/variable.scss";
+
+.cirWrapper {
+    display: grid;
+    place-items: center;
+
+    .cirOne {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 47%;
+        border-radius: 50%;
+        border: 2px dotted $primary;
+        transform: rotate(45deg);
+        animation: circle 5s linear infinite;
+
+        @media screen and (min-width: 768px) {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+
+    @keyframes circle {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    .cirTwo img{
+        position: absolute;
+        top: 51%;
+        left: 48.5%;
+        transform: rotate(45deg);
+        animation: circle 5s linear infinite;
+    }
+
+    .cirThree{
+        position: absolute;
+        top: 75%;
+    }
+
+    .cirFour {
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        top: 40%;
+        border-radius: 50%;
+        border: 2px dotted $primary;
+        transform: rotate(45deg);
+        animation: circle 5s linear infinite;
+
+        @media screen and (min-width: 768px) {
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
+}
