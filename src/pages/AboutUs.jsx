@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header/Header';
 
 export default function AboutUs() {
   return (
-    <div>
-      aa
-    </div>
+    <main className="mainWrapper">
+    <Header />
+  </main>
   )
 }

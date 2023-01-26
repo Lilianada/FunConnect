@@ -9,9 +9,14 @@ import "./Header.scss";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false);
+  const [active, setActive] = useState(false);
+
   const isActive = () => {
     setShowMenu(!showMenu);
-    console.log("clicked");
+  };
+
+  const activeLink = () => {
+    setActive(!active);
   };
 
   const closeMenu = () => {
@@ -28,17 +33,17 @@ export default function Header () {
         <nav className="navbar">
           <ul className="navList">
             <li className="navItem">
-              <Link to="/blog" className="navLink">
+              <Link to="/blog" className={`navLink ${active ? "activeLink" : ""}`}>
                 Blog
               </Link>
             </li>
             <li className="navItem">
-              <Link to="/about" className="navLink">
+              <Link to="/about" className={`navLink ${active ? "activeLink" : ""}`}>
                 About Us
               </Link>
             </li>
             <li className="navItem">
-              <Link to="/contact" className="navLink">
+              <Link to="/contact" className={`navLink ${active ? "activeLink" : ""}`}>
                 Contact Us
               </Link>
             </li>
@@ -71,18 +76,18 @@ export default function Header () {
           {/* Navigation List */}
           <ul className="navList">
             <li className="navItem">
-              <Link to="/blog" className="navLink">
+              <Link to="/blog" className={`navLink ${active ? "activeLink" : ""}`}>
                 Blog
               </Link>
             </li>
 
             <li className="navItem">
-              <Link to="/about" className="navLink">
+              <Link to="/about" className={`navLink ${active ? "activeLink" : ""}`}>
                 About Us
               </Link>
             </li>
             <li className="navItem">
-              <Link to="/contact" className="navLink">
+              <Link to="/contact" className={`navLink ${active ? "activeLink" : ""}`}>
                 Contact Us
               </Link>
             </li>
