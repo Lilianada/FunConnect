@@ -40,7 +40,7 @@
             overflow: overlay;
             gap: 1rem;
             position: relative;
-            
+
             .exploreCard {
                 width: 270px;
                 height: 270px;
@@ -59,10 +59,10 @@
                 }
 
                 .exploreCard_content {
-                    z-index: 1;
                     position: absolute;
+                    z-index: 1;
                     bottom: 1rem;
-                    left: 30%;
+                    width: 100%;
 
                     .exploreCard_title {
                         font-size: $fourteen;
@@ -73,11 +73,56 @@
                     .exploreCard_subtitle {
                         font-size: $ten;
                         font-family: $headFont;
+                        text-align: center;
+                    }
+
+                    .logosWrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-self: flex-end;
+                        width: 1.5rem;
+                        margin: 0.5rem 0.5rem 1rem auto;
+
+                        .whiteLogo {
+                            width: 10px;
+                            height: 10px;
+                            background: $white;
+                            border-radius: 50%;
+                            animation: movebtn 3s ease-in-out infinite;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        .orangeLogo {
+                            width: 10px;
+                            height: 10px;
+                            background: $primary;
+                            border-radius: 0 50% 50% 50%;
+                            animation: movebtn 3s ease-in-out infinite;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        @keyframes movebtn {
+                            0% {
+                                transform: rotate(0deg) translateY(0px) ;
+                            }
+                            25% {
+                                transform: rotate(35deg) translateY(10px) ;
+                            }
+                            50% {
+                                transform: rotate(0deg)translateY(0px) ;
+                            }
+                            75% {
+                                transform: rotate(-35deg) translateY(-10px);
+                            }
+                            100% {
+                                transform: rotate(0deg) translateY(0px) ;
+                            }
+                        }
                     }
                 }
             }
 
-            .hoverContent{
+            .hoverContent {
                 opacity: 0;
                 position: absolute;
                 top: 20%;
@@ -98,10 +143,10 @@
                 }
 
                 .exploreCard_content {
-                    z-index: 1;
                     position: absolute;
+                    z-index: 1;
                     bottom: 1rem;
-                    left: 30%;
+                    width: 100%;
 
                     .exploreCard_title {
                         font-size: $fourteen;
@@ -112,6 +157,50 @@
                     .exploreCard_subtitle {
                         font-size: $ten;
                         font-family: $headFont;
+                        text-align: center;
+                    }
+
+                    .logosWrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-self: flex-end;
+                        width: 1.5rem;
+                        margin: 0.5rem 0.5rem 1rem auto;
+
+                        .whiteLogo {
+                            width: 10px;
+                            height: 10px;
+                            background: $white;
+                            border-radius: 50%;
+                            animation: movebtn 3s ease-in-out infinite;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        .orangeLogo {
+                            width: 10px;
+                            height: 10px;
+                            background: $primary;
+                            border-radius: 0 50% 50% 50%;
+                            animation: movebtn 3s ease-in-out infinite;
+                            transition: all 0.5s ease-in-out;
+                        }
+                        @keyframes movebtn {
+                            0% {
+                                transform: rotate(0deg) translateY(0px) ;
+                            }
+                            25% {
+                                transform: rotate(35deg) translateY(10px) ;
+                            }
+                            50% {
+                                transform: rotate(0deg)translateY(0px) ;
+                            }
+                            75% {
+                                transform: rotate(-35deg) translateY(-10px);
+                            }
+                            100% {
+                                transform: rotate(0deg) translateY(0px) ;
+                            }
+                        }
                     }
                 }
             }
