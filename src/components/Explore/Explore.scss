@@ -7,18 +7,19 @@
     background: $black url(../../assets/images/HeroBg.svg) no-repeat;
     background-size: cover;
     background-position: center top;
-
+    
     @media screen and (min-width: 768px) {
         padding: 2rem;
     }
-
+    
     .exploreContent {
         margin: 2rem auto;
-
+        position: relative;
+        
         @media screen and (min-width: 768px) {
             width: 90%;
         }
-
+        
         .exploreTitle {
             text-align: center;
             color: $white;
@@ -34,7 +35,14 @@
             color: $white;
             text-align: center;
         }
-
+        
+        .dragBtn{
+            position: absolute;
+            right: -1rem;
+            top: 7rem;
+            z-index: 1;
+        }
+        
         .exploreCard_wrap {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
