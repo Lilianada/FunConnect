@@ -39,8 +39,12 @@
         .dragBtn{
             position: absolute;
             right: -1rem;
-            top: 7rem;
+            top: 14rem;
             z-index: 1;
+
+            @media screen and (min-width: 768px) {
+                top: 7rem;
+            }
         }
         
         .exploreCard_wrap {
