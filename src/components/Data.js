@@ -153,9 +153,9 @@ export const ExploreCards = [
     },
     {
         id: 14,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1421622548261-c45bfe178854?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "Waffle Way",
+        location: "Maitama, Abuja",  
+        image: "https://images.unsplash.com/photo-1543373072-69f3d4788832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
     {
         id: 15,
@@ -180,5 +180,65 @@ export const ExploreCards = [
         place: "Brass & Copper",
         location: "Lekki Phase 1",  
         image: "https://images.unsplash.com/photo-1545069986-6684b1203ca5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE2fHxyZXN0YXVyYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 19,
+        place: "Thought Pyramid",
+        location: "Wuse, Abuja",  
+        image: "https://images.unsplash.com/photo-1607537669513-8472b5a8f85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 20,
+        place: "The Peacock",
+        location: "Lekki Phase 1",  
+        image: "https://images.unsplash.com/photo-1559304822-9eb2813c9844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 21,
+        place: "Brass & Copper",
+        location: "Lekki Phase 1",
+        image: "https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 22,
+        place: "OCEAN 5 BY RIVIERA",
+        location: "Femi Pearce, VI",
+        image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 23,
+        place: "The Garden",
+        location: "Ikoyi",  
+        image: "https://images.unsplash.com/photo-1585518419759-7fe2e0fbf8a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 24,
+        place: "Waffle Way",
+        location: "Maitama, Abuja",  
+        image: "https://images.unsplash.com/photo-1543373072-69f3d4788832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 25,
+        place: "Crush Cafe",
+        location: "Gwarinpa Estate, Abuja", 
+        image: "https://images.unsplash.com/photo-1567667778211-b19f5a4e1efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+    },
+    {
+        id: 26,
+        place: "Thought Pyramid",
+        location: "Wuse, Abuja",  
+        image: "https://images.unsplash.com/photo-1607537669513-8472b5a8f85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 27,
+        place: "The Peacock",
+        location: "Lekki Phase 1",  
+        image: "https://images.unsplash.com/photo-1559304822-9eb2813c9844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    },
+    {
+        id: 28,
+        place: "Brass & Copper",
+        location: "Lekki Phase 1",  
+        image: "https://images.unsplash.com/photo-1521917441209-e886f0404a7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
     },
 ]

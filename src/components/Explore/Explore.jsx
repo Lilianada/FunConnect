@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ExploreCards } from "../Data";
+import Draggable from 'react-draggable';
 import "./Explore.scss";
 
 export default function Explore() {
@@ -46,6 +47,10 @@ export default function Explore() {
                   <div className="exploreCard_content">
                     <h6 className="exploreCard_title">{card.place}</h6>
                     <p className="exploreCard_subtitle">{card.location}</p>
+                    <div className="logosWrap">
+                      <div className="whiteLogo"></div>
+                      <div className="orangeLogo"></div>
+                    </div>
                   </div>
                 </span>
                   )

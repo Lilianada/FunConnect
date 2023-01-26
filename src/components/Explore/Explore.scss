@@ -3,8 +3,10 @@
 .exploreSection {
     width: 100vw;
     height: 100%;
-    padding: 2rem;
-    background-color: $black;
+    padding: 1rem;
+    background: $black url(../../assets/images/HeroBg.svg) no-repeat;
+    background-size: cover;
+    background-position: center top;
 
     @media screen and (min-width: 768px) {
         padding: 2rem;
@@ -37,17 +39,34 @@
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            overflow: overlay;
+            overflow: scroll;
             gap: 1rem;
             position: relative;
+            max-height: 450px;
+            margin-top: 2rem;
+
+            @media screen and (min-width: 900px) {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                max-height: 788px;
+            }
+
+            &::-webkit-scrollbar {
+                width: 0px;
+              }
 
             .exploreCard {
-                width: 270px;
-                height: 270px;
+                width: 213px;
+                height: 213px;
                 position: relative;
                 background: #0e0e0e;
                 border-radius: 16px;
                 cursor: pointer;
+
+                @media screen and (min-width: 900px) {
+                    width: 250px;
+                    height: 250px;
+                }
 
                 .exploreImage img {
                     width: 100%;
@@ -56,6 +75,8 @@
                     z-index: 0;
                     bottom: 1rem;
                     border-radius: 16px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.74%, rgba(0, 0, 0, 0.88) 97.22%);
+                    filter: opacit;
                 }
 
                 .exploreCard_content {
