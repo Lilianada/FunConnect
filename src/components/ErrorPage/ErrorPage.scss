@@ -1,43 +1,68 @@
 @import "../../variable/variable.scss";
 
 .errorPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;git
     height: calc(100vh - 110px);
     width: 100vw;
-    text-align: center;
-
+    padding: 2rem;
+    
     @media screen and (min-width: 768px) {
         background: url(../../assets/images/404Bg.png) no-repeat center center fixed;
     }
-
-    .errorPage__title {
-        margin: 1rem 0;
-        font-size: $fiftySeven;
-        color: $white;
-    }
-    .errorPage__subtitle {
-        color: $white;
-    }
-    .errorPage__text {
-        font-size: $twentyFour;
-        font-weight: 400;
-        color: $white;
-    }
-
-    .errorPage__button {
-        height: 58px;
+    
+    .errorContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        border-radius: 9px;
-        font-size: $twenty;
-        font-weight: 500;
-        padding: 19px 38px;
-        border: none;
-        outline: none;
-        background: $primary;
-        text-decoration: none;
-        margin-top: 1rem;
+        width: 80%;
+        margin: auto;
+        
+        .errorPage__title {
+            margin: 1rem 0;
+            font-size: $thirtySix;
+            color: $white;
+            
+            @media screen and (min-width: 768px) {
+                font-size: $fiftySeven;   
+            }
+        }
+    
+        .errorPage__subtitle {
+            color: $white;
+            font-size: $thirtyTwo;
+    
+            @media screen and (min-width: 768px) {
+                // font-size: $fiftySeven;   
+            }
+        }
+        .errorPage__text {
+            font-size: $sixteen;
+            font-weight: 400;
+            color: $white;
+    
+            @media screen and (min-width: 768px) {
+                font-size: $twentyFour;   
+            }
+        }
+
+        .errorPage__button {
+            height: 58px;
+            text-align: center;
+            border-radius: 9px;
+            font-size: $twenty;
+            font-weight: 500;
+            padding: 19px 38px;
+            border: none;
+            outline: none;
+            color: $darkText;
+            background: $primary;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
     }
+
+
 }
