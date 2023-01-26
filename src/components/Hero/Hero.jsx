@@ -29,7 +29,7 @@ export default function Hero() {
             Unlock a world of possibilities with our app.
           </p>
           <div className="heroSubtitle_mobile">
-            
+          We are focused on making the fun ecosystem easy to navigate while bringing our audience the much-needed interactive space for networking. 
           </div>
           {/* Download Buttons */}
           <DownloadButtons/>
