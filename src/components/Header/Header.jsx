@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
 import AppStore from "../../assets/images/AppleVector.svg";
@@ -9,14 +9,9 @@ import "./Header.scss";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false);
-  const [active, setActive] = useState(false);
 
   const isActive = () => {
     setShowMenu(!showMenu);
-  };
-
-  const activeLink = () => {
-    setActive(!active);
   };
 
   const closeMenu = () => {
@@ -27,25 +22,25 @@ export default function Header () {
     <header>
         {/* Desktop Menu */}
       <div className="desktopHeader">
-        <Link to="/">
+        <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/">
           <img src={Logo} alt="FunConnect Logo" />
-        </Link>
+        </NavLink>
         <nav className="navbar">
           <ul className="navList">
             <li className="navItem">
-              <Link to="/blog" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem">
-              <Link to="/about" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/about">
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem">
-              <Link to="/contact" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/contact">
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -56,9 +51,9 @@ export default function Header () {
 
       {/* Mobile Menu */}
       <div className="mobileHeader">
-        <Link to="/">
+        <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/">
           <img src={Logo} alt="FunConnect Logo" />
-        </Link>
+        </NavLink>
         <button type="button" className="menuButton">
           <FiMenu size={32} stroke="white" fill="white" onClick={isActive} />
         </button>
@@ -76,20 +71,20 @@ export default function Header () {
           {/* Navigation List */}
           <ul className="navList">
             <li className="navItem">
-              <Link to="/blog" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
                 Blog
-              </Link>
+              </NavLink>
             </li>
 
             <li className="navItem">
-              <Link to="/about" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/about">
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem">
-              <Link to="/contact" className={`navLink ${active ? "activeLink" : ""}`}>
+              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/contact">
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <ul className="navList">

@@ -80,9 +80,13 @@ header {
                         text-transform: capitalize;
 
                     }
-                    
+
                     .activeLink{
                         color: $primary;
+                        font-size: calc($twentyFour + 4px);
+                        font-family: $headFont;
+                        font-weight: 500;
+                        text-transform: capitalize;
                     }
                 }
 
@@ -162,10 +166,16 @@ header {
                         text-transform: none;
                         padding: 0 1rem;
                         transition: all 300ms ease-in-out;
-
-                        &:hover{
-                            color: $primary;
-                        }
+                    }
+                    
+                    .activeLink{
+                        color: $primary;
+                        font-size: $sixteen;
+                        font-family: $headFont;
+                        font-weight: 500;
+                        text-transform: none;
+                        padding: 0 1rem;
+                        transition: all 300ms ease-in-out;
                     }
                 }
             }
