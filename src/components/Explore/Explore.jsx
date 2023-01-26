@@ -4,8 +4,15 @@ import "./Explore.scss";
 
 export default function Explore() {
   const [hover, setHover] = useState(false);
-  const isHover = () => {
+  const [popImg, setPopImg] = useState("");
+  const [popPlace, setPopPlace] = useState("");
+  const [popLoc, setPopLoc] = useState("");
+
+  const isHover = ( image, place, location) => {
     setHover(!hover);
+    setPopImg(image);
+    setPopPlace(place );
+    setPopLoc(location);
   };
 
   return (
@@ -43,8 +50,13 @@ export default function Explore() {
         <div className="exploreCard_wrap">
           {ExploreCards.map((card) => {
             return (
-              <div key={card.id}>
-                <div className="exploreCard" onClick={isHover}>
+                <div
+                  className="exploreCard"
+                  key={card.id}
+                  onClick={() =>
+                    isHover(card.image, card.place, card.location)
+                  }
+                >
                   <div className="exploreImage">
                     <img src={card.image} alt="Location Pic" />
                   </div>
@@ -57,24 +69,21 @@ export default function Explore() {
                     </div>
                   </div>
                 </div>
-                {hover && (
-                  <span className="hoverContent">
+            );
+          })}
+                  <span className={hover ? "hoverContent" : "noShow"}>
                     <div className="exploreImage">
-                      <img src={card.image} alt="Location Pic" />
+                      <img src={popImg} alt="Location Pic" />
                     </div>
                     <div className="exploreCard_content">
-                      <h6 className="exploreCard_title">{card.place}</h6>
-                      <p className="exploreCard_subtitle">{card.location}</p>
+                      <h6 className="exploreCard_title">{popPlace}</h6>
+                      <p className="exploreCard_subtitle">{popLoc}</p>
                       <div className="logosWrap">
                         <div className="whiteLogo"></div>
                         <div className="orangeLogo"></div>
                       </div>
                     </div>
                   </span>
-                )}
-              </div>
-            );
-          })}
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@
             position: absolute;
             right: -1rem;
             top: 12rem;
-            z-index: 1;
+            z-index: 100;
 
             @media screen and (min-width: 768px) {
                 top: 7rem;
@@ -71,7 +71,7 @@
                 width: 213px;
                 height: 213px;
                 position: relative;
-                background: #0e0e0e;
+                // background: #0e0e0e;
                 border-radius: 16px;
                 cursor: pointer;
 
@@ -177,15 +177,20 @@
             }
 
             .hoverContent {
-                opacity: 0;
                 position: absolute;
-                top: 20%;
-                left: -70%;
-                height: 400px;
-                width: 400px;
-                z-index: 100;
-                transition: ease-in 0.5s;
+                opacity: 1;
+                visibility: visible;
+                height: 280px;
+                width: 280px;
+                z-index: 120;
                 border-radius: 16px;
+                transform: scale(.9);
+                transition: opacity 0.5s ease-in;
+                
+                @media screen and (max-width: 768px) {
+                    height: 400px;
+                    width: 400px;
+                }
 
                 .exploreImage img {
                     width: 100%;
@@ -278,11 +283,14 @@
                 }
             }
 
-            .exploreCard + .hoverContent {
-                opacity: 1;
-                left: 70%;
-                transition: 0.5s;
+            .noShow {
+                opacity: 0;
+                position: absolute;
+                visibility: hidden;
+                transition: opacity ease-out 0.5s;
             }
+
+            
         }
     }
 }
