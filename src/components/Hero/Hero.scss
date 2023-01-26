@@ -33,12 +33,34 @@
             .heroTitle {
                 color: $darkText;
                 font-family: $headFont;
+                text-align: center;
+
+                @media screen and (min-width: 768px) {
+                    text-align: left;              
+                }
             }
 
-            .heroSubtitle {
-                font-size: $twenty;
+            .heroSubtitle_desktop {
+                display: none;
+
+                @media screen and (min-width: 768px) {
+                    display: block;
+                    font-size: $twenty;
+                    color: $darkText;
+                    margin-top: 1.5rem;
+                }
+            }
+
+            .heroSubtitle_mobile{
+                display: block;
+                font-size: $sixteen;
                 color: $darkText;
                 margin-top: 1.5rem;
+                text-align: center;
+
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
             }
 
             .downloadApp {

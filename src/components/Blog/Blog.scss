@@ -97,8 +97,12 @@
                     border-radius: 0px 0px 16px 16px;
 
                     .articleTitle {
-                        font-size: $twentyFour;
+                        font-size: $eighteen;
                         line-height: 24px;
+
+                        @media screen and (min-width: 768px) {
+                            font-size: $twentyFour;
+                        }
                     }
 
                     .articleSubtitle {

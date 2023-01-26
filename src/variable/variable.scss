@@ -90,14 +90,14 @@ h1 {
   font-family: $headFont;
   font-style: normal;
   font-weight: 700;
-  line-height: 66px;
+  line-height: 48px;
   color: $darkText;
 }
 
 h2 {
   font-size: $thirtyTwo;
   font-family: $headFont;
-  line-height: 64px;
+  line-height: 40px;
   font-weight: 700;
 }
 
@@ -138,9 +138,11 @@ a {
 
   h1 {
     font-size: $sixty;
+    line-height: 66px;
   }
   h2 {
     font-size: $fiftySeven;
+    line-height: 64px;
   }
   h3 {
     font-size: $fourty;
