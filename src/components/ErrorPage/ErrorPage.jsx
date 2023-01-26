@@ -6,9 +6,12 @@ export default function ErrorPage() {
   return (
     <section className='errorPage'>
       <img src={Logo} alt="Logo"/>
-        <h1>404</h1>
-        <h4>You’re officially in no man’s land.</h4>
-        <p>Ooops! Check the URL and try again</p>
+        <h3 className='errorPage__subtitle'>404</h3>
+        <h1 className='errorPage__title'>You’re officially in no man’s land.</h1>
+        <p className='errorPage__text'>Ooops! Check the URL and try again.</p>
+        <button className="errorPage__button">
+          Go back home
+        </button>
     </section>
   )
 }

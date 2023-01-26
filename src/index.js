@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Error />,
   },
   {
     path: "/about",
