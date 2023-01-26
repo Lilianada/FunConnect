@@ -39,7 +39,8 @@
             @media screen and (min-width: 900px) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                column-gap: 1.5rem;
+                -moz-column-gap: 1.5rem;
+                     column-gap: 1.5rem;
             }
 
             .benefitFlex_item {

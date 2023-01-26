@@ -19,13 +19,33 @@
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
-    animation: scrollTop 5s ease-in-out infinite;
+    -webkit-animation: scrollTop 5s ease-in-out infinite;
+            animation: scrollTop 5s ease-in-out infinite;
     transition: all .5s ease-in-out;
     
     &:hover{
-      animation: none;
+      -webkit-animation: none;
+              animation: none;
       background: $yellowText;
       color: $black;
+    }
+  }
+
+  @-webkit-keyframes scrollTop {
+    0%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(10px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0px);
     }
   }
 
