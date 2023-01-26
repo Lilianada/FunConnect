@@ -23,11 +23,14 @@ export default function Hero() {
             </span>
             amazing <br /> places near you
           </h1>
-          <p className="heroSubtitle">
+          <p className="heroSubtitle_desktop">
             Whether you're a thrill-seeker or a free spirit, our app has
             something for everyone. Discover new activities and places to visit.
             Unlock a world of possibilities with our app.
           </p>
+          <div className="heroSubtitle_mobile">
+            
+          </div>
           {/* Download Buttons */}
           <DownloadButtons/>
           {/* Learn more */}

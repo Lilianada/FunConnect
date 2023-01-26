@@ -6,7 +6,7 @@
   .iconPosition{
     position: absolute;
     bottom: 40px;
-    right: .5rem;
+    right: .85rem;
     z-index: 20;
   }
 
@@ -19,7 +19,7 @@
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
-    animation: scrollTop 3s ease-in-out infinite;
+    animation: scrollTop 5s ease-in-out infinite;
     transition: all .5s ease-in-out;
     
     &:hover{

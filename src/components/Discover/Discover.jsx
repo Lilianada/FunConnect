@@ -26,6 +26,7 @@ export default function Discover() {
           </p>
           <DownloadButtons/>
         </div>
+        
       </div>
     </section>
   );
