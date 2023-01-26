@@ -39,7 +39,7 @@
         .dragBtn{
             position: absolute;
             right: -1rem;
-            top: 14rem;
+            top: 12rem;
             z-index: 1;
 
             @media screen and (min-width: 768px) {
@@ -114,7 +114,7 @@
                         justify-content: space-between;
                         align-self: flex-end;
                         width: 1.5rem;
-                        margin: 0.5rem 0.5rem 1rem auto;
+                        margin: 0rem 0.5rem .5rem auto;
 
                         .whiteLogo {
                             width: 10px;
@@ -139,13 +139,13 @@
                                 transform: rotate(0deg) translateY(0px) ;
                             }
                             25% {
-                                transform: rotate(35deg) translateY(10px) ;
+                                transform: rotate(35deg) translateY(5px) ;
                             }
                             50% {
                                 transform: rotate(0deg)translateY(0px) ;
                             }
                             75% {
-                                transform: rotate(-35deg) translateY(-10px);
+                                transform: rotate(-35deg) translateY(-5px);
                             }
                             100% {
                                 transform: rotate(0deg) translateY(0px) ;

@@ -7,7 +7,7 @@ import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./Header.scss";
 
-export default function Header() {
+export default function Header () {
   const [showMenu, setShowMenu] = useState(false);
   const isActive = () => {
     setShowMenu(!showMenu);
