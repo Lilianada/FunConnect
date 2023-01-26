@@ -48,6 +48,7 @@
                     font-size: $twenty;
                     color: $darkText;
                     margin-top: 1.5rem;
+                    line-height: 28px;
                 }
             }
 
@@ -57,6 +58,7 @@
                 color: $darkText;
                 margin-top: 1.5rem;
                 text-align: center;
+                line-height: 32px;
 
                 @media screen and (min-width: 768px) {
                     display: none;
