@@ -1,5 +1,5 @@
 import React from "react";
-import "./Benefits.scss";
+import "./style.scss";
 
 export default function Benefits() {
   return (

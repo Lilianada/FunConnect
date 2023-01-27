@@ -21,7 +21,7 @@ export default function Header () {
   return (
     <header>
         {/* Desktop Menu */}
-      <div className="desktopHeader">
+      <div className="desktopHeader" data-scroll-section>
         <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/">
           <img src={Logo} alt="FunConnect Logo" />
         </NavLink>

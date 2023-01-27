@@ -7,7 +7,7 @@ import "./style.scss";
 export default function FAQ() {
 
   return (
-    <section className="faqSection">
+    <section className="faqSection" data-scroll-section>
         <div className="faqContent">
             <div className="faqContent_head">
                 <h2 className="faqTitle">

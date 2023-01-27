@@ -7,7 +7,7 @@ import "./style.scss";
 
 export default function Hero() {
   return (
-    <section className="heroSection">
+    <section className="heroSection" data-scroll-section>
       <div className="heroContent">
         <div className="heroTexts">
           <h1 className="heroTitle">

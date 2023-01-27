@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import BackToTop from "../components/BackToTop";
-import Benefits from "../components/Benefits/Benefits";
+import Benefits from "../components/Benefits";
 import Blog from "../components/Blog";
 import Discover from "../components/Discover";
 import Explore from "../components/Explore";
