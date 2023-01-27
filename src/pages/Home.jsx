@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useRef } from "react";
+import { gsap, Power3 } from "gsap";
 import BackToTop from "../components/BackToTop";
 import Benefits from "../components/Benefits";
 import Blog from "../components/Blog";
@@ -11,31 +11,24 @@ import FAQ from "../components/Faq";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Preloader from "../components/Preloader";
-import useLocoScroll from "../hooks/useLocoScroll";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = useState(5);
-  const id = useRef(null);
+  const [timer, setTimer] = useState(4);
+
+  let tl = new gsap.timeline();
+  let ease = Power3.easeOut;
   
-  useLocoScroll(!preloader);
-
-  const clear = () => {
-    window.clearInterval(id.current);
-    setPreloader(false);
-  };
-
   useEffect(() => {
-    id.current = window.setInterval(() => {
+    const interval = setInterval(() => {
       setTimer((timer) => timer - 1);
     }, 1000);
-  }, []);
-
-  useEffect(() => {
     if (timer === 0) {
-      clear();
+      clearInterval(interval);
+      setPreloader(false);
     }
-  }, [timer]);   
+    return () => clearInterval(interval);
+  }, [timer]);
 
   return (
     <>
@@ -44,7 +37,7 @@ export default function Home() {
       ) : (
         <main className="mainContainer" id="mainContainer" data-scroll-container>
           <Header />
-          <Hero />
+          <Hero timeline={tl} ease={ease} />
           <Benefits />
           <Features />
           <Explore />

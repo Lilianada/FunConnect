@@ -6,7 +6,7 @@ import DownloadButtons from "../DownloadButtons";
 import "./style.scss";
 import AnimatedImages from "./AnimatedImages";
 
-export default function Hero() {
+export default function Hero({ timeline, ease}) {
   return (
     <section className="heroSection" data-scroll-section>
       <div className="heroContent">
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* Animated Image */}
-        <AnimatedImages/>
+        <AnimatedImages timeline={timeline} ease={ease} />
       </div>
     </section>
   );
