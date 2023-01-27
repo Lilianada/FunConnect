@@ -4,7 +4,7 @@ import BackToTop from "../components/BackToTop";
 import Benefits from "../components/Benefits/Benefits";
 import Blog from "../components/Blog/Blog";
 import Discover from "../components/Discover/Discover";
-import Explore from "../components/Explore/Explore";
+import Explore from "../components/Explore";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import FAQ from "../components/Faq";

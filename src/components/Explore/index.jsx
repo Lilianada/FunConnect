@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ExploreCards } from "../Data";
-import "./Explore.scss";
+import "./style.scss";
 
 export default function Explore() {
   const [hover, setHover] = useState(false);
