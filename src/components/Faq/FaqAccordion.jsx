@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
 import React, { useState } from "react";
-import "./FAQ.scss";
+import "./style.scss";
 
 export default function FAQAccordion({ id, title, description }) {
   const [isActive, setIsActive] = useState(false);

@@ -1,8 +1,8 @@
 import React from "react";
 import Blob from "../../assets/images/Blob.png";
 import { Accordion } from "../Data";
-import FAQAccordion from "./FAQ-Accordion";
-import "./FAQ.scss";
+import FAQAccordion from "./FaqAccordion";
+import "./style.scss";
 
 export default function FAQ() {
 

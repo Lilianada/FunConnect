@@ -1,9 +1,9 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaPlay } from "react-icons/fa";
-import "./Hero.scss";
 import DownloadButtons from "../DownloadButtons/DownloadButtons";
 import { Link } from "react-router-dom";
+import "./style.scss";
 
 export default function Hero() {
   return (

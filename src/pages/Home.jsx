@@ -7,7 +7,7 @@ import Discover from "../components/Discover/Discover";
 import Explore from "../components/Explore/Explore";
 import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
-import FAQ from "../components/FrequentlyAskedQstn/FAQ";
+import FAQ from "../components/Faq";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Preloader from "../components/Preloader";
