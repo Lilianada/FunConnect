@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
-import { FaPlay } from "react-icons/fa";
-import DownloadButtons from "../DownloadButtons";
 import { Link } from "react-router-dom";
+import { FaPlay } from "react-icons/fa";import { Typewriter } from "react-simple-typewriter";
+import DownloadButtons from "../DownloadButtons";
 import "./style.scss";
+import AnimatedImages from "./AnimatedImages";
 
 export default function Hero() {
   return (
@@ -50,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* Animated Image */}
-        <div className="animatedImage"></div>
+        <AnimatedImages/>
       </div>
     </section>
   );

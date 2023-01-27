@@ -2,32 +2,51 @@
 
 .heroSection {
     background: $white;
-    height: 100%;
     width: 100vw;
     padding: 1rem;
-    
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 520px) {
         padding: 2rem;
     }
+
+    @media screen and (min-height: 700px) {
+        height: 90vh;
+    }
     
+    @media screen and (max-height: 768px) {
+        height: 750px;
+    }
+
     .heroContent {
         width: 100%;
         margin: 2rem auto;
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        row-gap: 3rem;
 
         @media screen and (min-width: 768px) {
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1024px) {
             width: 90%;
+            flex-direction: row;
         }
 
         .heroTexts {
             background: url(../../assets/images/HeroBg.svg) no-repeat;
             background-size: contain;
             background-position: center;
-            
+
             @media screen and (min-width: 768px) {
+                width: 80%;
+            }
+
+            @media screen and (min-width: 1024px) {
                 width: 50%;
-                padding: 3rem 0 0 ;
-                
+                padding: 3rem 0 0;
             }
 
             .heroTitle {
@@ -35,15 +54,15 @@
                 font-family: $headFont;
                 text-align: center;
 
-                @media screen and (min-width: 768px) {
-                    text-align: left;              
+                @media screen and (min-width: 1024px) {
+                    text-align: left;
                 }
             }
 
             .heroSubtitle_desktop {
                 display: none;
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 1024px) {
                     display: block;
                     font-size: $twenty;
                     color: $darkText;
@@ -52,7 +71,7 @@
                 }
             }
 
-            .heroSubtitle_mobile{
+            .heroSubtitle_mobile {
                 display: block;
                 font-size: $sixteen;
                 color: $darkText;
@@ -60,57 +79,33 @@
                 text-align: center;
                 line-height: 32px;
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 1024px) {
                     display: none;
                 }
             }
 
-            .downloadApp {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-items: center;
-                margin-top: 1.5rem;
+            .downloadApp_btns {
+                justify-content: space-evenly;
 
-                .appStore,
-                .googlePlay {
-                    height: 64px;
-                    width: 200px;
-                    padding: 8px 20px;
-                    background: $black;
-                    border-radius: 10px;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    margin-bottom: 0.5rem;
-
-                    .downloadText {
-                        font-family: $altFont;
-                        font-size: $twelve;
-                        font-weight: 600;
-                        line-height: 16px;
-                    }
-
-                    .appText {
-                        font-family: $altFont;
-                        font-size: $eighteen;
-                        font-weight: 800;
-                        text-transform: capitalize;
-                        line-height: 20px;
-                    }
+                @media screen and (min-width: 768px) {
+                    justify-content: center;
                 }
 
-                .appStore {
-                    margin-right: 1rem;
+                @media screen and (min-width: 1024px) {
+                    justify-content: space-evenly;
                 }
             }
 
             .learnMore {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-top: 1.5rem;
-                position: relative;
+                display: none;
+
+                @media screen and (min-width: 1024px) {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 1.5rem;
+                    position: relative;
+                }
 
                 .learnMoreText {
                     font-size: $twenty;
@@ -138,30 +133,100 @@
                         position: absolute;
                         opacity: 1;
                         animation: scaleIn 1.5s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
-                        
+
                         @keyframes scaleIn {
                             from {
-                              transform: scale(.75, .75);
-                              opacity: 1;
+                                transform: scale(0.75, 0.75);
+                                opacity: 1;
                             }
                             to {
-                              transform: scale(1, 1);
-                              opacity: 0;
+                                transform: scale(1, 1);
+                                opacity: 0;
                             }
-                          }
-
                         }
+                    }
 
-                        .learnMoreIcon_black {
-                            width: 45px;
-                            height: 45px;
-                            border-radius: 50%;
-                            background: $secondaryBg;
-                            display: grid;
-                            place-items: center;
-                            position: relative;
-                            z-index: 1;
-                        }
+                    .learnMoreIcon_black {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        background: $secondaryBg;
+                        display: grid;
+                        place-items: center;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        .animatedImages_wrap{
+            width: 50%;
+            position: relative;
+            left: 28%;
+
+            @media screen and (min-width: 700px) {
+                left: 0;
+            }
+
+            @media screen and (min-width: 1024px) {
+                padding: 3rem 0 0
+            }
+
+            .animatedImages_content{
+                
+                .animatedImage_one{
+                    position: absolute;
+                    bottom: -25vh;
+                    left: -5rem;
+                    width: 20%;
+
+                    @media screen and (min-width: 520px) {
+                        bottom: -40vh;
+                        left: -6rem;
+                        width: 15%;
+                    }
+                    
+                    @media screen and (min-width: 1024px) {
+                        bottom: -60vh;
+                        left: 3rem;
+                        width: 25%;
+                    }
+                }
+
+                .animatedImage_two{
+                    position: absolute;
+                    right: -3rem;
+                    z-index: 1;
+                    width: 40%;
+
+                    @media screen and (min-width: 520px) {
+                        width: 25%;
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        right: -3.5rem;
+                    }
+                }
+
+                .animatedImage_three{
+                    position: absolute;
+                    top: 1rem;
+                    right: 2rem;
+                    z-index: 1;
+
+                    @media screen and (min-width: 768px) {
+                        top: 2rem;
+                    }
+
+                    @media screen and (min-width: 1024px) {
+                        top: 5rem;
+                    }
+                }
+
+                .animatedImage_four{
+                    position: absolute;
+                    right: 0;
                 }
             }
         }
