@@ -25,6 +25,8 @@ header {
             background: none;
             border: none;
             outline: none;
+
+
         }
 
         .navbar {
@@ -52,6 +54,10 @@ header {
                 align-self: flex-end;
                 border: none;
                 outline: none;
+
+                &:hover{
+                    background: $primary;
+                }
             }
 
             .navList{
