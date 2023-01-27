@@ -1,6 +1,6 @@
 import React from 'react';
-import ErrorPage from '../components/ErrorPage/ErrorPage';
-import Header from '../components/Header/Header';
+import ErrorPage from '../components/ErrorPage';
+import Header from '../components/Header';
 
 export default function Error() {
   return (

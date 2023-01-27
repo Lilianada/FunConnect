@@ -38,7 +38,7 @@ export default function Hero() {
           {/* Download Buttons */}
           <DownloadButtons />
           {/* Learn more */}
-          <a href="/" className="learnMore">
+          <div className="learnMore">
             <Link to="/about" className="learnMoreIcon">
               <div className="learnMoreIcon_black">
                 <FaPlay fill="#FF9100" size={20} />
@@ -46,7 +46,7 @@ export default function Hero() {
               <div className="learnMoreIcon_grey"></div>
             </Link>
             <div className="learnMoreText">Learn more about us</div>
-          </a>
+          </div>
         </div>
 
         {/* Animated Image */}

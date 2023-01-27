@@ -15,28 +15,27 @@ import useLocoScroll from "../hooks/useLocoScroll";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = useState(3);
+  const [timer, setTimer] = useState(5);
   const id = useRef(null);
+  
+  useLocoScroll(!preloader);
 
-const clear = () => {
-  window.clearInterval(id.current);
-  setPreloader(false);
-};
+  const clear = () => {
+    window.clearInterval(id.current);
+    setPreloader(false);
+  };
 
-useLocoScroll(!preloader);
+  useEffect(() => {
+    id.current = window.setInterval(() => {
+      setTimer((timer) => timer - 1);
+    }, 1000);
+  }, []);
 
-useEffect(() => {
-  id.current = window.setInterval(() => {
-    setTimer((timer) => timer - 1);
-  }, 1000);
-}, []);
-
-
- useEffect(() => {
-  if (timer === 0) {
-    clear();
-  }
-}, [timer]);   
+  useEffect(() => {
+    if (timer === 0) {
+      clear();
+    }
+  }, [timer]);   
 
   return (
     <>

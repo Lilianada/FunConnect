@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
-import "./Footer.scss";
+import "./style.scss";
 
 const SubscribeForm = () => {
     const [status, setStatus] = useState<string | null>(null)

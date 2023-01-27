@@ -5,7 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import AppStore from "../../assets/images/AppleVector.svg";
 import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
-import "./Header.scss";
+import "./style.scss";
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false);

@@ -14,6 +14,7 @@ export default function Preloader() {
                 typeSpeed={200}
                 deleteSpeed={180}
                 delaySpeed={500}
+                infinite={false}
               />
             </span>
             <div className="preloadCircle"></div>
