@@ -58,7 +58,37 @@
                 border: 1px solid #1a213b;
                 box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
                 border-radius: 16px;
-                
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    border: none;
+                    background: #FFD297;
+
+                    .first-child{
+                        background: #FFE9CC;
+
+                        svg path{
+                            fill: $black;
+                        }
+                    }
+
+                    .second-child{
+                        background: #FFE9CC;
+
+                        svg path{
+                            fill: $black;
+                        }
+                    }
+    
+                    .last-child{
+                        background: #FFE9CC;
+
+                        svg path{
+                            fill: $black;
+                        }
+                    }
+                }
+
                 @media screen and (min-width: 768px) {
                     height: 244px;
                     padding: 20px 16px;
@@ -79,7 +109,19 @@
                     place-items: center;
                     padding: 12px;
                     border-radius: 4px;
-                    text-align: center;
+                    text-align: center;    
+                }
+
+                .first-child{
+                    background: #FFE5EB;
+                }
+
+                .second-child{
+                    background: #F0EEF7;
+                }
+
+                .last-child{
+                    background: #E8FDF0;
                 }
 
                 .benefitFlex_text {

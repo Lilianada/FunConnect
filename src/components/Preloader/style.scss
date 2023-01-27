@@ -8,6 +8,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background: $primary;
+    position: relative;
+
+    .ellipseOne{
+        position: absolute;
+        top: -10%;
+        left: auto;
+        z-index: 1;
+    }
 
     .preloadText{
         font-size: 2rem;
@@ -18,22 +27,30 @@
         }
     }
 
-    .preloadCircle {
-        width: 3rem;
-        height: 3rem;
-        margin-top: 1rem;
-        border-radius: 50%;
-        border: 2px dotted $primary;
-        transform: rotate(45deg);
-        animation: circle 5s linear infinite;
-    }
+    // .preloadCircle {
+    //     width: 3rem;
+    //     height: 3rem;
+    //     margin-top: 1rem;
+    //     border-radius: 50%;
+    //     border: 2px dotted $white;
+    //     transform: rotate(45deg);
+    //     animation: circle 5s linear infinite;
+    // }
 
-    @keyframes circle {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(359deg);
-        }
+    // @keyframes circle {
+    //     from {
+    //         transform: rotate(0deg);
+    //     }
+    //     to {
+    //         transform: rotate(359deg);
+    //     }
+    // }
+
+    .ellipseTwo{
+        position: absolute;
+        bottom: -10%;
+        left: auto;
+        z-index: 1;
+        transform: rotate(180deg);
     }
 }

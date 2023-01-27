@@ -11,7 +11,7 @@ export default function Benefits() {
         </h4>
         <div className="benefitFlex_container">
           <div className="benefitFlex_item">
-            <div className="benefitFlex_icon" style={{ background: "#FFE5EB" }}>
+            <div className="benefitFlex_icon first-child">
               <svg
                 width="18"
                 height="21"
@@ -31,7 +31,7 @@ export default function Benefits() {
             </p>
           </div>
           <div className="benefitFlex_item">
-            <div className="benefitFlex_icon" style={{ background: "#F0EEF7" }}>
+            <div className="benefitFlex_icon second-child">
               <svg
                 width="24"
                 height="17"
@@ -51,7 +51,7 @@ export default function Benefits() {
             </p>
           </div>
           <div className="benefitFlex_item">
-            <div className="benefitFlex_icon" style={{ background: "#E8FDF0" }}>
+            <div className="benefitFlex_icon last-child">
               <svg
                 width="20"
                 height="20"

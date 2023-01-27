@@ -137,11 +137,11 @@
                         place-items: center;
                         position: absolute;
                         opacity: 1;
-                        animation: scaleIn 2s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                        animation: scaleIn 1.5s infinite cubic-bezier(0.18, 0.89, 0.32, 1.28);
                         
                         @keyframes scaleIn {
                             from {
-                              transform: scale(.5, .5);
+                              transform: scale(.75, .75);
                               opacity: 1;
                             }
                             to {
