@@ -9,7 +9,7 @@ import "./style.scss";
 export default function Footer() {
   return (
     <footer>
-      <div className="footerContent">
+      <div className="footerContent" data-scroll-section>
         <div className="footerFlex_item">
           <div className="footerFlex_head">
             <img src={Logo} alt="FunConnect Logo" />

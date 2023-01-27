@@ -16,7 +16,7 @@ export default function Explore() {
   };
 
   return (
-    <section className="exploreSection">
+    <section className="exploreSection" data-scroll-section>
       <div className="exploreContent">
         <h2 className="exploreTitle">Explore Exciting Destinations</h2>
         <p className="exploreSubtitle">

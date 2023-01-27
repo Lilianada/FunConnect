@@ -4,7 +4,7 @@ import "./style.scss";
 
 export default function Features() {
   return (
-    <section className="featureSection">
+    <section className="featureSection" data-scroll-section>
         <div className="featureContent">
             <h5 className="featuresTitle">What can you do with funconnect?</h5>
             <div className="featureFlex">
