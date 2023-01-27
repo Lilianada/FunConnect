@@ -16,7 +16,7 @@ export default function AnimatedImages({ timeline, ease }) {
         image1,
         1.2,
         {
-          y: 1200,
+          y: 1000,
           ease: ease,
           opacity: 0,
         },
@@ -36,7 +36,7 @@ export default function AnimatedImages({ timeline, ease }) {
         image2,
         1.2,
         {
-          y: 1200,
+          y: 1000,
           ease: ease,
           opacity: 0,
         },
@@ -56,7 +56,7 @@ export default function AnimatedImages({ timeline, ease }) {
         image3,
         1.2,
         {
-          y: 1200,
+          y: 1000,
           ease: ease,
           opacity: 0,
         },
@@ -76,7 +76,7 @@ export default function AnimatedImages({ timeline, ease }) {
         image4,
         1.2,
         {
-          y: 1200,
+          y: 800,
           ease: ease,
           opacity: 0,
         },
