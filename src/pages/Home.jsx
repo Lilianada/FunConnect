@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import BackToTop from "../components/BackToTop/BackToTop";
+import BackToTop from "../components/BackToTop";
 import Benefits from "../components/Benefits/Benefits";
 import Blog from "../components/Blog/Blog";
 import Discover from "../components/Discover/Discover";
@@ -8,9 +8,9 @@ import Explore from "../components/Explore/Explore";
 import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
 import FAQ from "../components/FrequentlyAskedQstn/FAQ";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Preloader from "../components/Preloader/Preloader";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Preloader from "../components/Preloader";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
@@ -39,7 +39,7 @@ useEffect(() => {
       {preloader ? (
         <Preloader/>
       ) : (
-        <main className="mainContainer">
+        <main className="mainContainer" data-scroll-container>
           <Header />
           <Hero />
           <Benefits />

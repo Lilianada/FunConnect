@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowUpShort } from "react-icons/bs";
-import "./BackToTop.scss";
+import "./style.scss";
 
 export default function BackToTop() {
     const [showTopBtn, setShowTopBtn] = useState(false);

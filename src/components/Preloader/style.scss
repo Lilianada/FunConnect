@@ -1,0 +1,39 @@
+@import "../../variable/variable.scss";
+
+.preloader {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .preloadText{
+        font-size: 2rem;
+        font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+
+    .preloadCircle {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border-radius: 50%;
+        border: 2px dotted $primary;
+        transform: rotate(45deg);
+        animation: circle 5s linear infinite;
+    }
+
+    @keyframes circle {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+}

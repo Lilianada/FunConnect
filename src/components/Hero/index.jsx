@@ -1,7 +1,9 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { FaPlay } from "react-icons/fa";import "./Hero.scss";
+import { FaPlay } from "react-icons/fa";
+import "./Hero.scss";
 import DownloadButtons from "../DownloadButtons/DownloadButtons";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -29,26 +31,26 @@ export default function Hero() {
             Unlock a world of possibilities with our app.
           </p>
           <div className="heroSubtitle_mobile">
-          We are focused on making the fun ecosystem easy to navigate while bringing our audience the much-needed interactive space for networking. 
+            We are focused on making the fun ecosystem easy to navigate while
+            bringing our audience the much-needed interactive space for
+            networking.
           </div>
           {/* Download Buttons */}
-          <DownloadButtons/>
+          <DownloadButtons />
           {/* Learn more */}
           <a href="/" className="learnMore">
-            <div className="learnMoreIcon">
-                <div className="learnMoreIcon_black">
-                  <FaPlay fill="#FF9100" size={20} />
-                </div>
+            <Link to="/about" className="learnMoreIcon">
+              <div className="learnMoreIcon_black">
+                <FaPlay fill="#FF9100" size={20} />
+              </div>
               <div className="learnMoreIcon_grey"></div>
-            </div>
+            </Link>
             <div className="learnMoreText">Learn more about us</div>
           </a>
         </div>
-        
-        {/* Animated Image */}
-        <div className="animatedImage">
 
-        </div>
+        {/* Animated Image */}
+        <div className="animatedImage"></div>
       </div>
     </section>
   );
