@@ -1,7 +1,7 @@
 import React from "react";
 import AppStore from "../../assets/images/AppleVector-colored.svg";
 import GooglePlay from "../../assets/images/GoogleVector-colored.svg";
-import "./DownloadButtons.scss";
+import "./style.scss";
 
 export default function DownloadButtons() {
   return (

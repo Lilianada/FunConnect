@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaPlay } from "react-icons/fa";
-import DownloadButtons from "../DownloadButtons/DownloadButtons";
+import DownloadButtons from "../DownloadButtons";
 import { Link } from "react-router-dom";
 import "./style.scss";
 

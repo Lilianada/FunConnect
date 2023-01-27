@@ -1,6 +1,6 @@
 import React from "react";
 import Phone from "../../assets/images/PhoneGroup.png";
-import DownloadButtons from "../DownloadButtons/DownloadButtons";
+import DownloadButtons from "../DownloadButtons";
 import "./Discover.scss";
 
 export default function Discover() {

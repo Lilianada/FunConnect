@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo.png';
-import './ErrorPage.scss';
+import './style.scss';
 
 export default function ErrorPage() {
   return (
