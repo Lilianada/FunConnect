@@ -50,7 +50,8 @@
                 align-items: center;
                 width: 100%;
                 max-width: 384px;
-                height: 218px;
+                min-height: 220px;
+                height: 100%;
                 padding: 16px;
                 margin-top: 1rem;
                 gap: 16px;

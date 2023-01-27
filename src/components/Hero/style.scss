@@ -9,12 +9,12 @@
         padding: 2rem;
     }
 
-    @media screen and (min-height: 700px) {
+    @media screen and (min-height: 769px) {
         height: 90vh;
     }
     
     @media screen and (max-height: 768px) {
-        height: 750px;
+        height: 800px;
     }
 
     .heroContent {
@@ -33,6 +33,8 @@
         @media screen and (min-width: 1024px) {
             width: 90%;
             flex-direction: row;
+            column-gap: 2rem;
+            align-items: flex-start;
         }
 
         .heroTexts {
@@ -54,8 +56,17 @@
                 font-family: $headFont;
                 text-align: center;
 
+                @media screen and (max-width: 380px) {
+                    font-size: $thirtyTwo;
+                }
+
                 @media screen and (min-width: 1024px) {
                     text-align: left;
+                    font-size: $fourty;
+                }
+
+                @media screen and (min-width: 1280px) {
+                    font-size: $sixty;
                 }
             }
 
@@ -87,12 +98,18 @@
             .downloadApp_btns {
                 justify-content: space-evenly;
 
+                @media screen and (max-width: 380px) {
+                    .appStore{
+                        margin-right: 0;
+                    }
+                }
+
                 @media screen and (min-width: 768px) {
                     justify-content: center;
                 }
 
                 @media screen and (min-width: 1024px) {
-                    justify-content: space-evenly;
+                    justify-content: flex-start;
                 }
             }
 
@@ -169,10 +186,6 @@
                 left: 0;
             }
 
-            @media screen and (min-width: 1024px) {
-                padding: 3rem 0 0
-            }
-
             .animatedImages_content{
                 
                 .animatedImage_one{
@@ -188,9 +201,14 @@
                     }
                     
                     @media screen and (min-width: 1024px) {
-                        bottom: -60vh;
-                        left: 3rem;
-                        width: 25%;
+                        top: 60vh;
+                        left: -5rem;
+                        width: auto;
+                    }
+
+                    @media screen and (min-width: 1280px) {
+                        top: 65vh;
+                        left: 2rem;
                     }
                 }
 
@@ -206,6 +224,7 @@
 
                     @media screen and (min-width: 1024px) {
                         right: -3.5rem;
+                        width: auto;
                     }
                 }
 
@@ -217,10 +236,6 @@
 
                     @media screen and (min-width: 768px) {
                         top: 2rem;
-                    }
-
-                    @media screen and (min-width: 1024px) {
-                        top: 5rem;
                     }
                 }
 
