@@ -11,15 +11,19 @@ import FAQ from "../components/Faq";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Preloader from "../components/Preloader";
+import useLocoScroll from "../hooks/useLocoScroll";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = useState(3);
   const id = useRef(null);
+
 const clear = () => {
   window.clearInterval(id.current);
   setPreloader(false);
 };
+
+useLocoScroll(!preloader);
 
 useEffect(() => {
   id.current = window.setInterval(() => {
@@ -39,7 +43,7 @@ useEffect(() => {
       {preloader ? (
         <Preloader/>
       ) : (
-        <main className="mainContainer" data-scroll-container>
+        <main className="mainContainer" id="mainContainer" data-scroll-container>
           <Header />
           <Hero />
           <Benefits />

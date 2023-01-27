@@ -3,7 +3,7 @@ import "./style.scss";
 
 export default function Benefits() {
   return (
-    <section className="benefitSection">
+    <section className="benefitSection" data-scroll-section>
       <div className="benefitSection__container">
         <h4 className="benefitTitle">
           <span className="primaryText">Funconnect </span> allows you to do what
