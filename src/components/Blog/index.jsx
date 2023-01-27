@@ -2,7 +2,7 @@
 import React from "react"; 
 import BlogImage from "../../assets/images/Blog-Image.png"
 import { BlogArticles } from "../Data";
-import "./Blog.scss";
+import "./style.scss";
 
 export default function Blog() {
   return (

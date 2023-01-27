@@ -1,7 +1,7 @@
 import React from "react";
 import Phone from "../../assets/images/PhoneGroup.png";
 import DownloadButtons from "../DownloadButtons";
-import "./Discover.scss";
+import "./style.scss";
 
 export default function Discover() {
   return (
