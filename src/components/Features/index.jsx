@@ -1,6 +1,6 @@
 import React from "react";
-import TransparentLogo from "../../assets/images/Funconnect-transparent-logo.svg";
-import "./Features.scss";
+// import TransparentLogo from "../../assets/images/Funconnect-transparent-logo.svg";
+import "./style.scss";
 
 export default function Features() {
   return (

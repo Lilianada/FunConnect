@@ -4,7 +4,7 @@ import { BsTelegram } from "react-icons/bs";
 import { RiInstagramFill, RiLinkedinFill } from "react-icons/ri";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import SubscribeForm from "./SubscriptionForm.tsx";
-import "./Footer.scss";
+import "./style.scss";
 
 export default function Footer() {
   return (
