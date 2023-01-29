@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-export default function ContactHero() {
+export default function ContactHero () {
   return (
     <div>
       

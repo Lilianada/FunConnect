@@ -6,7 +6,7 @@ import Logo from "../../assets/images/Funconnect-logo.svg";
 import SubscribeForm from "./SubscriptionForm.tsx";
 import "./style.scss";
 
-export default function Footer() {
+export default function Footer () {
   return (
     <footer>
       <div className="footerContent" data-scroll-section>
