@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    max-width: 590px;
     margin: 2rem auto;
     padding: 2rem 20px;
     background-color: $white;
@@ -78,11 +79,16 @@
                 border: none;
                 border-radius: 5px;
                 font-size: $sixteen;
-                font-weight: 600;
+                font-family: inherit;
+                font-weight: 500;
                 color: $white;
                 background-color: #848484;
                 outline: none;
                 cursor: pointer;
+
+                .formBtnIcon{
+                    margin-left: .5rem;
+                }
             }
         }
 

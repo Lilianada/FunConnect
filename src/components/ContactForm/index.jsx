@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { RxArrowTopRight } from "react-icons/rx";
 import "./style.scss";
 
 export default function ContactForm() {
@@ -47,7 +47,7 @@ export default function ContactForm() {
           ></textarea>
           <button type="submit" className="formButton">
             Send Message
-            <HiArrowUpRight className="formBtnIcon" />
+            <RxArrowTopRight className="formBtnIcon" />
           </button>
         </form>
         <p className="formInform">
