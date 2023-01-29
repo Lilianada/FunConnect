@@ -8,15 +8,7 @@
     @media screen and (min-width: 520px) {
         padding: 2rem;
     }
-
-    // @media screen and (min-height: 769px) {
-    //     height: 90vh;
-    // }
     
-    // @media screen and (max-height: 768px) {
-    //     height: 800px;
-    // }
-
     .heroContent {
         width: 100%;
         margin: 2rem auto;
@@ -104,7 +96,7 @@
                     }
                 }
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 400px) {
                     justify-content: center;
                 }
 
@@ -198,8 +190,8 @@
 
                 .animatedImage_one{
                     position: absolute;
-                    bottom: -20rem;
-                    left: -5rem;
+                    bottom: -18rem;
+                    left: -30%;
                     width: 2rem;
 
                     @media screen and (max-width: 400px) {
@@ -207,29 +199,21 @@
                         left: -35%;
                         width: 1.5rem;
                     }
+
                     
                     @media screen and (min-width: 720px) {
                         bottom: -24rem;
                         left: -5rem;
                         width: 3rem;
                     }
-
-                    // @media screen and (min-width: 1280px) {
-                    //     top: 50vh;
-                    //     left: 2rem;
-                    // }
                 }
 
                 .animatedImage_two{
                     position: absolute;
                     right: -3rem;
                     z-index: 1;
-                    width: 40%;
-
-                    @media screen and (min-width: 520px) {
-                        width: 25%;
-                    }
-
+                    width: 5rem;
+                    
                     @media screen and (min-width: 1024px) {
                         right: -3.5rem;
                         width: auto;
