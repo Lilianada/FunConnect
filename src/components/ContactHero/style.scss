@@ -2,24 +2,50 @@
 
 .contactHero_section{
     width: 100%;
-    height: 515px;    
-    background: url(../../assets/images/contactImage/DesktopBg.png) no-repeat;
+    height: 90vh;    
+    background: url(../../assets/images/contactImage/MobileBg.png) #FFEDD5;
     background-size: cover;
     background-position: center;
-    padding: 2rem 3rem;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    
+    @media screen and (min-width: 900px){
+        background: url(../../assets/images/contactImage/DesktopBg.png) no-repeat;
+        padding: 2rem 3rem;
+        height: 515px;
+    }
 
     .contactHero_texts{
-        width: 50%;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 900px){
+            width: 44%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin-left: 2rem;
+        }
+
+        @media screen and (min-width: 1024px){
+            width: 40%;
+            margin-left: 3rem;
+        }
+
+        .contactHero_title{
+            display: inline;
+            color: $secondaryBg;
+        }
+    
+        .contactHero_subtitle{
+            font-size: $eighteen;
+            font-weight: 500;
+            color: $assets;
+            margin-top: 1rem;
+        }
     }
 
-    .contactHero_title{
-        display: inline;
-        color: $secondaryBg;
-    }
-
-    .contactHero_subtitle{
-        font-size: $eighteen;
-        color: $assets;
-        margin-top: 1rem;
-    }
 }

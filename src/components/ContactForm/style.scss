@@ -17,11 +17,17 @@
         width: 70%;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
         position: absolute;
+        left: 48%;
+        top: 25%;
+        z-index: 1;
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 1024px) {
         left: 51%;
         top: 32%;
-        z-index: 1;
         width: 470px;
     }
 
