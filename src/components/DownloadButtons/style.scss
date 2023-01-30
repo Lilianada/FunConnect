@@ -9,7 +9,7 @@
     
     .appStore, .googlePlay{
         height: 64px;
-        width: 168px;
+        // width: 168px;
         padding: 8px 20px;
         background: $black;
         border-radius: 10px;
@@ -36,6 +36,14 @@
             text-transform: capitalize;
             line-height: 13px;
         }
+    }
+
+    .appStore{
+        width: 184px;
+    }
+
+    .googlePlay{
+        width: 200px;
     }
     
     .appStore{

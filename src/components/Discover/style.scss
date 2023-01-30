@@ -16,12 +16,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: 85%;
         background: url('../../assets/images/DiscoverBackground.png') no-repeat;
         background-size: 100% 87%;
         background-position: top;
         width: 90%;
         margin: 2rem auto;
+
+        @media screen and (min-width: 1200px) {
+            height: 90%;
+        }
+
+        .discoverImage img{
+            height: 550px;
+
+            @media screen and (min-width: 1200px) {
+                height: 600px;
+            }
+        }
         
         .discoverText{
             width: 510px;
@@ -43,7 +55,7 @@
                     line-height: 55px;
                 }
             }
-    
+
             .discoverDescription{
                 color: $black;
                 font-size: $eighteen;
