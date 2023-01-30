@@ -14,6 +14,7 @@ export default function Blog() {
           amet, consectetur
         </p>
         <div className="blogArticle_wrap">
+          {/* Make another map for mobile. Should be 3 blog posts only */}
           {BlogArticles.map((article)  => {
               return (
                 <div className="blogArticle" key={article.id}>
@@ -32,7 +33,6 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
-                
               );
             })
           }

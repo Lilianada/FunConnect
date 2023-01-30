@@ -42,7 +42,7 @@ export default function Hero({ timeline, ease}) {
           <div className="learnMore">
             <Link to="/about" className="learnMoreIcon">
               <div className="learnMoreIcon_black">
-                <FaPlay fill="#FF9100" size={20} />
+                <FaPlay fill="#FF9100" size={16} />
               </div>
               <div className="learnMoreIcon_grey"></div>
             </Link>

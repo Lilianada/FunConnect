@@ -4,9 +4,10 @@
     width: 100vw;
     height: 100%;
     padding: 1rem;
-    background: $black url(../../assets/images/HeroBg.svg) no-repeat;
+    background: $black url(../../assets/images/HeroBg.svg) url(../../assets/images/ExploreBg.png);
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
     
     @media screen and (min-width: 768px) {
         padding: 2rem;
@@ -34,6 +35,11 @@
             font-size: $eighteen;
             color: $white;
             text-align: center;
+
+            @media screen and (min-width: 768px) {
+                width: 588px;
+                margin: 0 auto;
+            }
         }
         
         .dragBtn{

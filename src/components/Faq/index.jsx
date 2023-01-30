@@ -8,6 +8,7 @@ export default function FAQ() {
 
   return (
     <section className="faqSection" data-scroll-section>
+        {/* Close the previous dropdown onclick of the next */}
         <div className="faqContent">
             <div className="faqContent_head">
                 <h2 className="faqTitle">

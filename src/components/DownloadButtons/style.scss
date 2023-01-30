@@ -9,12 +9,12 @@
     
     .appStore, .googlePlay{
         height: 64px;
-        width: auto;
+        width: 168px;
         padding: 8px 20px;
         background: $black;
         border-radius: 10px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: .5rem;
 
