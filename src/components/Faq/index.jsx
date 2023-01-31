@@ -5,7 +5,7 @@ import FAQAccordion from "./FaqAccordion";
 import "./style.scss";
 
 export default function FAQ() {
-
+    
   return (
     <section className="faqSection" data-scroll-section>
         {/* Close the previous dropdown onclick of the next */}

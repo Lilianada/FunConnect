@@ -7,7 +7,6 @@ import "./style.scss";
 export default function FAQAccordion({ id, title, description }) {
   const [isActive, setIsActive] = useState(false);
   const openAccordion = () => {
-    
     setIsActive(!isActive);
   };
 
