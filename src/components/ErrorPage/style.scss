@@ -7,7 +7,9 @@
     width: 100vw;
     
     @media screen and (min-width: 768px) {
-        background: url(../../assets/images/404Bg.png) no-repeat center center fixed;
+        background: url(../../assets/images/404Bg.png) no-repeat;
+        background-position: bottom;
+        background-size: cover;
     }
 
     .errorPage Header {
