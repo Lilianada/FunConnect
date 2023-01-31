@@ -1,39 +1,47 @@
 @import "../../variable/variable.scss";
 
-.contactInfo_section{
+.contactInfo_section {
     background: $white;
     width: 100%;
     height: 100%;
     padding: 1rem;
+    margin-top: -2rem;
     display: flex;
+    flex-direction: column-reverse;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 900px) {
+        flex-direction: row;
         padding: 2rem;
+        margin-top: 0;
     }
 
-    .contactInfo_wrap{
+    .contactInfo_wrap {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 8rem auto;
+        margin: 6rem auto;
 
         @media screen and (min-width: 768px) {
             width: 90%;
         }
 
-        .contactInfo_content{
+        .contactInfo_content {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-bottom: 2rem;
 
-            @media screen and (min-width: 768px) {
-                width: 50%;
+            @media screen and (min-width: 900px) {
+                width: 43%;
                 text-align: left;
             }
 
-           .contactInfo_title{
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+            }
+
+            .contactInfo_title {
                 font-family: $textFont;
                 font-size: $twentyEight;
                 font-weight: 600;
@@ -41,22 +49,31 @@
                 margin-bottom: 1rem;
             }
 
-           .contactInfo_texts{
-
-        }
-            .contactInfo_text{
+            .contactInfo_text {
                 font-size: $sixteen;
                 color: $assets;
                 margin-bottom: 1rem;
                 display: flex;
                 align-items: center;
 
-                .mailTo{
+                .mailTo {
                     text-decoration: underline;
                 }
 
-                .contactInfo_icon{
-                    margin-right: .75rem;
+                .contactInfo_icon {
+                    margin-right: 0.75rem;
+                }
+            }
+            
+            .contactInfo_text2 {
+                font-size: $sixteen;
+                color: $assets;
+                margin-bottom: 1rem;
+                display: inline;
+                align-items: center;
+
+                .mailTo {
+                    text-decoration: underline;
                 }
             }
         }

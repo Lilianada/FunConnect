@@ -11,7 +11,7 @@ export default function Contact() {
       <Header />
       <ContactHero/>
       <ContactInfo/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
       <Footer />
     </main>
   );
