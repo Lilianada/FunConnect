@@ -1,0 +1,47 @@
+@import "../../variable/variable.scss";
+
+.aboutHero_section{
+    width: 100%;
+    height: 90vh;    
+    background: url(../../assets/images/aboutImages/HeroBg-mobile.png) #FFEDD5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    
+    @media screen and (min-width: 900px){
+        background: url(../../assets/images/aboutImages/HeroBG-desktop.png) #FFEDD5;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 2rem 3rem;
+        height: 515px;
+    }
+
+    .contactHero_texts{
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 900px){
+            width: 44%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin-left: 2rem;
+        }
+
+        @media screen and (min-width: 1024px){
+            width: 40%;
+            margin-left: 3rem;
+        }
+
+        .contactHero_title{
+            display: inline;
+            color: $secondaryBg;
+        }
+    }
+
+}
