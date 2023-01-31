@@ -10,10 +10,10 @@ export default function ContactInfo() {
           <h5 className="contactInfo_title">Contact Information</h5>
           <p className="contactInfo_text">
             Any questions or remarks? Just write us a message at{" "}
-            <a href="mailto:Info@funconnect.app">Info@funconnect.app</a>
+            <a href="mailto:Info@funconnect.app" className="mailTo">Info@funconnect.app</a>
           </p>
 
-          <p className="contactInfo_">
+          <p className="contactInfo_text">
             <svg
               width="24"
               height="24"
@@ -35,16 +35,16 @@ export default function ContactInfo() {
                 fill="#1E1E1E"
               />
             </svg>
-            Lagos, Nigeria
+            +234 810 399 7299 
           </p>
-          <p className="contactInfo_">
-            <FaGlobe className="contactInfo_icon" />
+          <p className="contactInfo_text">
+            <FaGlobe size={24} className="contactInfo_icon" />
             Lagos, Nigeria
           </p>
         </div>
 
         <div className="contactInfo_content">
-          <h5 className="contactInfo_title">Contact Information</h5>
+          <h5 className="contactInfo_title">Work at Funconnect</h5>
         </div>
       </div>
     </section>
