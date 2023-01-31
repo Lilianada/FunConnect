@@ -36,19 +36,14 @@
             text-align: center;
         }
 
-        .blogArticle_wrap {
+        .blogArticle_wrapMobile {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 2rem;
-
+            
             @media screen and (min-width: 900px) {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            @media screen and (min-width: 1024px) {
-                grid-template-columns: repeat(3, 1fr);
+                display: none;
             }
 
             .blogArticle {
@@ -69,11 +64,11 @@
                     cursor: pointer;
                     border-radius: 16px 16px 0px 0px;
                     overflow: hidden;
-                    
+
                     @media screen and (min-width: 800px) {
                         height: 275px;
                     }
-                    
+
                     img {
                         width: 100%;
                         max-width: 385px;
@@ -82,7 +77,7 @@
                         transition: transform 0.5s ease-in-out;
                     }
 
-                    &:hover img{
+                    &:hover img {
                         transform: scale(1.2) rotate(-5deg);
                         opacity: 0.8;
                     }
@@ -133,6 +128,115 @@
                                 &:first-child {
                                     font-weight: 600;
                                     margin-bottom: 0.25rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .blogArticle_wrapDesktop {
+            display: none;
+
+            @media screen and (min-width: 900px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 2rem;
+
+                @media screen and (min-width: 900px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media screen and (min-width: 1024px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                .blogArticle {
+                    max-width: 385px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 1rem;
+
+                    @media screen and (min-width: 768px) {
+                        &:nth-child(6n + 2),
+                        &:nth-child(6n + 5) {
+                            margin-top: 4rem;
+                        }
+                    }
+
+                    .articleImage {
+                        cursor: pointer;
+                        border-radius: 16px 16px 0px 0px;
+                        overflow: hidden;
+
+                        @media screen and (min-width: 800px) {
+                            height: 275px;
+                        }
+
+                        img {
+                            width: 100%;
+                            max-width: 385px;
+                            height: 180px;
+                            height: 100%;
+                            transition: transform 0.5s ease-in-out;
+                        }
+
+                        &:hover img {
+                            transform: scale(1.2) rotate(-5deg);
+                            opacity: 0.8;
+                        }
+                    }
+
+                    .articleContent {
+                        display: grid;
+                        width: 100%;
+                        row-gap: 16px;
+                        padding: 24px 16px;
+                        background: #111111;
+                        border-radius: 0px 0px 16px 16px;
+
+                        .articleTitle {
+                            font-size: $eighteen;
+                            line-height: 24px;
+
+                            @media screen and (min-width: 768px) {
+                                font-size: $twentyFour;
+                            }
+                        }
+
+                        .articleSubtitle {
+                            font-size: $fourteen;
+                            font-weight: 600;
+                            color: $white;
+                        }
+
+                        .articleDescription {
+                            display: flex;
+                            font-size: $sixteen;
+                            color: $white;
+
+                            img {
+                                width: 48px;
+                                height: 48px;
+                                margin-right: 0.75rem;
+                                border: 1.5px solid $primary;
+                                border-radius: 50%;
+                            }
+
+                            .articleTimeline {
+                                p {
+                                    font-size: $fourteen;
+                                    color: $white;
+                                    line-height: 21px;
+
+                                    &:first-child {
+                                        font-weight: 600;
+                                        margin-bottom: 0.25rem;
+                                    }
                                 }
                             }
                         }

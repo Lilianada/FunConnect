@@ -170,19 +170,25 @@
         }
 
         .animatedImages_wrap{
-            @media screen and (max-width: 400px) {
-                width: 10rem;
-                height: 15rem;
+            width: 13rem;
+            height: 19rem;
+            margin: auto;
+
+            @media screen and (min-width: 340px) {
+                width: 14rem;
+                height: 22rem;
                 margin: auto;
             }
 
-            width: 16rem;
-            height: 23rem;
-            margin: auto;
+            @media screen and (min-width: 401px) {
+                width: 16rem;
+                height: 24rem;
+                margin: auto;
+            }
             
             @media screen and (min-width: 768px) {
                 width: 24rem;
-                height: 32rem;
+                height: 34rem;
             }
             
             .animatedImages_content{

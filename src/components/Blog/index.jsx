@@ -13,8 +13,30 @@ export default function Blog() {
           Explore amazing places in your neighbourhood Lorem ipsum dolor sit
           amet, consectetur
         </p>
-        <div className="blogArticle_wrap">
-          {/* Make another map for mobile. Should be 3 blog posts only */}
+        <div className="blogArticle_wrapMobile">
+          {BlogArticles.slice(0, 3).map((article)  => {
+              return (
+                <div className="blogArticle" key={article.id}>
+                  <div className="articleImage">
+                    <img src={BlogImage} alt="Blog Image"  />
+                  </div>
+                  <div className="articleContent">
+                    <p className="articleSubtitle"> Category </p>
+                    <h3 className="articleTitle"> {article.title} </h3>
+                    <div className="articleDescription">
+                      <img src={BlogImage} alt="Profile Picture" />
+                      <div className="articleTimeline">
+                        <p>{article.writer}</p>
+                        <p> {article.date} . {article.time} min read </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+        <div className="blogArticle_wrapDesktop">
           {BlogArticles.map((article)  => {
               return (
                 <div className="blogArticle" key={article.id}>
