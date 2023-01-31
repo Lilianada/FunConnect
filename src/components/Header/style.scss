@@ -14,7 +14,7 @@ header {
         align-items: center;
         margin: 1rem;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 900px) {
             display: none;
         }
 
@@ -149,7 +149,7 @@ header {
     .desktopHeader {
         display: none;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 900px) {
             display: flex;
             flex-direction: row;
             align-items: center;
