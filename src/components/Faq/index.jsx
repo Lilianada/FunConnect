@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Blob from "../../assets/images/Blob.png";
 import { Accordion } from "../Data";
 import FAQAccordion from "./FaqAccordion";
 import "./style.scss";
 
 export default function FAQ() {
+    const [selectItem, setSelectItem] = useState(1);
+
+    const selected = (index) => {
+        setSelectItem(index);
+    }
+
 
   return (
     <section className="faqSection" data-scroll-section>
@@ -25,6 +31,8 @@ export default function FAQ() {
                                 key={item.id}
                                 title={item.title}
                                 description={item.content}
+                                open={selectItem === item.id}
+                                onClick={selected}
                             />
                         )
                     })
