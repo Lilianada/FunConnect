@@ -7,15 +7,6 @@ export default function OurStory() {
       <div className="ourStory_content">
         <div className="ourStory_bodyVideo">
           <div className="videoPlayer">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/9bZkp7q19f0"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="video"
-            ></iframe>
           </div>
         </div>
         <div className="ourStory_bodyText">

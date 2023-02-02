@@ -10,8 +10,8 @@
     padding: 2rem;
 
     @media screen and (min-width: 500px) and (max-width: 799px) {
-        background-size: 80%;
-        background-position: center right;
+        background-size: cover;
+        background-position: center;
     }
     
     @media screen and (min-width: 900px){
