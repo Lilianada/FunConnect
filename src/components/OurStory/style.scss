@@ -63,9 +63,15 @@
             }
 
             .ourStory_title{
+                font-size: $thrirtyTwo;
                 color: $black;
                 margin-bottom: 1.5rem;
+                
+                @media screen and (min-width: 900px) {
+                    font-size: $fourtyEight;
+                }
             }
+
             .ourStory_text{
                 color: $black;
             }
