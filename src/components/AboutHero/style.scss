@@ -8,6 +8,11 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 2rem;
+
+    @media screen and (min-width: 500px) and (max-width: 799px) {
+        background-size: 80%;
+        background-position: center right;
+    }
     
     @media screen and (min-width: 900px){
         background: url(../../assets/images/aboutImages/HeroBG-desktop.png) #FFEDD5;
@@ -18,13 +23,13 @@
         height: 515px;
     }
 
-    .contactHero_texts{
+    .aboutHero_texts{
         width: 100%;
         text-align: center;
 
         @media screen and (min-width: 900px){
-            width: 44%;
-            height: 100%;
+            width: 588px;
+            height: 90%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -38,7 +43,7 @@
             margin-left: 3rem;
         }
 
-        .contactHero_title{
+        .aboutHero_title{
             display: inline;
             color: $secondaryBg;
         }

@@ -1,6 +1,7 @@
 @import "../../variable/variable.scss";
 
 .contactForm_wrap {
+    min-height: 630px;
 
     @media screen and (min-width: 900px) {
         background-color: $white;
@@ -18,18 +19,21 @@
         background-color: $white;
         box-shadow: 0px 6px 14px 12px rgba(24, 39, 75, 0.12), 0px 10px 32px 14px rgba(24, 39, 75, 0.1);
         border-radius: 16px;
+        position: absolute;
+        left: 2.5%;
+        top: 85%;
+        right: 2.5%;
     
         @media screen and (min-width: 900px) {
             position: absolute;
             left: 48%;
-            top: 25%;
+            top: 23rem;
             z-index: 1;
             width: 450px;
         }
         
         @media screen and (min-width: 1024px) {
             left: 51%;
-            top: 32%;
             width: 470px;
         }
 
