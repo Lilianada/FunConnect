@@ -5,9 +5,25 @@ export default function OurStory() {
   return (
     <section className="ourStory_section">
       <div className="ourStory_content">
-        <div className="ourStory_text">
-          <h2>Our Story</h2>
-          <p>
+        <div className="ourStory_bodyVideo">
+          <div className="videoPlayer">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/9bZkp7q19f0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="video"
+            ></iframe>
+          </div>
+        </div>
+        <div className="ourStory_bodyText">
+          <h2 className="ourStory_title">
+            <span className="primaryText">Our </span>
+            Story
+          </h2>
+          <p className="ourStory_text">
             Our journey began with a simple idea: to create a platform that
             would make it easy for people to discover new and exciting
             experiences. We wanted to help people escape the everyday routine
@@ -25,17 +41,6 @@ export default function OurStory() {
             exciting experiences to it. So join us on this journey of adventure
             and discovery and let's make memories together."
           </p>
-        </div>
-        <div className="ourStory_video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/9bZkp7q19f0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="video"
-          ></iframe>
         </div>
       </div>
     </section>
