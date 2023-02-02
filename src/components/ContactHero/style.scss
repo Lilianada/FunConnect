@@ -4,8 +4,8 @@
     width: 100%;
     height: 90vh;    
     background: url(../../assets/images/contactImage/MobileBg.png) #FFEDD5;
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: bottom right;
     background-repeat: no-repeat;
     padding: 2rem;
     
@@ -20,10 +20,17 @@
 
     .contactHero_texts{
         width: 100%;
+        max-width: 366px;
+        margin: 2rem auto 0;
         text-align: center;
+
+        @media screen and (min-width: 500px){
+            max-width: 80%;
+        }
 
         @media screen and (min-width: 900px){
             width: 44%;
+            max-width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -31,6 +38,7 @@
             justify-content: center;
             text-align: left;
             margin-left: 2rem;
+            margin-top: 0;
         }
 
         @media screen and (min-width: 1024px){
