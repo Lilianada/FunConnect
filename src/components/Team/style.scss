@@ -17,10 +17,18 @@
         margin-top: 3rem;
         
         .teamSection_head{
-            width: 60%;
+            width: 90%;
             text-align: center;
             margin: 0 auto 2rem;
 
+            @media screen and (min-width: 768px) {
+                width: 80%;
+            }
+
+            @media screen and (min-width: 950px) {
+                width: 60%;
+            }
+            
             .teamSection_title{
                 font-weight: 700;
                 color: $black;

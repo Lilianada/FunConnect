@@ -1,6 +1,6 @@
-@import '../../variable/variable.scss';
+@import "../../variable/variable.scss";
 
-.communitySection{
+.communitySection {
     width: 100%;
     height: 100%;
     padding: 1rem;
@@ -10,57 +10,68 @@
         padding: 2rem;
     }
 
-    .communitySection_content{
+    .communitySection_content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 3rem auto;
-        gap: 5%;
+        gap: 2rem;
         width: 90%;
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 950px) {
             flex-direction: row;
         }
 
         .communitySection_image {
-            width: 590px;
+            max-width: 550px;
+            width: 100%;
             height: 374px;
             background: $assets;
             border-radius: 28px;
+
+            @media screen and (min-width: 950px) {
+                width: 48%;
+            }
         }
-        
-        .communitySection_texts{
+
+        .communitySection_texts {
             width: 100%;
             display: grid;
             place-items: center;
             text-align: center;
-            
-            @media screen and (min-width: 900px) {
-                width: 45%;
+
+            @media screen and (min-width: 950px) {
+                width: 48%;
                 text-align: left;
                 display: block;
             }
 
-            .communitySection_title{
+            .communitySection_title {
                 font-weight: 700;
                 color: $black;
                 background: url(../../assets/images/communityVector.svg);
-                background-size: 53%;
+                background-size: 60%;
                 background-repeat: no-repeat;
                 background-position: right;
                 width: fit-content;
                 line-height: 64px;
                 height: 64px;
+                font-size: $thirtyTwo;
+
+                @media screen and (min-width: 950px) {
+                    font-size: $fourty;
+                    background-size: 53%;
+                }
             }
 
-            p{
+            p {
                 font-size: $sixteen;
                 line-height: 32px;
                 color: $black;
             }
 
-            .btnPrimary{
+            .btnPrimary {
                 width: 250px;
                 height: 56px;
                 display: flex;
