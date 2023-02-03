@@ -11,8 +11,7 @@ export default function Community() {
         </div>
         <div className="communitySection_texts">
           <h3 className="communitySection_title">
-            Join our
-            <span className="backdrop"> community</span>
+            Join our community
           </h3>
           <p className="communitySection_subtitle">
             Join a community of diverse individuals who share the same interest
