@@ -55,7 +55,7 @@ export default function Team () {
               </div>
             </div>
           </div>
-          <div className="teamSection_profile">
+          {/* <div className="teamSection_profile">
             <div className="profileImage">
               <img src={Img1} alt="Profile" />
             </div>
@@ -73,8 +73,8 @@ export default function Team () {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="teamSection_profile">
+          </div> */}
+          {/* <div className="teamSection_profile">
             <div className="profileImage">
               <img src={Img1} alt="Profile" />
             </div>
@@ -92,7 +92,7 @@ export default function Team () {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

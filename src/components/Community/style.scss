@@ -12,11 +12,16 @@
 
     .communitySection_content{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 3rem auto;
         gap: 5%;
         width: 90%;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+        }
 
         .communitySection_image {
             width: 590px;
@@ -26,13 +31,20 @@
         }
         
         .communitySection_texts{
-            width: 45%;
-            text-align: left;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            
+            @media screen and (min-width: 900px) {
+                width: 45%;
+                text-align: left;
+                display: block;
+            }
 
             .communitySection_title{
                 font-weight: 700;
                 color: $black;
-                margin-bottom: 1rem;
                 background: url(../../assets/images/communityVector.svg);
                 background-size: 53%;
                 background-repeat: no-repeat;
@@ -46,7 +58,6 @@
                 font-size: $sixteen;
                 line-height: 32px;
                 color: $black;
-                margin-top: 2rem;
             }
 
             .btnPrimary{
