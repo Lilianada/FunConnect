@@ -2,12 +2,62 @@
 
 .teamSection{
     width: 100%;
-    height: 1005;
+    height: 100%;
     padding: 1rem;
     background: url(../../assets/images/teamImages/Vector.png) $secondary;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media screen and (min-width: 768px) {
-        width: 90%;
         padding: 2rem;
+    }
+
+    .teamSection_content{
+        margin-top: 3rem;
+        
+        .teamSection_head{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto 2rem;
+
+            .teamSection_title{
+                font-size: $fiftySeven;
+                font-weight: 700;
+                color: $black;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: $eighteen;
+                font-weight: 500;
+                color: $black;
+            }
+        }
+
+        .teamSection_sliderImages{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            .teamSection_profile{
+                display: grid;
+                place-items: center;
+                height: 300px;
+                width: 282px;
+                background: $black;
+                border-radius: 10px;
+                padding: 19px 0px;
+                
+                .profileImage img {
+                    width: 195.62px;
+                    height: 198.38px;
+                    border: 4px solid $primary;
+                    border-radius: 50% 50% 50% 0;
+                }
+            }
+        }
     }
 }
