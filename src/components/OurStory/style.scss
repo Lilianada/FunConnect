@@ -63,9 +63,10 @@
             }
 
             .ourStory_title{
-                font-size: $thrirtyTwo;
+                font-size: $thirtyTwo;
+                line-height: 40px;
                 color: $black;
-                margin-bottom: 1.5rem;
+                margin-bottom: 24px;
                 
                 @media screen and (min-width: 900px) {
                     font-size: $fourtyEight;
