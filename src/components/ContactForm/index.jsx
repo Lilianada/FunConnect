@@ -45,6 +45,7 @@ export default function ContactForm() {
             cols="30"
             rows="10"
           ></textarea>
+          {/* onclick state for button */}
           <button type="submit" className="formButton">
             Send Message
             <RxArrowTopRight className="formBtnIcon" />

@@ -16,7 +16,8 @@ export default function ErrorPage() {
         <h1 className="errorPage__title">
           You’re officially in no man’s land.
         </h1>
-        <p className="errorPage__text">Ooops! Check the URL and try again.</p>
+        <p className="errorPage__textMobile"> = </p>
+        <p className="errorPage__textDesktop">Ooops! Check the URL and try again.</p>
         <button className="errorPage__button" onClick={() => navigate("/")}>
           Go back home
         </button>
