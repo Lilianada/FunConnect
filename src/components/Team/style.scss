@@ -5,19 +5,20 @@
     height: 100%;
     padding: 1rem;
     background: url(../../assets/images/teamImages/Vector.png) $secondary;
-    background-size: 90%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    
     @media screen and (min-width: 768px) {
+        background-size: 90%;
         padding: 2rem;
     }
 
     .teamSection_content{
-        margin-top: 3rem;
+        margin: 3rem auto;
         
         .teamSection_head{
-            width: 90%;
+            width: 100%;
             text-align: center;
             margin: 0 auto 2rem;
 
@@ -28,7 +29,7 @@
             @media screen and (min-width: 950px) {
                 width: 60%;
             }
-            
+
             .teamSection_title{
                 font-weight: 700;
                 color: $black;
