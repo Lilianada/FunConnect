@@ -5,7 +5,7 @@ import "./style.scss";
 
 export default function Discover() {
   return (
-    <section className="discoverSection" data-scroll-section>
+    <section className="discoverSection">
       <div className="discoverContent">
         <div className="discoverImage">
           <img src={Phone} alt="discover" />

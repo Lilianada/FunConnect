@@ -6,7 +6,7 @@ import "./style.scss";
 
 export default function Blog() {
   return (
-    <section className="blogSection" data-scroll-section>
+    <section className="blogSection">
       <div className="blogContent">
         <h2 className="blogTitle">Our Latest Blog Posts</h2>
         <p className="blogSubtitle">
