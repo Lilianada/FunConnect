@@ -55,6 +55,10 @@
             display: inline;
             text-align: center;
             color: $secondaryBg;
+
+            @media screen and (min-width: 900px){
+                text-align: left;
+            }
         }
     
         .contactHero_subtitle{

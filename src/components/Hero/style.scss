@@ -90,12 +90,6 @@
             .downloadApp_btns {
                 justify-content: space-evenly;
 
-                @media screen and (max-width: 380px) {
-                    .appStore{
-                        margin-right: 0;
-                    }
-                }
-
                 @media screen and (min-width: 400px) {
                     justify-content: center;
                 }

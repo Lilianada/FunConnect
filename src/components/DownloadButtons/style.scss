@@ -6,10 +6,10 @@
     flex-wrap: wrap;
     align-items: center;
     margin-top: 2rem;
+    gap: 1rem;
     
     .appStore, .googlePlay{
         height: 64px;
-        // width: 168px;
         padding: 8px 20px;
         background: $black;
         border-radius: 10px;
@@ -17,10 +17,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: .5rem;
-
-        .appleLogo{
-            margin-right: 16px;
-        }
         
         .downloadText{
             font-family: $altFont;
@@ -46,7 +42,4 @@
         width: 200px;
     }
     
-    .appStore{
-        margin-right: 1rem;
-    }
 }
