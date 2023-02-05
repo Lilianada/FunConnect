@@ -1,6 +1,5 @@
 import React from "react";
-import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { Slider } from "../Data";
+// import Slideshow  from "./Slider";
 import "./style.scss";
 
 export default function Team() {
@@ -18,33 +17,7 @@ export default function Team() {
             effective solution promptly.
           </p>
         </div>
-        <div className="teamSection_sliderImages">
-          {
-            Slider.map((item, id) => {
-              return (
-                <div className="teamSection_profile">
-                <div className="profileImage">
-                  <img src={item.image} alt="Profile" />
-                </div>
-                <div className="teamProfile_data">
-                  <div className="profileData">
-                    <p className="profileName"> {item.name} </p>
-                    <p className="teamPosition"> {item.posiiton} </p>
-                  </div>
-                  <div className="profileLinks">
-                    <a href="/" className="footerFlex_icon">
-                      <FaTwitter fill="#000" size={14} />
-                    </a>
-                    <a href="/" className="footerFlex_icon linkedinIcon">
-                      <FaLinkedinIn size={14} fill="#000" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              )
-            })
-          }
-        </div>
+        {/* <Slideshow/> */}
       </div>
     </section>
   );
