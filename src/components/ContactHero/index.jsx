@@ -14,7 +14,7 @@ export default function ContactHero () {
         Need assistance? Fill out the form and our friendly team will  respond to you promptly within 24 hours.
         </p>
       </div>
-      <img src={People} alt="People" className="contactHero_imageDesktop" />
+      <img src={People} alt="People" className="contactHero_imageMobile" />
       </div>
     </section>  
   )

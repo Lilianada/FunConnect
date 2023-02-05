@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGlobe } from "react-icons/fa";
-import ContactForm from "../ContactForm";
 import "./style.scss";
 
 export default function ContactInfo() {
@@ -56,8 +55,6 @@ export default function ContactInfo() {
                     </p>
                 </div>
             </div>
-
-            <ContactForm/>
         </section>
     );
 }

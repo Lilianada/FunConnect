@@ -83,18 +83,18 @@
             }
         }
 
-        .contactHero_imageDesktopg {
+        .contactHero_imageMobile {
             display: none;
 
-            @media screen and (min-width: 800px) {
-                display: block;
-                width: 55%;
-                height: 100%;
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 1;
-            }
+            // @media screen and (min-width: 800px) {
+            //     display: block;
+            //     width: 55%;
+            //     height: 100%;
+            //     position: absolute;
+            //     right: 0;
+            //     top: 0;
+            //     z-index: 1;
+            // }
         }
     }
 }
