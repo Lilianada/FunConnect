@@ -44,11 +44,45 @@
         }
 
         .teamSection_sliderImages{
-            display: flex;
+            display: flex !important;
             justify-content: center;
             overflow: hidden;
             gap: 1rem;
             margin-top: 2rem;
+            width: 100vw !important;
+
+            .teamSection_sliderControlsContainer{
+                width: 100% ;
+                margin: 2rem auto 0;
+                display: grid;
+                place-items: center;
+                position: static;
+                transform: translateX(0%);
+            }
+
+            .teamSection_pagingDotsContainer{
+                display: flex;
+                gap: .5rem;
+            }
+
+            .teamSection_pagingDots{
+                width: 24px;
+                height: 8px;
+                background: $primary;
+                border-radius: 10px;
+            }
+
+            .teamSection_pagingDots .active{
+                background: $black;
+                width: 16px;
+                height: 8px;
+                border-radius: 10px;
+            }
+
+            .paging-dot{
+                visibility: hidden;
+            }
+
 
             .teamSection_profile{
                 display: grid;
