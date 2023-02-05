@@ -2,9 +2,9 @@
 
 .contactForm_wrap {
     min-height: 630px;
+    background-color: $white;
 
     @media screen and (min-width: 1024px) {
-        background-color: $white;
         min-height: auto;
     }
     
@@ -21,7 +21,7 @@
         box-shadow: 0px 6px 14px 12px rgba(24, 39, 75, 0.12), 0px 10px 32px 14px rgba(24, 39, 75, 0.1);
         border-radius: 16px;
         position: relative;
-        top: -5%;
+        top: -10%;
     
         @media screen and (min-width: 1024px) {
             position: absolute;
@@ -33,6 +33,7 @@
         
         @media screen and (min-width: 1280px) {
             width: 100%;
+            left: 45%;
         }
 
         &_header {
