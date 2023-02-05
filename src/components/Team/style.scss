@@ -44,49 +44,18 @@
         }
 
         .teamSection_sliderImages{
-            display: flex !important;
+            display: flex ;
             justify-content: center;
             overflow: hidden;
             gap: 1rem;
             margin-top: 2rem;
-            width: 100vw !important;
-
-            .teamSection_sliderControlsContainer{
-                width: 100% ;
-                margin: 2rem auto 0;
-                display: grid;
-                place-items: center;
-                position: static;
-                transform: translateX(0%);
-            }
-
-            .teamSection_pagingDotsContainer{
-                display: flex;
-                gap: .5rem;
-            }
-
-            .teamSection_pagingDots{
-                width: 24px;
-                height: 8px;
-                background: $primary;
-                border-radius: 10px;
-            }
-
-            .teamSection_pagingDots .active{
-                background: $black;
-                width: 16px;
-                height: 8px;
-                border-radius: 10px;
-            }
-
-            .paging-dot{
-                visibility: hidden;
-            }
+            width: 100vw ;
 
 
         }
     }
 }
+
 .teamSection_profile{
     display: grid;
     place-items: center;
@@ -95,6 +64,7 @@
     background: $black;
     border-radius: 10px;
     padding: 19px 0px;
+    margin: 0 auto;
     
     .profileImage img {
         width: 195.62px;
@@ -143,3 +113,18 @@
         }
     }
 }
+.indicator {
+    cursor: pointer;
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    width: 28px;
+    margin-right: 15px;
+    background: orange;
+  }
+  
+  .indicator.active {
+    color: #fff;
+    background: #000;
+  }

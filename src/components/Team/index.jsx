@@ -1,5 +1,5 @@
 import React from "react";
-// import Slideshow  from "./Slider";
+import Slideshow  from "./Slider";
 import "./style.scss";
 
 export default function Team() {
@@ -17,7 +17,7 @@ export default function Team() {
             effective solution promptly.
           </p>
         </div>
-        {/* <Slideshow/> */}
+        <Slideshow/>
       </div>
     </section>
   );
