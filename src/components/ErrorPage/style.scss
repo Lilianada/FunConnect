@@ -10,6 +10,10 @@
         background: url(../../assets/images/404Bg.png) no-repeat;
         background-position: bottom;
         background-size: cover;
+
+        Header{
+            display: none;
+        }
     }
 
     .errorPage Header {
@@ -39,7 +43,7 @@
                 font-size: $fourty;   
             }
             
-            @media screen and (min-width: 1024px) {
+            @media screen and (min-width: 1280px) {
                 font-size: 4rem;   
             }
         }
@@ -71,7 +75,7 @@
             font-weight: 400;
             color: $white;
     
-            @media screen and (min-width: 900px) {
+            @media screen and (min-width: 768px) {
                 display: none;
                 font-size: $twentyFour;   
             }
@@ -83,8 +87,12 @@
             color: $white;
             display: none;
     
-            @media screen and (min-width: 900px) {
+            @media screen and (min-width: 768px) {
                 display: block;
+                font-size: $sixteen;   
+            }
+
+            @media screen and (min-width: 1024px) {
                 font-size: $twentyFour;   
             }
         }
@@ -96,7 +104,7 @@
             border-radius: 9px;
             font-size: $sixteen;
             font-weight: 600;
-            padding: 19px 38px;
+            padding: 20px;
             border: none;
             outline: none;
             color: $darkText;
@@ -104,7 +112,12 @@
             text-decoration: none;
             margin-top: 2rem;
 
+            @media screen and (min-width: 768px) {
+                width: 189px;
+            }
+
             @media screen and (min-width: 900px) {
+                width: 212px;
                 font-size: $twenty;   
                 font-weight: 500;
             }

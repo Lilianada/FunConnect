@@ -8,7 +8,7 @@ import AnimatedImages from "./AnimatedImages";
 
 export default function Hero({ timeline, ease}) {
   return (
-    <section className="heroSection" data-scroll-section>
+    <section className="heroSection">
       <div className="heroContent">
         <div className="heroTexts">
           <h1 className="heroTitle">
@@ -23,8 +23,7 @@ export default function Hero({ timeline, ease}) {
                 deleteSpeed={180}
                 delaySpeed={1000}
               />
-            </span>
-            amazing <br /> places near you
+            </span>amazing <br /> places near you
           </h1>
           <p className="heroSubtitle_desktop">
             Whether you're a thrill-seeker or a free spirit, our app has
