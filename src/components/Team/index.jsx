@@ -1,8 +1,45 @@
 import React from "react";
-import Slideshow  from "./Slider";
+// import { Slider } from "../Data";
+// import { Slide } from "react-slideshow-image";
+// import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import "react-slideshow-image/dist/styles.css";
 import "./style.scss";
+import Slideshow from "./Slider";
 
 export default function Team() {
+  // const properties = [
+  //   {
+  //     breakpoint: 1280,
+  //     settings: {
+  //       slidesToShow: 4,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 800,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 3
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 500,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 320,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1
+  //     }
+  //   }
+
+  // ];
+  // const indicators = () => <div className="indicator"></div>;
+
   return (
     <section className="teamSection">
       <div className="teamSection_content">
@@ -17,7 +54,7 @@ export default function Team() {
             effective solution promptly.
           </p>
         </div>
-        <Slideshow/>
+        {/* <Slideshow/> */}
       </div>
     </section>
   );

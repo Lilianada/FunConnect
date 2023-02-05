@@ -47,7 +47,7 @@ export default function Explore() {
           />
         </svg>
 
-        {/* change the slider for this section, when the images move fto the left on the top, it moves to the opp direction on the bottom */}
+        {/* change the slider for this section, when the images move from the left on the top, it moves to the opp direction on the bottom */}
         <div className="exploreCard_wrap">
           {ExploreCards.map((card) => {
             return (
