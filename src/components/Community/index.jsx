@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../../assets/images/communityImage.png";
 import { HiArrowUpRight } from "react-icons/hi2";
 import "./style.scss";
 
@@ -7,7 +8,7 @@ export default function Community() {
     <section className="communitySection">
       <div className="communitySection_content">
         <div className="communitySection_image">
-            
+            <img src={img} alt="Coomunity" />
         </div>
         <div className="communitySection_texts">
           <h3 className="communitySection_title">

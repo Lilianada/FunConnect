@@ -54,9 +54,14 @@
         .ourCulture_bodyImage{
             width: 100%;
             max-height: 450px;
+            display: grid;
+            place-items: center;
 
-            img{
-                width: 100vw;
+            // .imgMobile{
+            //     width: 100vw;
+            // }
+            .imgDesktop{
+                display: none;
             }
 
             @media screen and (min-width: 767px) {
@@ -66,7 +71,13 @@
 
             @media screen and (min-width: 900px) {
                 width: 50%;
-                
+                .imgMobile{
+                    display: none;
+                }
+                .imgDesktop{
+                    display: block;
+                    width: 100vw;
+                }
             }
 
             

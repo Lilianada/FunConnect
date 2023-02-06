@@ -25,7 +25,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <form action="" method="post" className="contactForm_form">
+        <form action="" className="contactForm_form">
           <input
             type="text"
             name="first-name"
@@ -68,7 +68,7 @@ export default function ContactForm() {
             disabled={!values}
             className={active ? "activeButton" : "inactiveButton"}
           >
-            <a href="mailto:Info@funconnect.app">Send Message</a>
+            <a href="mailto:lilianokeke.ca@gmail.com">Send Message</a>
             <RxArrowTopRight className="formBtnIcon" />
           </button>
         </form>

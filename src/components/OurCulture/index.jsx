@@ -1,5 +1,6 @@
 import React from 'react';
 import CEO from '../../assets/images/Ceo.png';
+import CEOMobile from '../../assets/images/CeoMobile.png';
 import './style.scss';
 
 export default function OurCulture() {
@@ -16,7 +17,8 @@ export default function OurCulture() {
           </p>
         </div>
         <div className="ourCulture_bodyImage">
-            <img src={CEO} alt="CEO Profile" />
+            <img src={CEO} alt="CEO Profile" className='imgDesktop' />
+            <img src={CEOMobile} alt="CEO Profile" className='imgMobile' />
         </div>
       </div>
     </section>
