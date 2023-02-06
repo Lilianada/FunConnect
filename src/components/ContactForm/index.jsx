@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { RxArrowTopRight } from "react-icons/rx";
 import "./style.scss";
 
 export default function ContactForm() {
+  const [active, setActive] = useState(false);
+  const [values, setValues] = useState("");
+
+  const isActive = (e) => {
+    setValues(e.target.value);
+    if (setValues !== "") {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  }; 
+
   return (
     <section className="contactForm_wrap">
       <div className="contactForm">
@@ -17,36 +29,41 @@ export default function ContactForm() {
           <input
             type="text"
             name="first-name"
+            onChange={isActive}
             className="formField"
             placeholder="Enter first name"
           />
           <input
             type="text"
             name="last-name"
+            onChange={isActive}
             className="formField"
             placeholder="Enter last name"
           />
           <input
             type="text"
             name="email-address"
+            onChange={isActive}
             className="formField"
             placeholder="Enter your email address"
           />
           <input
             type="text"
             name="phone-number"
+            onChange={isActive}
             className="formField"
             placeholder="Enter your phone number"
           />
           <textarea
             name="text-area"
+            onChange={isActive}
             className="formTextarea"
             placeholder="Add message"
             cols="30"
             rows="10"
           ></textarea>
           {/* onclick state for button */}
-          <button type="submit" className="formButton">
+          <button type="submit" disabled={!values} className={active ? "activeButton" : "inactiveButton"}>
             Send Message
             <RxArrowTopRight className="formBtnIcon" />
           </button>

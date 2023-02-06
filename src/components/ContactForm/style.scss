@@ -92,7 +92,28 @@
                 }
             }
 
-            .formButton {
+            .activeButton {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 5px;
+                font-size: $sixteen;
+                font-family: inherit;
+                font-weight: 500;
+                color: $white;
+                background-color: $black;
+                outline: none;
+                cursor: pointer;
+
+                .formBtnIcon {
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .inactiveButton{
                 width: 100%;
                 height: 40px;
                 display: flex;
