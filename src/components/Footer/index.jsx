@@ -89,7 +89,6 @@ export default function Footer() {
             </div>
             </div>
           </div>
-
         {/* Legal */}
         <div className="footerFlex_item">
           <div className="footerFlex_item">

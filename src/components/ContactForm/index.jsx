@@ -13,7 +13,7 @@ export default function ContactForm() {
     } else {
       setActive(false);
     }
-  }; 
+  };
 
   return (
     <section className="contactForm_wrap">
@@ -63,8 +63,12 @@ export default function ContactForm() {
             rows="10"
           ></textarea>
           {/* onclick state for button */}
-          <button type="submit" disabled={!values} className={active ? "activeButton" : "inactiveButton"}>
-            Send Message
+          <button
+            type="submit"
+            disabled={!values}
+            className={active ? "activeButton" : "inactiveButton"}
+          >
+            <a href="mailto:Info@funconnect.app">Send Message</a>
             <RxArrowTopRight className="formBtnIcon" />
           </button>
         </form>
