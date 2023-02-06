@@ -10,8 +10,12 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 2rem 3rem;
+        padding: 2rem;
         height: 515px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 2rem 3rem;
     }
 
     .contactHero_content {
