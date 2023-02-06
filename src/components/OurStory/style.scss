@@ -45,6 +45,11 @@
                 border-radius: 16px;
                 background: $assets;
 
+                @media screen and (min-width: 768px) {
+                    width: 75%;
+                    margin: auto;
+                }
+
                 @media screen and (min-width: 900px) {
                     max-width: 588px;
                     
