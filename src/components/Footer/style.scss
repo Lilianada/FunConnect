@@ -6,6 +6,10 @@ footer {
     padding: 0.5rem;
 
     @media screen and (min-width: 768px) {
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: 1024px) {
         padding: 2rem;
     }
 
@@ -153,7 +157,7 @@ footer {
     .footerContent_tablet {
         display: none;
 
-        @media screen and (min-width: 768px) and (max-width: 102px) {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
