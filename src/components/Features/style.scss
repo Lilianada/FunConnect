@@ -4,9 +4,17 @@
     background: $black;
     height: 100%;
     width: 100vw;
-    padding: 1rem;
+    padding: .5rem;
     
+    @media screen and (min-width: 500px) {
+        padding: 1rem;
+    }
+
     @media screen and (min-width: 768px) {
+        padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
         padding: 2rem;
     }
     

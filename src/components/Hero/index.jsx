@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import DownloadButtons from "../DownloadButtons";
-import "./style.scss";
 import AnimatedImages from "./AnimatedImages";
+import "./style.scss";
 
 export default function Hero({ timeline, ease}) {
   return (

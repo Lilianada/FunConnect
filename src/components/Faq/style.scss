@@ -3,10 +3,18 @@
 .faqSection{
     width: 100vw;
     height: 100%;
-    padding: 1rem;
     background: $white;
+    padding: .5rem;
     
+    @media screen and (min-width: 500px) {
+        padding: 1rem;
+    }
+
     @media screen and (min-width: 768px) {
+        padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
         padding: 2rem;
     }
     

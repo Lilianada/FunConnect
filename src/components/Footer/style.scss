@@ -3,10 +3,14 @@
 footer {
     width: 100vw;
     background: $black;
-    padding: 0.5rem;
-
+    padding: .5rem;
+    
     @media screen and (min-width: 500px) {
         padding: 1rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 1.5rem;
     }
 
     @media screen and (min-width: 1024px) {
@@ -162,7 +166,7 @@ footer {
             flex-direction: row;
             align-items: flex-start;
             justify-content: flex-start;
-            gap: 5rem;
+            gap: 7rem;
             width: 100%;
             margin: 0 auto;
 

@@ -3,13 +3,21 @@
 .exploreSection {
     width: 100vw;
     height: 100%;
-    padding: 1rem;
     background: $black url(../../assets/images/HeroBg.svg) url(../../assets/images/ExploreBg.png);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    padding: .5rem;
     
+    @media screen and (min-width: 500px) {
+        padding: 1rem;
+    }
+
     @media screen and (min-width: 768px) {
+        padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
         padding: 2rem;
     }
     
