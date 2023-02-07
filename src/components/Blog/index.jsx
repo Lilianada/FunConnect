@@ -2,6 +2,7 @@
 import React from "react"; 
 import BlogImage from "../../assets/images/Blog-Image.png"
 import { BlogArticles } from "../Data";
+import PostTitles from "./PostTitles";
 import "./style.scss";
 
 export default function Blog() {
@@ -13,6 +14,7 @@ export default function Blog() {
           Explore amazing places in your neighbourhood Lorem ipsum dolor sit
           amet, consectetur
         </p>
+        <PostTitles/>
         <div className="blogArticle_wrapMobile">
           {BlogArticles.slice(0, 3).map((article)  => {
               return (

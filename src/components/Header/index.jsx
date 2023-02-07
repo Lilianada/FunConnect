@@ -7,7 +7,7 @@ import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./style.scss";
 
-export default function Header () {
+export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   const isActive = () => {
@@ -16,42 +16,61 @@ export default function Header () {
 
   const closeMenu = () => {
     setShowMenu(false);
-    };
+  };
 
   return (
     <header>
-        {/* Desktop Menu */}
+      {/* Desktop Menu */}
       <div className="desktopHeader">
-        <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/">
+        <NavLink
+          className={({ isActive }) => (isActive ? "activeLink" : "navLink")}
+          to="/"
+        >
           <img src={Logo} alt="FunConnect Logo" />
         </NavLink>
         <nav className="navbar">
           <ul className="navList">
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
+              {/* <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
                 Blog
-              </NavLink>
+              </NavLink> */}
+              <a href="https://funconnect.app/blog/" className="navLink">
+                Blog
+              </a>
             </li>
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/about">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/about"
+              >
                 About Us
               </NavLink>
             </li>
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/contact">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/contact"
+              >
                 Contact Us
               </NavLink>
             </li>
           </ul>
         </nav>
         <a href="/" className="headerDownload_btn">
-            Download Now
+          Download Now
         </a>
       </div>
 
       {/* Mobile Menu */}
       <div className="mobileHeader">
-        <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/">
+        <NavLink
+          className={({ isActive }) => (isActive ? "activeLink" : "navLink")}
+          to="/"
+        >
           <img src={Logo} alt="FunConnect Logo" />
         </NavLink>
         <button type="button" className="menuButton">
@@ -71,18 +90,31 @@ export default function Header () {
           {/* Navigation List */}
           <ul className="navList">
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
+              {/* <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
                 Blog
-              </NavLink>
+              </NavLink> */}
+              <a href="https://funconnect.app/blog/" className="navLink">
+                Blog
+              </a>
             </li>
 
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/about">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/about"
+              >
                 About Us
               </NavLink>
             </li>
             <li className="navItem">
-              <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/contact">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/contact"
+              >
                 Contact Us
               </NavLink>
             </li>
