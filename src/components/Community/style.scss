@@ -5,12 +5,16 @@
     height: 100%;
     background: $white;
     padding: .5rem;
-        
+    
     @media screen and (min-width: 500px) {
         padding: 1rem;
     }
 
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 768px) {
+        padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
         padding: 2rem;
     }
 

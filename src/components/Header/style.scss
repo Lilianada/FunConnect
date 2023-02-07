@@ -18,6 +18,10 @@ header {
             margin: 1rem;
         }
 
+        @media screen and (min-width: 768px) {
+            margin: 1.5rem;
+        }
+
         @media screen and (min-width: 900px) {
             display: none;
         }

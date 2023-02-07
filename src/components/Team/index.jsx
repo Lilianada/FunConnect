@@ -4,7 +4,7 @@ import React from "react";
 // import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import "react-slideshow-image/dist/styles.css";
 import "./style.scss";
-import Slideshow from "./Slider";
+// import Slideshow from "./Slider";
 
 export default function Team() {
   // const properties = [
