@@ -14,8 +14,12 @@
         padding: 1.5rem;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 900px) {
         padding: 2rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0rem;
     }
 
     .ourCulture_content{
@@ -27,10 +31,13 @@
         gap: 1rem;
         
         @media screen and (min-width: 900px) {
-            width: 90%;
             flex-direction: row;
             align-items: center;
             gap: 2rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 90%;
         }
 
         .ourCulture_bodyText{
@@ -70,14 +77,16 @@
 
             @media screen and (min-width: 900px) {
                 max-height: 650px;
-                
             }
 
             @media screen and (min-width: 900px) {
                 width: 50%;
+                max-width: 580px;
+                
                 .imgMobile{
                     display: none;
                 }
+
                 .imgDesktop{
                     display: block;
                     width: 100vw;

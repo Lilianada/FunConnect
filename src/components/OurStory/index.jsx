@@ -1,4 +1,5 @@
 import React from "react";
+import Bg from '../../assets/images/ourStoryImages/videoBg.png';
 import "./style.scss";
 
 export default function OurStory() {
@@ -6,8 +7,8 @@ export default function OurStory() {
     <section className="ourStory_section">
       <div className="ourStory_content">
         <div className="ourStory_bodyVideo">
-          <div className="videoPlayer">
-          </div>
+          <div className="videoPlayer"></div>
+            <img src={Bg} alt="Background" className="background"/>
         </div>
         <div className="ourStory_bodyText">
           <h2 className="ourStory_title">

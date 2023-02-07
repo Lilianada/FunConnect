@@ -21,7 +21,7 @@ export default function Community() {
             individuals.
           </p>
           <button className="btnPrimary">
-            You're Sweet <HiArrowUpRight size={24} />
+            You're Sweet <HiArrowUpRight size={20} />
           </button>
         </div>
       </div>
