@@ -12,7 +12,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 1rem;
+        margin: .5rem;
+        
+        @media screen and (min-width: 500px) {
+            margin: 1rem;
+        }
 
         @media screen and (min-width: 900px) {
             display: none;
