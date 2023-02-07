@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutHero from '../components/AboutHero';
+import BackToTop from '../components/BackToTop';
 import Community from '../components/Community';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -17,6 +18,7 @@ export default function AboutUs() {
     <Team/>
     <Community/>
     <Footer />
+    <BackToTop/>
   </main>
   )
 }

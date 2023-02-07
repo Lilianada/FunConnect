@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
+import BackToTop from "../components/BackToTop";
 
 export default function Contact() {
   return (
@@ -13,6 +14,7 @@ export default function Contact() {
       <ContactForm/>
       <ContactInfo/>
       <Footer />
+      <BackToTop/>
     </main>
   );
 }
