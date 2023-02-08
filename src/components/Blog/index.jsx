@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import { RxDotFilled } from "react-icons/rx";
 import BlogImage from "../../assets/images/Blog-Image.png";
 import useFetch from "../../hooks/wordpressApi";
 import "./style.scss";
@@ -27,16 +28,16 @@ export default function Blog() {
                   />
                 </div>
                 <div className="articleContent">
-                  <p className="articleSubtitle"> {post.categories[0]} </p>
+                  {/* <p className="articleSubtitle"> {post.categories[0]} </p> */}
                   <h3 className="articleTitle"> {post.title.rendered} </h3>
                   <div className="articleDescription">
                     <img src={BlogImage} alt="Profile Picture" />
                     <div className="articleTimeline">
                       <p>{post.yoast_head_json.author}</p>
                       <p>
-                        {/* {post.date.toLocaleString()} . */}
-                        {post.date.toLocaleDateString()} .
-                        {/* {post.date.toString()} . */}
+                        {
+                          new Date(post.date).toDateString()
+                        } .
                         {Object.keys(post.yoast_head_json.twitter_misc)
                           .slice(1, 2)
                           .map((key) => (
@@ -63,22 +64,22 @@ export default function Blog() {
                   />
                 </div>
                 <div className="articleContent">
-                  <p className="articleSubtitle"> {post.categories[0]} </p>
+                  {/* <p className="articleSubtitle"> {post.categories[0]} </p> */}
                   <h3 className="articleTitle"> {post.title.rendered} </h3>
                   <div className="articleDescription">
                     <img src={BlogImage} alt="Profile Picture" />
                     <div className="articleTimeline">
                       <p>{post.yoast_head_json.author}</p>
-                      <p style={{display: "inline"}}>
-                        {post.date.slice(0, 10).replace(/-/g, " ")} 
-                        <span> . </span> 
+                      <p style={{display: "flex", alignItems: "center"}}>
+                        {new Date(post.date).toDateString().slice(4, 15)} 
+                        <span style={{lineHeight: "0"}}> <RxDotFilled/> </span> 
                         {Object.keys(post.yoast_head_json.twitter_misc)
                           .slice(1, 2)
                           .map((key) => (
                             <span key={key}>
-                              {post.yoast_head_json.twitter_misc[key]}
+                              {post.yoast_head_json.twitter_misc[key]} read
                             </span>
-                          ))}{" "}
+                          ))}
                       </p>
                     </div>
                   </div>
@@ -87,7 +88,7 @@ export default function Blog() {
             );
           })}
         </div>
-        <a href="/" className="viewMore">
+        <a href="https://funconnect.app/blog/" className="viewMore">
           View all
         </a>
       </div>
