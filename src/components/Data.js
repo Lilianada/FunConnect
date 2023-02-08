@@ -1,48 +1,3 @@
-export const BlogArticles = [
-    {
-        id: 1,
-        title: "5 things to do on a first date",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-    {
-        id: 2,
-        title: "Fun places to catch late night",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-    {
-        id: 3,
-        title: "9 tips to spice up your tech ",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-    {
-        id: 4,
-        title: "9 tips to spice up your tech ",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-    {
-        id: 5,
-        title: "5 things to do on a first date",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-    {
-        id: 6,
-        title: "Fun places to catch late night",
-        writer: "Harriet Tumbman",
-        date: "11 Jan 2023",
-        time: 5
-    },
-]
-
 export const Accordion=[
     {
         id: 1,
@@ -243,7 +198,7 @@ export const ExploreCards = [
     },
 ]
 
-export const Slider = [
+export const SlideItems = [
     {
       name: "Amujo Oluwasomidotun",
       image: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",

@@ -1,45 +1,12 @@
 import React from "react";
-// import { Slider } from "../Data";
-// import { Slide } from "react-slideshow-image";
-// import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import "react-slideshow-image/dist/styles.css";
 import "./style.scss";
-// import Slideshow from "./Slider";
+import Slideshow from "./Slider";
+import SimpleSlider from "./SimpleSlider";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { SlideItems } from "../Data";
+import Slider from "react-slick";
 
 export default function Team() {
-  // const properties = [
-  //   {
-  //     breakpoint: 1280,
-  //     settings: {
-  //       slidesToShow: 4,
-  //       slidesToScroll: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 800,
-  //     settings: {
-  //       slidesToShow: 3,
-  //       slidesToScroll: 3
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 500,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 320,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-
-  // ];
-  // const indicators = () => <div className="indicator"></div>;
-
   return (
     <section className="teamSection">
       <div className="teamSection_content">
@@ -55,6 +22,32 @@ export default function Team() {
           </p>
         </div>
         {/* <Slideshow/> */}
+        <SimpleSlider/>
+        {/* <Slider className="teamSection_slider">
+          {SlideItems.map((item, id) => {
+            return (
+              <div className="teamSection_profile" key={id}>
+                <div className="profileImage">
+                  <img src={item.image} alt="Profile" />
+                </div>
+                <div className="teamProfile_data">
+                  <div className="profileData">
+                    <p className="profileName"> {item.name} </p>
+                    <p className="teamPosition"> {item.position} </p>
+                  </div>
+                  <div className="profileLinks">
+                    <a href="/" className="footerFlex_icon">
+                      <FaTwitter fill="#000" size={14} />
+                    </a>
+                    <a href="/" className="footerFlex_icon linkedinIcon">
+                      <FaLinkedinIn size={14} fill="#000" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Slider> */}
       </div>
     </section>
   );

@@ -1,52 +1,15 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
+import { SlideItems } from "../Data";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import "react-slideshow-image/dist/styles.css";
 import "./style.scss";
 
-export const Slider = [
-  {
-    name: "Amujo Oluwasomidotun",
-    image:
-      "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    position: "CEO"
-  },
-  {
-    name: " Lorem Faith ",
-    image:
-      "https://images.unsplash.com/photo-1444525873963-75d329ef9e1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80 ",
-    posiiton: " OBO "
-  },
-  {
-    name: " Surprise Olori ",
-    image:
-      "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80 ",
-    posiiton: " NFA "
-  },
-  {
-    name: "Mayowa Somebody ",
-    image:
-      "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-    posiiton: " CFO "
-  },
-  {
-    name: "Grace Something ",
-    image:
-      "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    posiiton: "COO "
-  },
-  {
-    name: " Figma React",
-    image:
-      "https://images.unsplash.com/photo-1444525873963-75d329ef9e1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    posiiton: " Cleaner"
-  }
-];
-
-const indicators = () => <div className="indicator"></div>;
 
 export default function Slideshow() {
-  const properties = [
+  const indicators = () => <div className="indicator"></div>;
+
+  const responsiveSettings  = [
     {
       breakpoint: 1280,
       settings: {
@@ -80,14 +43,15 @@ export default function Slideshow() {
   return (
     <Slide
       slidesToScroll={1}
-      slidesToShow={1}
+    // slidesToShow={1}
       autoplay={false}
-      responsive={properties}
+      responsive={responsiveSettings }
       duration={5000}
       indicators={indicators}
       arrows={false}
+      className="teamSection_slider"
     >
-      {Slider.map((item, id) => {
+      {SlideItems.map((item, id) => {
         return (
           <div className="teamSection_profile" key={id}>
             <div className="profileImage">
@@ -96,7 +60,7 @@ export default function Slideshow() {
             <div className="teamProfile_data">
               <div className="profileData">
                 <p className="profileName"> {item.name} </p>
-                <p className="teamPosition"> {item.posiiton} </p>
+                <p className="teamPosition"> {item.position} </p>
               </div>
               <div className="profileLinks">
                 <a href="/" className="footerFlex_icon">
