@@ -13,28 +13,28 @@ import Hero from "../components/Hero";
 import Preloader from "../components/Preloader";
 
 export default function Home() {
-  const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = useState(4);
+  // const [preloader, setPreloader] = useState(true);
+  // const [timer, setTimer] = useState(4);
 
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
   
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer((timer) => timer - 1);
-    }, 1000);
-    if (timer === 0) {
-      clearInterval(interval);
-      setPreloader(false);
-    }
-    return () => clearInterval(interval);
-  }, [timer]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTimer((timer) => timer - 1);
+  //   }, 1000);
+  //   if (timer === 0) {
+  //     clearInterval(interval);
+  //     setPreloader(false);
+  //   }
+  //   return () => clearInterval(interval);
+  // }, [timer]);
 
   return (
     <>
-      {preloader ? (
+      {/* {preloader ? (
         <Preloader/>
-      ) : (
+      ) : ( */}
         <main className="mainContainer" id="mainContainer" data-scroll-container>
           <Header />
           <Hero timeline={tl} ease={ease} />
@@ -47,7 +47,7 @@ export default function Home() {
           <Footer />
           <BackToTop />
         </main>
-      )}
+      {/* )} */}
     </>
   );
 }

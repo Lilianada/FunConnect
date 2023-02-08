@@ -1,17 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function useFetch() {
+export default function useFetch(url) {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const url = "https://funconnect.app/wp-json/wp/v2/posts";
+  // const url = "https://funconnect.app/wp-json/wp/v2/posts";
 
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
         setPosts(response.data);
+        console.log(response.data);
         setLoading(true);
       })
       .catch((err) => {
