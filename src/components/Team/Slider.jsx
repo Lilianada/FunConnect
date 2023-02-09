@@ -43,13 +43,13 @@ export default function Slideshow() {
   return (
     <Slide
       slidesToScroll={1}
-    // slidesToShow={1}
+      slidesToShow={1}
       autoplay={false}
       responsive={responsiveSettings }
       duration={5000}
       indicators={indicators}
       arrows={false}
-      className="teamSection_slider"
+      infinite={false}
     >
       {SlideItems.map((item, id) => {
         return (

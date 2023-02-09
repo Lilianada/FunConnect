@@ -52,16 +52,16 @@
             }
         }
 
-        .slick-track {
+        .slide {
             display: grid;
-            width: 100vw;
+            width: 100vw !important;
             overflow: hidden;
             gap: 1rem;
             grid-template-columns: repeat(6, 282px);
             grid-template-rows: 300px;
 
             .teamSection_profile {
-                display: grid;
+                display: grid !important;
                 place-items: center;
                 height: 300px;
                 width: 282px;
@@ -117,21 +117,27 @@
                     }
                 }
             }
-            .indicator {
-                cursor: pointer;
-                padding: 6px;
-                text-align: center;
-                border-radius: 10px;
-                margin: 5px;
-                width: 28px;
-                margin-right: 15px;
-                background: orange;
-            }
-
-            .indicator.active {
-                color: #fff;
-                background: #000;
-            }
         }
     }
+}
+
+.images-wrap{
+    gap: 1rem;
+}
+
+.indicator{
+    cursor: pointer;
+    height: 8px;;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    width: 18px;
+    margin-right: 15px;
+    background: orange;
+}
+
+.indicator.active{
+    color: #fff;
+    background: #000;
+    width: 40px;
 }

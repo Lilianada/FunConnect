@@ -21,8 +21,8 @@ export default function Team() {
             effective solution promptly.
           </p>
         </div>
-        {/* <Slideshow/> */}
-        <SimpleSlider/>
+        <Slideshow/>
+        {/* <SimpleSlider/> */}
         {/* <Slider className="teamSection_slider">
           {SlideItems.map((item, id) => {
             return (
