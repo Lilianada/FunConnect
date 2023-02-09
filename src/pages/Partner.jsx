@@ -5,7 +5,7 @@ import WhyPartner from "../components/WhyPartner";
 import PartnerFaq from "../components/PartnerFaq";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
-import PartnerRegister from "../components/PartnerRegister";
+import PartnerRegisteration from "../components/PartnerRegister";
 
 
 export default function Partner() {
@@ -14,7 +14,7 @@ export default function Partner() {
     <Header/>
     <PartnerHero />
     <WhyPartner />
-    <PartnerRegister />
+    <PartnerRegisteration />
     <PartnerFaq />
     <Footer/>
     <BackToTop/>
