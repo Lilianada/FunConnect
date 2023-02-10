@@ -9,7 +9,6 @@
     justify-content: center;
     position: relative;
     background: $primary;
-    position: relative;
     overflow: hidden;
 
     .ellipseOne{
@@ -28,26 +27,6 @@
             font-size: 3rem;
         }
     }
-
-    // .preloadCircle {
-    //     width: 3rem;
-    //     height: 3rem;
-    //     margin-top: 1rem;
-    //     border-radius: 50%;
-    //     border: 2px dotted $white;
-    //     transform: rotate(45deg);
-    //     animation: circle 5s linear infinite;
-    // }
-
-    // @keyframes circle {
-    //     from {
-    //         transform: rotate(0deg);
-    //     }
-    //     to {
-    //         transform: rotate(359deg);
-    //     }
-    // }
-
     .ellipseTwo{
         position: absolute;
         bottom: -10%;

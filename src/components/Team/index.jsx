@@ -2,8 +2,6 @@ import React from "react";
 import "./style.scss";
 import Slideshow from "./Slider";
 import SimpleSlider from "./SimpleSlider";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { SlideItems } from "../Data";
 import Slider from "react-slick";
 
 export default function Team() {

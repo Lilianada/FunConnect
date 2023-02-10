@@ -35,7 +35,7 @@ export default function Home() {
       {/* {preloader ? (
         <Preloader/>
       ) : ( */}
-        <main className="mainContainer" id="mainContainer" data-scroll-container>
+        <main className="mainContainer" id="mainContainer">
           <Header />
           <Hero timeline={tl} ease={ease} />
           <Benefits />

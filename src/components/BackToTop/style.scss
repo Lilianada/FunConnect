@@ -6,11 +6,12 @@
   .iconPosition{
     position: absolute;
     bottom: 7rem;
-    right: 1rem;
+    right: 1.5rem;
     z-index: 20;
 
     @media screen and (min-width: 900px){
-      right: 4rem;
+      right: 8rem;
+      bottom: 9rem;
     }
   }
 
