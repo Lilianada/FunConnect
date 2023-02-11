@@ -51,7 +51,7 @@ export default function Hero({ timeline, ease}) {
         </div>
 
         {/* Animated Image */}
-        {/* <AnimatedImages timeline={timeline} ease={ease} /> */}
+        <AnimatedImages timeline={timeline} ease={ease} />
       </div>
     </section>
   );

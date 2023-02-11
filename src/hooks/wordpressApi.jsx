@@ -12,7 +12,6 @@ export default function useFetch(url) {
       .get(url)
       .then((response) => {
         setPosts(response.data);
-        console.log(response.data);
         setLoading(true);
       })
       .catch((err) => {

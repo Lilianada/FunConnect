@@ -13,6 +13,10 @@
       right: 8rem;
       bottom: 9rem;
     }
+    
+    @media screen and (min-width: 1024px){
+      right: 2rem;
+    }
   }
 
   .iconStyle{
