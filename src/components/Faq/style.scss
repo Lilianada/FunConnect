@@ -106,6 +106,15 @@
                     font-size: $eighteen;
                     color: #3a3a3a;
                     letter-spacing: .5px;
+                    padding-top: 0rem;
+                    height: 0;
+                    overflow-y: hidden;
+                    transition: padding ease .5s;
+                }
+
+                .faqContent_description.open{
+                    height: auto;
+                    padding-top: 1rem;
                 }
             }
         }

@@ -1,15 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
 
-export default function FAQAccordion({ id, title, description }) {
-  const [isActive, setIsActive] = useState(false);
-  const openAccordion = () => {
-    setIsActive(!isActive);
-  };
-
+export default function FAQAccordion({ id, title, description, onToggle, isActive }) {
   return (
     <motion.div
       className="faqContent_item"
@@ -21,7 +16,7 @@ export default function FAQAccordion({ id, title, description }) {
         <AnimatePresence>
           <motion.button
             className="openBtn"
-            onClick={openAccordion}
+            onClick={onToggle}
             animate="open"
             variants={{
               open: { opacity: 1, height: "auto" },
@@ -32,24 +27,9 @@ export default function FAQAccordion({ id, title, description }) {
           </motion.button>
         </AnimatePresence>
       </div>
-      <AnimatePresence>
-        {isActive && (
-          <motion.p
-            className="faqContent_description"
-            key="content"
-            initial="collapsed"
-            animate="open"
-            exit="collapsed"
-            variants={{
-              open: { opacity: 1, height: "auto", paddingTop: "1rem" },
-              collapsed: { opacity: 0, height: 0, paddingTop: "0rem" },
-            }}
-            transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
-          >
-            {description} 
-          </motion.p>
-        )}
-      </AnimatePresence>
+      <p className={`faqContent_description ${isActive ? "open" : ""}`}>
+        {description}
+      </p>
     </motion.div>
   );
 }
