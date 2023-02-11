@@ -67,134 +67,224 @@ export const ExploreCards = [
     {
         id: 7,
         place: "The Peacock",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1559304822-9eb2813c9844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        location: "Lekki Phase 1, Lagos",  
+        image: "../../assets/images/exploreImages/The-peacock.png"
     },
     {
         id: 8,
         place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1521917441209-e886f0404a7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        location: "Lekki Phase 1, Lagos",  
+        image: "../../assets/images/exploreImages/Brass-and-copper.png"
     },
     {
         id: 9,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1581486902120-5880052aadf0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "CIRCA NONPAREIL",
+        location: "Lekki Phase 1, Lagos",  
+        image: "../../assets/images/exploreImages/circa-nonpareil.png"
     },
     {
         id: 10,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "Pura Vida",
+        location: "Illashe, Lagos",  
+        image: "../../assets/images/exploreImages/Pura-vida.png"
     },
     {
         id: 11,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "HOV Beach House",
+        location: "Badagry Creek, Lagos",  
+        image: "../../assets/images/exploreImages/Hov-beach-house.png"
     },
     {
         id: 12,
-        place: "Brass & Copper",
+        place: "Mykonos on the roof",
         location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1573668200361-62e141908294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        image: "../../assets/images/exploreImages/mykonos-on-the-roof.png"
     },
     {
         id: 13,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1579648207097-edbc62b94930?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "OCEAN 5 BY RIVIERA",
+        location: "Femi Pearce, VI, Lagos",  
+        image: "../../assets/images/exploreImages/Ocean5-by-riviera.png"
     },
     {
         id: 14,
-        place: "Waffle Way",
-        location: "Maitama, Abuja",  
-        image: "https://images.unsplash.com/photo-1543373072-69f3d4788832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "The Garden",
+        location: "Ikoyi, Lagos",  
+        image: "../../assets/images/exploreImages/The-garden.png"
     },
     {
         id: 15,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1560187839-af980ee37cec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "Victoria Garden City",
+        location: "Lekki, Lagos",  
+        image: "../../assets/images/exploreImages/Victoria-garden.png"
     },
     {
         id: 16,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1508213824875-83a3d36e72a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA0fHxyZXN0YXVyYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        place: "Maple",
+        location: "Lekki Phase 1, Lagos",  
+        image: "../../assets/images/exploreImages/Maple.png"
     },
     {
         id: 17,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxyZXN0YXVyYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        place: "THE SANNIKAYZ PLACE",
+        location: "Lekki Phase 1, Lagos",  
+        image: "../assets/images/exploreImages/The-sannikayz-place.png"
     },
     {
         id: 18,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1545069986-6684b1203ca5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE2fHxyZXN0YXVyYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        place: "JARA BEACH HOUSE",
+        location: "Lekki Phase 1, Lagos",  
+        image: "../assets/images/exploreImages/Jara-beach-house.png"
     },
     {
         id: 19,
-        place: "Thought Pyramid",
-        location: "Wuse, Abuja",  
-        image: "https://images.unsplash.com/photo-1607537669513-8472b5a8f85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "MILLENIUM PARK",
+        location: "Three Arms zone, Abuja",  
+        image: ""
     },
     {
         id: 20,
-        place: "The Peacock",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1559304822-9eb2813c9844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "TRUKADERO",
+        location: "Wuse 2, Abuja",  
+        image: ""
     },
     {
         id: 21,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",
-        image: "https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+        place: "BLUCABANA",
+        location: "Mabushi, Abuja",
+        image: ""
     },
     {
         id: 22,
-        place: "OCEAN 5 BY RIVIERA",
-        location: "Femi Pearce, VI",
-        image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "MAGICLAND",
+        location: "Wuye, Abuja",
+        image: ""
     },
     {
         id: 23,
-        place: "The Garden",
-        location: "Ikoyi",  
-        image: "https://images.unsplash.com/photo-1585518419759-7fe2e0fbf8a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "CENTRAL PARK",
+        location: "Garki 1, Abuja",  
+        image: ""
     },
     {
         id: 24,
         place: "Waffle Way",
         location: "Maitama, Abuja",  
-        image: "https://images.unsplash.com/photo-1543373072-69f3d4788832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        image: ""
     },
     {
         id: 25,
         place: "Crush Cafe",
         location: "Gwarinpa Estate, Abuja", 
-        image: "https://images.unsplash.com/photo-1567667778211-b19f5a4e1efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+        image: "" 
     },
     {
         id: 26,
         place: "Thought Pyramid",
         location: "Wuse, Abuja",  
-        image: "https://images.unsplash.com/photo-1607537669513-8472b5a8f85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        image: ""
     },
     {
         id: 27,
-        place: "The Peacock",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1559304822-9eb2813c9844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "AGODI PARKS & GARDENS",
+        location: "Parliament Road",  
+        image: ""
     },
     {
         id: 28,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",  
-        image: "https://images.unsplash.com/photo-1521917441209-e886f0404a7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "WHITE DECK RESORT",
+        location: "Ajah, Lagos",  
+        image: ""
+    },
+    {
+        id: 29,
+        place: "LA CHAMPAGNE BEACH RESORT",
+        location: "Oniru, Lagos",  
+        image: ""
+    },
+    {
+        id: 30,
+        place: "RAFIU JAFOLO PARK",
+        location: "Shasha",  
+        image: "../assets/images/exploreImages/Rafiu-jafolo-park.png"
+    },
+    {
+        id: 31,
+        place: "JOHNSON JAKANDE TINUBU PARK",
+        location: "Ikeja, Lagos",  
+        image: "../assets/images/exploreImages/Johnson-jakande-tinubu.png"
+    },
+    {
+        id: 32,
+        place: "LIGHTHOUSE BEACH HOUSE",
+        location: "Takwa Bay, Lagos",  
+        image: "../assets/images/exploreImages/Lighthouse-beach-house.png"
+    },
+    {
+        id: 33,
+        place: "K’ODO BEACH HOUSE",
+        location: "Victoria Island, Lagos",  
+        image: "../assets/images/exploreImages/k'odo-beach-house.png"
+    },
+    {
+        id: 34,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
+    },
+    {
+        id: ,
+        place: "",
+        location: "",  
+        image: ""
     },
 ]
 
