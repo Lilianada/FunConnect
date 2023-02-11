@@ -42,27 +42,27 @@ export const ExploreCards = [
     },
     {
         id: 3,
-        place: "The Garden",
-        location: "Ikoyi",  
-        image: "https://images.unsplash.com/photo-1585518419759-7fe2e0fbf8a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "MURI OKUNOLA PARK",
+        location: "Eti-Osa, Lagos",  
+        image: "../../assets/images/exploreImages/Muri Okunola.png"
     },
     {
         id: 4,
-        place: "Waffle Way",
-        location: "Maitama, Abuja",  
-        image: "https://images.unsplash.com/photo-1543373072-69f3d4788832?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "FREEDOM PARK",
+        location: "Lagos Island",  
+        image: "../../assets/images/exploreImages/Freedom-Park-Lagos.png"
     },
     {
         id: 5,
-        place: "Crush Cafe",
-        location: "Gwarinpa Estate, Abuja", 
-        image: "https://images.unsplash.com/photo-1567667778211-b19f5a4e1efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+        place: "JHALOBIA PARK & GARDEN",
+        location: "Ikeja, Lagos", 
+        image: "../../assets/images/exploreImages/Jhalobia-Park.png" 
     },
     {
         id: 6,
-        place: "Thought Pyramid",
-        location: "Wuse, Abuja",  
-        image: "https://images.unsplash.com/photo-1607537669513-8472b5a8f85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "LEKKI CONSERVATION CENTRE",
+        location: "Lekki-Epe Expressway, Lagos",  
+        image: "../../assets/images/exploreImages/lekki-conservation-centre.png"
     },
     {
         id: 7,
