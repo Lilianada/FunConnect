@@ -200,7 +200,7 @@ export const ExploreCards = [
         id: 29,
         place: "LA CHAMPAGNE BEACH RESORT",
         location: "Oniru, Lagos",  
-        image: ""
+        image: "../../assets/images/exploreImages/La-champagne-beach.png"
     },
     {
         id: 30,
@@ -228,27 +228,27 @@ export const ExploreCards = [
     },
     {
         id: 34,
-        place: "",
-        location: "",  
-        image: ""
+        place: "SENCILLO LAGOS BEACH HOUSE",
+        location: "Ilashe, Lagos",  
+        image: "../../assets/images/exploreImages/Sencillo-lagos.png"
     },
     {
         id: 35,
-        place: "",
-        location: "",  
-        image: ""
+        place: "KAMP IKARE RESORT",
+        location: "Amuwo Odofin, Lagos",  
+        image: "../../assets/images/exploreImages/Kamp-ikare-resort.png"
     },
     {
         id: 36,
-        place: "",
-        location: "",  
-        image: ""
+        place: "KING BISTRO & GRILLE",
+        location: "Old Bodija, Ibadan",  
+        image: "../../assets/images/exploreImages/King-bistro.png"
     },
     {
         id: 37,
-        place: "",
-        location: "",  
-        image: ""
+        place: "IBIZA LOUNGE",
+        location: "Ringroad",  
+        image: "../../assets/images/exploreImages/Ibiza-lounge.png"
     },
     {
         id: 38,
