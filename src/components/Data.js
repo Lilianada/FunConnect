@@ -32,259 +32,259 @@ export const ExploreCards = [
         id: 1,
         place: "Lufasi Park",
         location: "Lekki-Epe Expressway, Lagos",
-        image: "../../assets/images/exploreImages/lufasi-park-lekki-lagos-adventures.png"
+        image: "lufasi-park-lekki-lagos-adventures"
     },
     {
         id: 2,
         place: "NDUBISI KANU PARK",
         location: "Mobolaji-Johnson Avenue",
-        image: "../../assets/images/exploreImages/Ndubisi.png"
+        image: "Ndubisi"
     },
     {
         id: 3,
         place: "MURI OKUNOLA PARK",
         location: "Eti-Osa, Lagos",  
-        image: "../../assets/images/exploreImages/Muri Okunola.png"
+        image: "Muri Okunola"
     },
     {
         id: 4,
         place: "FREEDOM PARK",
         location: "Lagos Island",  
-        image: "../../assets/images/exploreImages/Freedom-Park-Lagos.png"
+        image: "Freedom-Park-Lagos"
     },
     {
         id: 5,
         place: "JHALOBIA PARK & GARDEN",
         location: "Ikeja, Lagos", 
-        image: "../../assets/images/exploreImages/Jhalobia-Park.png" 
+        image: "Jhalobia-Park" 
     },
     {
         id: 6,
         place: "LEKKI CONSERVATION CENTRE",
         location: "Lekki-Epe Expressway, Lagos",  
-        image: "../../assets/images/exploreImages/lekki-conservation-centre.png"
+        image: "lekki-conservation-centre"
     },
     {
         id: 7,
         place: "The Peacock",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/The-peacock.png"
+        image: "The-peacock"
     },
     {
         id: 8,
         place: "Brass & Copper",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/Brass-and-copper.png"
+        image: "Brass-and-copper"
     },
     {
         id: 9,
         place: "CIRCA NONPAREIL",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/circa-nonpareil.png"
+        image: "circa-nonpareil"
     },
     {
         id: 10,
         place: "Pura Vida",
         location: "Illashe, Lagos",  
-        image: "../../assets/images/exploreImages/Pura-vida.png"
+        image: "Pura-vida"
     },
     {
         id: 11,
         place: "HOV Beach House",
         location: "Badagry Creek, Lagos",  
-        image: "../../assets/images/exploreImages/Hov-beach-house.png"
+        image: "Hov-beach-house"
     },
     {
         id: 12,
         place: "Mykonos on the roof",
         location: "Lekki Phase 1",  
-        image: "../../assets/images/exploreImages/mykonos-on-the-roof.png"
+        image: "mykonos-on-the-roof"
     },
     {
         id: 13,
         place: "OCEAN 5 BY RIVIERA",
         location: "Femi Pearce, VI, Lagos",  
-        image: "../../assets/images/exploreImages/Ocean5-by-riviera.png"
+        image: "Oceans5-by-riviera"
     },
     {
         id: 14,
         place: "The Garden",
         location: "Ikoyi, Lagos",  
-        image: "../../assets/images/exploreImages/The-garden.png"
+        image: "The-garden"
     },
     {
         id: 15,
         place: "Victoria Garden City",
         location: "Lekki, Lagos",  
-        image: "../../assets/images/exploreImages/Victoria-garden.png"
+        image: "Victoria-garden"
     },
     {
         id: 16,
         place: "Maple",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/Maple.png"
+        image: "Maple"
     },
     {
         id: 17,
         place: "THE SANNIKAYZ PLACE",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/The-sannikayz-place.png"
+        image: "The-sannikayz-place"
     },
     {
         id: 18,
         place: "JARA BEACH HOUSE",
         location: "Lekki Phase 1, Lagos",  
-        image: "../../assets/images/exploreImages/Jara-beach-house.png"
+        image: "Jara-beach-house"
     },
     {
         id: 19,
         place: "MILLENIUM PARK",
         location: "Three Arms zone, Abuja",  
-        image: "../../assets/images/exploreImages/Millennium-park.png"
+        image: "Millennium-park"
     },
     {
         id: 20,
         place: "TRUKADERO",
         location: "Wuse 2, Abuja",  
-        image: "../../assets/images/exploreImages/Trukadero.png"
+        image: "Trukadero"
     },
     {
         id: 21,
         place: "BLUCABANA",
         location: "Mabushi, Abuja",
-        image: "../../assets/images/exploreImages/Blucabana.png"
+        image: "Blucabana"
     },
     {
         id: 22,
         place: "MAGICLAND",
         location: "Wuye, Abuja",
-        image: "../../assets/images/exploreImages/Magicland.png"
+        image: "Magicland"
     },
     {
         id: 23,
         place: "CENTRAL PARK",
         location: "Garki 1, Abuja",  
-        image: "../../assets/images/exploreImages/Central-park.png"
+        image: "Central-park"
     },
     {
         id: 24,
         place: "Waffle Way",
         location: "Maitama, Abuja",  
-        image: "../../assets/images/exploreImages/Waffle-way.png"
+        image: "Waffle-way"
     },
     {
         id: 25,
         place: "Crush Cafe",
         location: "Gwarinpa Estate, Abuja", 
-        image: "../../assets/images/exploreImages/Crush-cafe.png" 
+        image: "Crush-cafe" 
     },
     {
         id: 26,
         place: "Thought Pyramid",
         location: "Wuse, Abuja",  
-        image: "../../assets/images/exploreImages/Thought-pyramid.png"
+        image: "Thought-pyramid"
     },
     {
         id: 27,
         place: "AGODI PARKS & GARDENS",
         location: "Parliament Road",  
-        image: "../../assets/images/exploreImages/Agodi-park.png"
+        image: "Agodi-park"
     },
     {
         id: 28,
         place: "WHITE DECK RESORT",
         location: "Ajah, Lagos",  
-        image: "../../assets/images/exploreImages/White-deck-resort.png"
+        image: "White-deck-resort"
     },
     {
         id: 29,
         place: "LA CHAMPAGNE BEACH RESORT",
         location: "Oniru, Lagos",  
-        image: "../../assets/images/exploreImages/La-champagne-beach.png"
+        image: "La-champagne-beach"
     },
     {
         id: 30,
         place: "RAFIU JAFOLO PARK",
         location: "Shasha",  
-        image: "../assets/images/exploreImages/Rafiu-jafolo-park.png"
+        image: "Rafiu-jafolo-park"
     },
     {
         id: 31,
         place: "JOHNSON JAKANDE TINUBU PARK",
         location: "Ikeja, Lagos",  
-        image: "../assets/images/exploreImages/Johnson-jakande-tinubu.png"
+        image: "Johnson-jakande-tinubu"
     },
     {
         id: 32,
         place: "LIGHTHOUSE BEACH HOUSE",
         location: "Takwa Bay, Lagos",  
-        image: "../assets/images/exploreImages/Lighthouse-beach-house.png"
+        image: "Lighthouse-beach-house"
     },
     {
         id: 33,
         place: "K’ODO BEACH HOUSE",
         location: "Victoria Island, Lagos",  
-        image: "../assets/images/exploreImages/k'odo-beach-house.png"
+        image: "k'odo-beach-house"
     },
     {
         id: 34,
         place: "SENCILLO LAGOS BEACH HOUSE",
         location: "Ilashe, Lagos",  
-        image: "../../assets/images/exploreImages/Sencillo-lagos.png"
+        image: "Sencillo-lagos"
     },
     {
         id: 35,
         place: "KAMP IKARE RESORT",
         location: "Amuwo Odofin, Lagos",  
-        image: "../../assets/images/exploreImages/Kamp-ikare-resort.png"
+        image: "Kamp-ikare-resort"
     },
     {
         id: 36,
         place: "KING BISTRO & GRILLE",
         location: "Old Bodija, Ibadan",  
-        image: "../../assets/images/exploreImages/King-bistro.png"
+        image: "King-bistro"
     },
     {
         id: 37,
         place: "IBIZA LOUNGE",
-        location: "Ringroad",  
-        image: "../../assets/images/exploreImages/Ibiza-lounge.png"
+        location: "Ringroad, Ibadan",  
+        image: "Ibiza-lounge"
     },
     {
         id: 38,
-        place: "",
-        location: "",  
-        image: ""
+        place: "GREYS BISTRO",
+        location: "New Eleyele, Ibadan",  
+        image: "Greys-bistro"
     },
     {
         id: 39,
-        place: "",
-        location: "",  
-        image: ""
+        place: "PALMS MALL",
+        location: "MKO Way, Oluyole, Ibadan",  
+        image: "Palms-mall"
     },
     {
         id: 40,
-        place: "",
-        location: "",  
-        image: ""
+        place: "VENTURA MALL",
+        location: "Oyo Road, Ibadan",  
+        image: "Ventura-mall"
     },
     {
         id: 41,
-        place: "",
-        location: "",  
-        image: ""
+        place: "STONE CAFE",
+        location: "MKO Abiola Way, New GRA, Ibadan",  
+        image: "Stone-cafe"
     },
     {
         id: 42,
-        place: "",
-        location: "",  
-        image: ""
+        place: "CAFE CHRYSALIS",
+        location: "Old Bodija, Ibadan",  
+        image: "Cafe-chrysalis"
     },
     {
         id: 43,
-        place: "",
-        location: "",  
-        image: ""
+        place: "MAGNUS PAINTBALL ARENA",
+        location: "Agodi Gardens, Ibadan",
+        image: "Magnus-paintball"
     },
 ]
 

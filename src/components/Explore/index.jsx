@@ -8,10 +8,10 @@ export default function Explore() {
   const [popPlace, setPopPlace] = useState("");
   const [popLoc, setPopLoc] = useState("");
 
-  const isHover = ( image, place, location) => {
+  const isHover = (image, place, location) => {
     setHover(!hover);
     setPopImg(image);
-    setPopPlace(place );
+    setPopPlace(place);
     setPopLoc(location);
   };
 
@@ -51,40 +51,43 @@ export default function Explore() {
         <div className="exploreCard_wrap">
           {ExploreCards.map((card) => {
             return (
-                <div
-                  className="exploreCard"
-                  key={card.id}
-                  onClick={() =>
-                    isHover(card.image, card.place, card.location)
-                  }
-                >
-                  <div className="exploreImage">
-                    <img src={card.image} alt="Location Pic" />
-                  </div>
-                  <div className="exploreCard_content">
-                    <h6 className="exploreCard_title">{card.place}</h6>
-                    <p className="exploreCard_subtitle">{card.location}</p>
-                    <div className="logosWrap">
-                      <div className="whiteLogo"></div>
-                      <div className="orangeLogo"></div>
-                    </div>
+              <div
+                className="exploreCard"
+                key={card.id}
+                onClick={() => isHover(card.image, card.place, card.location)}
+              >
+                <div className="exploreImage">
+                  <img
+                    src={require("../../assets/images/exploreImages/" +
+                      card.image +
+                      ".png")}
+                    alt="Location Pic"
+                  />
+                </div>
+                <div className="exploreCard_content">
+                  <h6 className="exploreCard_title">{card.place}</h6>
+                  <p className="exploreCard_subtitle">{card.location}</p>
+                  <div className="logosWrap">
+                    <div className="whiteLogo"></div>
+                    <div className="orangeLogo"></div>
                   </div>
                 </div>
+              </div>
             );
           })}
-                  <span className={hover ? "hoverContent" : "noShow"}>
-                    <div className="exploreImage">
-                      <img src={popImg} alt="Location Pic" />
-                    </div>
-                    <div className="exploreCard_content">
-                      <h6 className="exploreCard_title">{popPlace}</h6>
-                      <p className="exploreCard_subtitle">{popLoc}</p>
-                      <div className="logosWrap">
-                        <div className="whiteLogo"></div>
-                        <div className="orangeLogo"></div>
-                      </div>
-                    </div>
-                  </span>
+          <span className={hover ? "hoverContent" : "noShow"}>
+            <div className="exploreImage">
+              <img src={popImg} alt="Location Pic" />
+            </div>
+            <div className="exploreCard_content">
+              <h6 className="exploreCard_title">{popPlace}</h6>
+              <p className="exploreCard_subtitle">{popLoc}</p>
+              <div className="logosWrap">
+                <div className="whiteLogo"></div>
+                <div className="orangeLogo"></div>
+              </div>
+            </div>
+          </span>
         </div>
       </div>
     </section>
