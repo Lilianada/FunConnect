@@ -30,15 +30,15 @@ export const Accordion=[
 export const ExploreCards = [
     {
         id: 1,
-        place: "Brass & Copper",
-        location: "Lekki Phase 1",
-        image: "https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+        place: "Lufasi Park",
+        location: "Lekki-Epe Expressway, Lagos",
+        image: "../../assets/images/exploreImages/lufasi-park-lekki-lagos-adventures.png"
     },
     {
         id: 2,
-        place: "OCEAN 5 BY RIVIERA",
-        location: "Femi Pearce, VI",
-        image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        place: "NDUBISI KANU PARK",
+        location: "Mobolaji-Johnson Avenue",
+        image: "../../assets/images/exploreImages/Ndubisi.png"
     },
     {
         id: 3,
