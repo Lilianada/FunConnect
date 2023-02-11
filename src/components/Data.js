@@ -21,7 +21,7 @@ export const Accordion=[
     },
     {
         id: 5,
-        title: "Can I book an event?",
+        title: "Can I book an event? ",
         content: "Yes. You would be able to book public events or private events that you have been invited to attend.periences.",
     },
 ]
