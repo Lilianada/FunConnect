@@ -233,55 +233,55 @@ export const ExploreCards = [
         image: ""
     },
     {
-        id: ,
+        id: 35,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 36,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 37,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 38,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 39,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 40,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 41,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 42,
         place: "",
         location: "",  
         image: ""
     },
     {
-        id: ,
+        id: 43,
         place: "",
         location: "",  
         image: ""
