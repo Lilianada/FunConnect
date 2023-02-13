@@ -14,7 +14,7 @@ export default function DownloadButtons() {
         </div>
       </a>
       <a href="/" className="googlePlay">
-        <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
+        <img src={GooglePlay} alt="Google Logo" className="googleLogo" />
         <div className="textWrap">
           <p className="downloadText">Get it on</p>
           <h5 className="appText">Google Play</h5>

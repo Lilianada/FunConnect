@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { RxDotFilled } from "react-icons/rx";
-import BlogImage from "../../assets/images/Blog-Image.png";
+import BlogImage from "../../assets/images/Funconnect-Logo-lg.jpeg";
 import useFetch from "../../hooks/wordpressApi";
 import "./style.scss";
 

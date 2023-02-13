@@ -9,14 +9,15 @@
     gap: 1rem;
     
     .appStore, .googlePlay{
-        height: 64px;
-        padding: 8px 20px;
-        background: $black;
-        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: .5rem;
+        height: 64px;
+        padding: 8px 20px;
+        gap: 16px;
+        background: $black;
+        border-radius: 10px;
+        margin-bottom: 8px;
         
         .downloadText{
             font-family: $altFont;
@@ -42,4 +43,8 @@
         width: 200px;
     }
     
+    .appleLogo, .googleLogo{
+        width: 24px;
+        height: 28.75px;
+    }
 }
