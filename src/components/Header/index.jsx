@@ -6,6 +6,7 @@ import AppStore from "../../assets/images/AppleVector.svg";
 import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./style.scss";
+import DownloadButtons from "../DownloadButtons";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -121,7 +122,7 @@ export default function Header() {
           </ul>
           <ul className="navList">
             <li className="navItem">
-              <h6 className="navTitle">Get in touch</h6>
+              <h6 className="navTitle" style={{color: "#FF9100"}}>Get in touch</h6>
             </li>
             <li className="navItem">
               <h6 className="navTitle">Info@funconnect.app</h6>
@@ -129,22 +130,7 @@ export default function Header() {
           </ul>
 
           {/* Download Buttons */}
-          <div className="downloadApp_btns">
-            <a href="/" className="appStore">
-              <img src={AppStore} alt="Apple Logo" className="appleLogo" />
-              <div className="textWrap">
-                <p className="downloadText">Download on the</p>
-                <h5 className="appText">App Store</h5>
-              </div>
-            </a>
-            <a href="/" className="googlePlay">
-              <img src={GooglePlay} alt="Google Logo" className="appleLogo" />
-              <div className="textWrap">
-                <p className="downloadText">Download on the</p>
-                <h5 className="appText">Google Play</h5>
-              </div>
-            </a>
-          </div>
+          <DownloadButtons/>
         </nav>
       </div>
     </header>
