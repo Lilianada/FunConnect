@@ -34,7 +34,7 @@ export default function Blog() {
                     <img src={BlogImage} alt="Profile Picture" />
                     <div className="articleTimeline">
                       <p>{post.yoast_head_json.author}</p>
-                      <p>
+                      <p style={{display: "block"}}>
                         {
                           new Date(post.date).toDateString()
                         } .
@@ -70,7 +70,7 @@ export default function Blog() {
                     <img src={BlogImage} alt="Profile Picture" />
                     <div className="articleTimeline">
                       <p>{post.yoast_head_json.author}</p>
-                      <p style={{display: "flex", alignItems: "center"}}>
+                      <p style={{display: "block"}}>
                         {new Date(post.date).toDateString().slice(4, 15)} 
                         <span style={{lineHeight: "0"}}> <RxDotFilled/> </span> 
                         {Object.keys(post.yoast_head_json.twitter_misc)

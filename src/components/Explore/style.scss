@@ -104,8 +104,6 @@
                         bottom: 1rem;
                         border-radius: 16px;
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.74%, rgba(0, 0, 0, 0.88) 97.22%);
-                        -webkit-filter: opacity(0.5);
-                        filter: opacity(0.5);
                     }
 
                     .exploreCard_content {
@@ -113,6 +111,7 @@
                         z-index: 1;
                         bottom: 1rem;
                         width: 100%;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 8.52%, rgba(0, 0, 0, 0.88) 95.19%);
 
                         .exploreCard_title {
                             font-size: $fourteen;
@@ -219,8 +218,8 @@
                 }
 
                 @media screen and (min-width: 1024px) {
-                    height: 70%;
-                    width: 70%;
+                    height:500px;
+                    width: 500px;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
@@ -240,6 +239,7 @@
                     z-index: 1;
                     bottom: 1rem;
                     width: 100%;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 8.52%, rgba(0, 0, 0, 0.88) 95.19%);
 
                     .exploreCard_title {
                         font-size: $twentyFour;

@@ -75,12 +75,11 @@
 
                     @media screen and (min-width: 800px) {
                         height: 275px;
+                        width: 100%;
                     }
 
                     img {
                         width: 100%;
-                        max-width: 385px;
-                        height: 180px;
                         height: 100%;
                         transition: transform 0.5s ease-in-out;
                     }
@@ -94,6 +93,7 @@
                 .articleContent {
                     display: grid;
                     width: 100%;
+                    height: 180px;
                     row-gap: 16px;
                     padding: 24px 16px;
                     background: #111111;
@@ -184,12 +184,11 @@
 
                         @media screen and (min-width: 800px) {
                             height: 275px;
+                            width: 100%;
                         }
 
                         img {
                             width: 100%;
-                            max-width: 385px;
-                            // height: 180px;
                             height: 100%;
                             object-fit: cover;
                             transition: transform 0.5s ease-in-out;
@@ -204,6 +203,7 @@
                     .articleContent {
                         display: grid;
                         width: 100%;
+                        height: 180px;
                         row-gap: 16px;
                         padding: 24px 16px;
                         background: #111111;
