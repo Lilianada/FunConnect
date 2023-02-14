@@ -42,8 +42,8 @@ export default function Slideshow() {
   ];
   return (
     <Slide
-      slidesToScroll={1}
-      slidesToShow={1}
+      // slidesToScroll={1}
+      // slidesToShow={1}
       autoplay={false}
       responsive={responsiveSettings }
       duration={5000}
