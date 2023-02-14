@@ -104,6 +104,7 @@
                         bottom: 1rem;
                         border-radius: 16px;
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.74%, rgba(0, 0, 0, 0.88) 97.22%);
+                        filter: brightness(0.75);
                     }
 
                     .exploreCard_content {
@@ -211,13 +212,6 @@
                 transform: scale(0.9);
 
                 @media screen and (min-width: 768px) {
-                    height: 90%;
-                    width: 90%;
-                    top: 3%;
-                    left: 5%;
-                }
-
-                @media screen and (min-width: 1024px) {
                     height:500px;
                     width: 500px;
                     left: 50%;
@@ -237,7 +231,7 @@
                 .exploreCard_content {
                     position: absolute;
                     z-index: 1;
-                    bottom: 1rem;
+                    bottom: 15px;
                     width: 100%;
                     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 8.52%, rgba(0, 0, 0, 0.88) 95.19%);
 
