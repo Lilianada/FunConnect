@@ -92,7 +92,7 @@ export const ExploreCards = [
         id: 11,
         place: "HOV Beach House",
         location: "Badagry Creek, Lagos",  
-        image: "Hov-beach-house"
+        image: "hov-beach-house"
     },
     {
         id: 12,
@@ -188,7 +188,7 @@ export const ExploreCards = [
         id: 27,
         place: "AGODI PARKS & GARDENS",
         location: "Parliament Road",  
-        image: "Agodi-park"
+        image: "agodi-park"
     },
     {
         id: 28,
@@ -224,7 +224,7 @@ export const ExploreCards = [
         id: 33,
         place: "K’ODO BEACH HOUSE",
         location: "Victoria Island, Lagos",  
-        image: "k'odo-beach-house"
+        image: "kodo-beach-house"
     },
     {
         id: 34,
