@@ -66,8 +66,7 @@ export default function Explore() {
                   <div className="exploreImage">
                     <img
                       src={require("../../assets/images/exploreImages/" +
-                        card.image +
-                        ".png")}
+                        card.image + ".png")}
                       alt="Location Pic"
                     />
                   </div>
