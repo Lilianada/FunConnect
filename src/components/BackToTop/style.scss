@@ -9,6 +9,10 @@
     right: 1.5rem;
     z-index: 20;
 
+    @media screen and (min-width: 500px){
+      right: 3.5rem;
+    }
+
     @media screen and (min-width: 900px){
       right: 8rem;
       bottom: 9rem;
