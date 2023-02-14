@@ -142,12 +142,12 @@ export const ExploreCards = [
         location: "Three Arms zone, Abuja",  
         image: "Millennium-park"
     },
-    // {
-    //     id: 20,
-    //     place: "TRUKADERO",
-    //     location: "Wuse 2, Abuja",  
-    //     image: "Trukadero"
-    // },
+    {
+        id: 20,
+        place: "TRUKADERO",
+        location: "Wuse 2, Abuja",  
+        image: "Trukadero"
+    },
     {
         id: 21,
         place: "BLUCABANA",

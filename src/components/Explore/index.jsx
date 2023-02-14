@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ExploreCards } from "../Data";
+import ErrorBoundary from "../ErrorBoundary";
 import "./style.scss";
 
 export default function Explore() {
@@ -51,6 +52,7 @@ export default function Explore() {
           </svg>
         </div>
 
+        <ErrorBoundary>
         <div className="explorecards_hoverCards">
           {/* change the slider for this section, when the images move from the left on the top, it moves to the opp direction on the bottom */}
           <div className="exploreCard_wrap">
@@ -102,6 +104,7 @@ export default function Explore() {
             )
           }
         </div>
+        </ErrorBoundary>
       </div>
     </section>
   );

@@ -1,0 +1,28 @@
+.errorBoundary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.errorMsg{
+    color: var( --htmlBg-color);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.errorDetails{
+    font-size: var( --font-twenty);
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+}
+
+.errorButton{
+    width: fit-content;
+    padding: .5rem .75rem;
+    background: var(--blueTxt-color);
+    color: var(--headerTxt-color);
+    border: none;
+    border-radius: 8px;
+}
