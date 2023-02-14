@@ -13,7 +13,7 @@ export default function Slideshow() {
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 2
       }
     },
@@ -25,7 +25,7 @@ export default function Slideshow() {
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 700,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2

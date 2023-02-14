@@ -141,3 +141,8 @@
     background: #000;
     width: 40px;
 }
+
+.react-slideshow-wrapper .images-wrap>div[aria-hidden='false'],
+.react-slideshow-wrapper .images-wrap>div[aria-hidden='true']{
+ width: 280px !important;
+}
