@@ -66,7 +66,7 @@ export default function Explore() {
                   <div className="exploreImage">
                     <img
                       src={require("../../assets/images/exploreImages/" +
-                        card.image)}
+                        card.image + ".png")}
                       alt="Location Pic"
                     />
                   </div>
@@ -87,7 +87,7 @@ export default function Explore() {
               <span className="hoverContent">
             <div className="exploreImage" key={popId}>
               <img
-                src={require("../../assets/images/exploreImages/" + popImg)}
+                src={require("../../assets/images/exploreImages/" + popImg + ".png")}
                 alt="Location Pic"
               />
             </div>
