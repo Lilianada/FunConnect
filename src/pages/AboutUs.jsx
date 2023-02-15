@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutHero from '../components/AboutHero';
 import BackToTop from '../components/BackToTop';
-import Community from '../components/Community';
+// import Community from '../components/Community';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import OurCulture from '../components/OurCulture';
@@ -16,7 +16,7 @@ export default function AboutUs() {
     <OurStory/>
     <OurCulture/>
     <Team/>
-    <Community/>
+    {/* <Community/> */}
     <Footer />
     <BackToTop/>
   </main>
