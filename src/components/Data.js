@@ -28,12 +28,12 @@ export const Accordion=[
 
 
 export const ExploreCards = [
-    {
-        id: 1,
-        place: "Lufasi Park",
-        location: "Lekki-Epe Expressway, Lagos",
-        image: "lufasi-park-lekki-lagos-adventures"
-    },
+    // {
+    //     id: 1,
+    //     place: "Lufasi Park",
+    //     location: "Lekki-Epe Expressway, Lagos",
+    //     image: "lufasi-park-lekki-lagos-adventures"
+    // },
     {
         id: 2,
         place: "NDUBISI KANU PARK",
@@ -76,12 +76,12 @@ export const ExploreCards = [
         location: "Lekki Phase 1, Lagos",  
         image: "brass-and-copper"
     },
-    {
-        id: 9,
-        place: "CIRCA NONPAREIL",
-        location: "Lekki Phase 1, Lagos",  
-        image: "circa-nonpareil"
-    },
+    // {
+    //     id: 9,
+    //     place: "CIRCA NONPAREIL",
+    //     location: "Lekki Phase 1, Lagos",  
+    //     image: "circa-nonpareil"
+    // },
     {
         id: 10,
         place: "Pura Vida",
