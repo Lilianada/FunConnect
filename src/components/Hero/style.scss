@@ -175,6 +175,8 @@
             width: 13rem;
             height: 19rem;
             margin: auto;
+            position: relative;
+                left: 1rem;
 
             @media screen and (min-width: 340px) {
                 width: 14rem;
@@ -194,14 +196,14 @@
             }
             
             .animatedImages_content{
-                position: relative;
-                left: 1rem;
+                
 
                 .animatedImage_one{
-                    // position: absolute;
-                    bottom: -18rem;
+                    position: absolute;
+                    bottom: 4rem;
                     left: -30%;
                     width: 2rem;
+                    height: fit-content;
 
                     @media screen and (max-width: 400px) {
                         bottom: -13rem;
@@ -211,8 +213,8 @@
 
                     
                     @media screen and (min-width: 720px) {
-                        bottom: -24rem;
-                        left: -5rem;
+                        bottom: 5rem;
+                        left: -6rem;
                         width: 3rem;
                     }
                 }
@@ -222,6 +224,7 @@
                     right: -3rem;
                     z-index: 1;
                     width: 5rem;
+                    height: fit-content;
                     
                     @media screen and (min-width: 1024px) {
                         right: -3.5rem;

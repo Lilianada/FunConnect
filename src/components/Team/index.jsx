@@ -17,7 +17,7 @@ export default function Team() {
             effective solution promptly.
           </p>
         </div>
-        <Slideshow/>
+        {/* <Slideshow/> */}
       </div>
     </section>
   );
