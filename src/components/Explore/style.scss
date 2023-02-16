@@ -108,23 +108,38 @@
                     }
 
                     .exploreCard_content {
+                        display: grid;
+                        place-items: center;
                         position: absolute;
                         z-index: 1;
                         bottom: 1rem;
                         width: 100%;
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 8.52%, rgba(0, 0, 0, 0.88) 95.19%);
 
+                        .exploreBar{
+                            width: 33px;
+                            height: 1.75px;
+                            border-radius: 6.75px;
+                            background-color: $primary;
+                            margin-bottom: .5rem;
+
+                            @media screen and (min-width: 900px) {
+                            }
+                        }
+
                         .exploreCard_title {
                             font-size: $fourteen;
                             font-family: $headFont;
                             text-align: center;
                             text-transform: uppercase;
+                            line-height: 17px;
                         }
 
                         .exploreCard_subtitle {
                             font-size: $ten;
                             font-family: $headFont;
                             text-align: center;
+                            line-height: 10px;
                         }
 
                         .logosWrap {
@@ -202,18 +217,21 @@
 
             .hoverContent {
                 position: fixed;
-                opacity: 1;
-                transition: opacity ease-in 0.5s;
-                top: 2%;
-                height: 90%;
+                height: 400px;
                 width: 100%;
+                max-width: 400px;
+                opacity: 1;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0.9);
+                transition: opacity ease-in 0.5s;
                 z-index: 120;
                 border-radius: 16px;
-                transform: scale(0.9);
 
                 @media screen and (min-width: 768px) {
-                    height:500px;
+                    height: 500px;
                     width: 500px;
+                    max-width: 100%;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
@@ -239,7 +257,8 @@
                         font-size: $twentyFour;
                         font-family: $headFont;
                         text-align: center;
-                        letter-spacing: 2px;
+                        letter-spacing: 1px;
+                        color: $white;
                     }
 
                     .exploreCard_subtitle {
@@ -247,6 +266,7 @@
                         font-family: $headFont;
                         text-align: center;
                         letter-spacing: 1px;
+                        color: $white;
                     }
 
                     .logosWrap {

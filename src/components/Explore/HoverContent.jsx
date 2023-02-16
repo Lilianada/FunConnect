@@ -3,14 +3,14 @@ import Backdrop from "../Backdrop";
 import { motion } from "framer-motion";
 import "./style.scss";
 
-export default function HoverContent({ popId, popImg, popPlace, popLoc}) {
+export default function HoverContent({ popId, popImg, popPlace, popLoc, closePop}) {
   return (
-    <Backdrop>
+    <Backdrop onClick={closePop}>
               <motion.span 
                 className="hoverContent"
                 onClick={(e) => e.stopPropagation()}
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.8,
                   delay: 0.5,

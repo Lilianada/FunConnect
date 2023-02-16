@@ -6,6 +6,7 @@ import "./style.scss";
 
 export default function Explore() {
   const [hover, setHover] = useState(false);
+
   const [popImg, setPopImg] = useState("");
   const [popPlace, setPopPlace] = useState("");
   const [popLoc, setPopLoc] = useState("");
@@ -55,7 +56,6 @@ export default function Explore() {
 
         <ErrorBoundary>
         <div className="explorecards_hoverCards">
-          {/* change the slider for this section, when the images move from the left on the top, it moves to the opp direction on the bottom */}
           <div className="exploreCard_wrap">
             {ExploreCards.map((card) => {
               return (
@@ -72,6 +72,7 @@ export default function Explore() {
                     />
                   </div>
                   <div className="exploreCard_content">
+                    <div className="exploreBar"></div>
                     <h6 className="exploreCard_title">{card.place}</h6>
                     <p className="exploreCard_subtitle">{card.location}</p>
                     <div className="logosWrap">
@@ -90,6 +91,7 @@ export default function Explore() {
                 popPlace={popPlace}
                 popLoc={popLoc}
                 popId={popId}
+                closePop={isHover}
               />
             )
           }
