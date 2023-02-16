@@ -1,5 +1,5 @@
 import React from "react";
-import './Backdrop.scss';
+import './style.scss';
 import { motion } from "framer-motion";
 
 function Backdrop({ children, onClick }) {

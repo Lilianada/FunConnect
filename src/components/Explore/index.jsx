@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ExploreCards } from "../Data";
 import ErrorBoundary from "../ErrorBoundary";
+import HoverContent from "./HoverContent";
 import "./style.scss";
 
 export default function Explore() {
@@ -84,22 +85,12 @@ export default function Explore() {
           </div>
           {
             hover && (
-              <span className="hoverContent">
-            <div className="exploreImage" key={popId}>
-              <img
-                src={require("../../assets/images/exploreImages/" + popImg + ".png")}
-                alt="Location Pic"
+              <HoverContent
+                popImg={popImg}
+                popPlace={popPlace}
+                popLoc={popLoc}
+                popId={popId}
               />
-            </div>
-            <div className="exploreCard_content">
-              <h6 className="exploreCard_title">{popPlace}</h6>
-              <p className="exploreCard_subtitle">{popLoc}</p>
-              <div className="logosWrap">
-                <div className="whiteLogo"></div>
-                <div className="orangeLogo"></div>
-              </div>
-            </div>
-          </span>
             )
           }
         </div>
