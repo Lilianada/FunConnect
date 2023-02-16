@@ -162,10 +162,12 @@
                         height: 45px;
                         border-radius: 50%;
                         background: $secondaryBg;
-                        display: grid;
-                        place-items: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         position: relative;
                         z-index: 1;
+                        text-align: center;
                     }
                 }
             }
