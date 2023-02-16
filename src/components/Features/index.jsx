@@ -4,7 +4,8 @@ import BeachHouse from "../../assets/images/featuresImage/BEACH CLUBS.png";
 import FusionSpots from "../../assets/images/featuresImage/FUSION SPOTS.png";
 import Cocktail from "../../assets/images/featuresImage/Cocktail and Mocktail.png";
 import Park from "../../assets/images/featuresImage/Parks in lagos.png";
-import PlanMeet from "../../assets/images/featuresImage/hANGOUT SPOTS IN IBADAN.png";
+import PlanMeet from "../../assets/images/featuresImage/hANGOUT SPOTS IN IBADAN.png"; 
+import Funconnect from "../../assets/images/Funconnect-transparent-logo.svg";
 import "./style.scss";
 
 export default function Features() {
@@ -16,25 +17,28 @@ export default function Features() {
                 <ul className="featuresList">
                     <li className="featuresItem">
                         <h3 className="feature">Beach Houses</h3>
-                        <img src={BeachHouse} alt="Featured Image" />
+                        <img src={BeachHouse} className="featureImage" alt="Featured Image" />
                     </li>
                     <li className="featuresItem">
                         <h3 className="feature">Fusion Spots</h3>
-                        <img src={FusionSpots} alt="Featured Image" />
+                        <img src={FusionSpots} className="featureImage" alt="Featured Image" />
                     </li>
                     <li className="featuresItem">
                         <h3 className="feature">Plan meetups</h3>
-                        <img src={PlanMeet} alt="Featured Image" />
+                        <img src={PlanMeet} className="featureImage" alt="Featured Image" />
                     </li>
                     <li className="featuresItem">
                         <h3 className="feature">Exquisite Parks</h3>
-                        <img src={Park} alt="Featured Image" />
+                        <img src={Park} className="featureImage" alt="Featured Image" />
                     </li>
                     <li className="featuresItem">
                         <h3 className="feature">Cocktail & Mocktails Spots </h3>
-                        <img src={Cocktail} alt="Featured Image" />
+                        <img src={Cocktail} className="featureImage" alt="Featured Image" />
                     </li>
                 </ul>
+                <div className="featuredImage">
+                    <img src={Funconnect} alt="Featured Image" />
+                </div>
             </div>
         </div>
     </section>

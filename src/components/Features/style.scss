@@ -54,23 +54,50 @@
                 }
         
                 .featuresItem{
-                    
+                    display: flex;
+                    position: relative;
+
                     @media screen and (min-width: 768px) {
-                        margin-bottom: 1rem;
+                        margin-bottom: 2rem;
                     }
         
                     .feature{
                         color: $yellowText;
+                        
+                        @media screen and (min-width: 768px) {
+                            cursor: pointer;
+                            &:hover + .featureImage{
+                                right: -10%;
+                                transform: translate(50%, -100px);
+                            }
+                        }
+                    }
+
+                    .featureImage{
+                        display: none;
+
+                        @media screen and (min-width: 768px) {
+                            display: block;
+                            width: 359px;
+                            height: 359px;
+                            border-radius: 1rem;
+                            position: absolute;
+                            right: -200%;
+                            transition: right .7s ease-in-out;
+                        }
                     }
                 }
             }
 
-            .featureImage{
+            .featuredImage{
                 display: none;
 
-                @media screen and (min-width: 900px) {
+                @media screen and (min-width: 768px) {
                     display: block;
                     width: 35%;
+                    height: 380px;
+                    position: relative;
+                    z-index: 100;
                 }
             }
         }
