@@ -56,12 +56,16 @@
             flex-direction: column;
             width: 100%;
 
-            @media screen and (min-width: 500px) and (min-width: 1280px) {
+            @media screen and (min-width: 500px){
                 width: 475px;
             }
-
+            
             @media screen and (min-width: 1024px) and (max-width: 1270px) {
                 width: 100%;
+            }
+            
+            @media screen and (min-width: 1280px) {
+                width: 475px;
             }
 
             .formField {
@@ -150,12 +154,16 @@
             text-align: justify;
             line-height: 22px;
             
-            @media screen and (min-width: 500px) and (min-width: 1280px) {
+            @media screen and (min-width: 500px){
                 width: 475px;
             }
-
+            
             @media screen and (min-width: 1024px) and (max-width: 1270px) {
                 width: 100%;
+            }
+            
+            @media screen and (min-width: 1280px) {
+                width: 475px;
             }
         }
     }

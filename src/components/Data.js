@@ -305,13 +305,13 @@ export const SlideItems = [
       position: " NFA "
     },
     {
-      name: "Amujo Oluwasomidotun",
-      image: "Amujo Oluwasomidotun",
+      name: "Agbanimu Oluwamayowa ",
+      image: "Agbanimu Oluwamayowa ",
       position: "CEO"
     },
     {
-      name: " Kelani Bukola ",
-      image: "Kelani Bukola",
+      name: " Hamzat Mariam ",
+      image: "Hamzat Mariam",
       position: " OBO "
     },
     {
