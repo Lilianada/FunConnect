@@ -55,7 +55,7 @@ export default function Slideshow() {
         return (
           <div className="teamSection_profile" key={id}>
             <div className="profileImage">
-              <img src={item.image} alt="Profile" />
+              <img src={require("../../assets/images/teamImages/" + item.image + ".jpg") } alt="Team Profile Pic" />
             </div>
             <div className="teamProfile_data">
               <div className="profileData">

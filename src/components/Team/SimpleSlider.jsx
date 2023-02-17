@@ -52,7 +52,7 @@ export default function SimpleSlider() {
         <Slider
             {...settings}
         >
-          {SlideItems.map((item, id) => {
+          {SlideItems.slice(0, 2 ).map((item, id) => {
             return (
               <div className="teamSection_profile" key={id}>
                 <div className="profileImage">
