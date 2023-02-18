@@ -295,28 +295,38 @@ export const SlideItems = [
       position: "CEO"
     },
     {
-      name: " Kelani Bukola ",
-      image: "Kelani Bukola",
-      position: " OBO "
+      name: "Emmanuel Uche",
+      image: "img1",
+      position: " C.T.O "
     },
     {
-      name: " Omiwole Emmanuel ",
+        name: " Omiwole Emmanuel ",
       image: "Omiwole Emmanuel",
-      position: " NFA "
+      position: " Creative Lead "
     },
     {
-      name: "Agbanimu Oluwamayowa ",
-      image: "Agbanimu Oluwamayowa ",
-      position: "CEO"
+        name: "Agbanimu Oluwamayowa ",
+        image: "Agbanimu Oluwamayowa",
+        position: "P.M"
     },
     {
       name: " Hamzat Mariam ",
       image: "Hamzat Mariam",
-      position: " OBO "
+      position: " Developer "
     },
     {
-      name: " Omiwole Emmanuel ",
-      image: "Omiwole Emmanuel",
-      position: " NFA "
+      name: "Christopher Madueke",
+      image: "img2",
+      position: " Developer "
+    },
+    {
+      name: " Kelani Bukola ",
+      image: "Kelani Bukola",
+      position: " Content Marketer "
+    },
+    {
+      name: "Ayodapo Talabi",
+      image: "img1",
+      position: " Digital Marketer "
     },
   ];
