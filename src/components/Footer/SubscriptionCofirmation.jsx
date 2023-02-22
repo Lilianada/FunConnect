@@ -25,16 +25,8 @@ export function ErrorCofirmation({ onClose }) {
       <div className="subscribeWrap">
         <AiOutlineClose className="closeIcon" onClick={onClose} />
         <p className="subscribeText">
-          Email invalid. Please confirm and try again.
+          Email invalid. Please confirm your email and try again.
         </p>
-
-        <button
-          className="btnPrimary"
-          style={{ marginTop: "10px" }}
-          onClick={() => onClose()}
-        >
-          Try again.
-        </button>
       </div>
     </Backdrop>
   );
