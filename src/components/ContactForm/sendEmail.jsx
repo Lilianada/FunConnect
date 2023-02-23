@@ -8,15 +8,15 @@
 //       port: 465,
 //       secure: true,
 //       auth: {
-//         user: 'Lilibest30.lb@gmail.com',
-//         pass: 'Lilibest30',
+//         user: '',
+//         pass: '',
 //       },
 //     });
 
 //     // send mail with defined transport object
 //     let info = await transporter.sendMail({
 //       from: `"${data.name}" <${data.email}>`,
-//       to: 'Lilibest30.lb@gmail.com',
+//       to: '',
 //       subject: 'New message from your website!',
 //       text: `You have received a new message from ${data.name} (${data.email}). Phone: ${data.phone}. Message: ${data.message}`,
 //     });
