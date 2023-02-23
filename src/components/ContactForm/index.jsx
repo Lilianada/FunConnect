@@ -22,6 +22,7 @@ export default function ContactForm() {
     setSubmitStatus(status);
     setValues({});
     setActive(false);
+    event.target.reset(); // this line will reset the form after submission
   };
 
   return (
