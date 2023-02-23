@@ -1,18 +1,26 @@
 import React, { useState } from "react";
-import { RxArrowTopRight } from "react-icons/rx";
 import "./style.scss";
+import sendEmail from "./sendEmail";
 
 export default function ContactForm() {
+  const [values, setValues] = useState({});
   const [active, setActive] = useState(false);
-  const [values, setValues] = useState("");
+  const [submitStatus, setSubmitStatus] = useState("");
 
-  const isActive = (e) => {
-    setValues(e.target.value);
-    if (setValues !== "") {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
+  const handleChange = (event) => {
+    setValues((values) => ({
+      ...values,
+      [event.target.name]: event.target.value,
+    }));
+    setActive(true);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const status = await sendEmail(values);
+    setSubmitStatus(status);
+    setValues({});
+    setActive(false);
   };
 
   return (
@@ -25,38 +33,38 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <form action="" className="contactForm_form">
+        <form onSubmit={handleSubmit} className="contactForm_form">
           <input
             type="text"
             name="first-name"
-            onChange={isActive}
+            onChange={handleChange}
             className="formField"
             placeholder="Enter first name"
           />
           <input
             type="text"
             name="last-name"
-            onChange={isActive}
+            onChange={handleChange}
             className="formField"
             placeholder="Enter last name"
           />
           <input
             type="text"
             name="email-address"
-            onChange={isActive}
+            onChange={handleChange}
             className="formField"
             placeholder="Enter your email address"
           />
           <input
             type="text"
             name="phone-number"
-            onChange={isActive}
+            onChange={handleChange}
             className="formField"
             placeholder="Enter your phone number"
           />
           <textarea
             name="text-area"
-            onChange={isActive}
+            onChange={handleChange}
             className="formTextarea"
             placeholder="Add message"
             cols="30"
@@ -65,11 +73,10 @@ export default function ContactForm() {
           {/* onclick state for button */}
           <button
             type="submit"
-            disabled={!values}
+            disabled={!active}
             className={active ? "activeButton" : "inactiveButton"}
           >
-            <a href="mailto:lilianokeke.ca@gmail.com">Send Message</a>
-            <RxArrowTopRight className="formBtnIcon" />
+            Send Message
           </button>
         </form>
         <p className="formInform">
@@ -78,6 +85,7 @@ export default function ContactForm() {
           from our list at anytime. For further information, read our Privacy
           Policy
         </p>
+        {submitStatus && <p className="formStatus">{submitStatus}</p>}
       </div>
     </section>
   );
