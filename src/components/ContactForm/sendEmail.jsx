@@ -1,35 +1,3 @@
-// import nodemailer from 'nodemailer';
-
-// const sendEmail = async (data) => {
-//   try {
-//     // create reusable transporter object using the default SMTP transport
-//     let transporter = nodemailer.createTransport({
-//       host: 'smtp.gmail.com',
-//       port: 465,
-//       secure: true,
-//       auth: {
-//         user: '',
-//         pass: '',
-//       },
-//     });
-
-//     // send mail with defined transport object
-//     let info = await transporter.sendMail({
-//       from: `"${data.name}" <${data.email}>`,
-//       to: '',
-//       subject: 'New message from your website!',
-//       text: `You have received a new message from ${data.name} (${data.email}). Phone: ${data.phone}. Message: ${data.message}`,
-//     });
-
-//     console.log('Message sent: %s', info.messageId);
-//     return 'Thank you for your message! We will get back to you as soon as possible.';
-//   } catch (error) {
-//     console.error('There was an error sending your message:', error);
-//     return 'There was an error sending your message.';
-//   }
-// };
-
-// export default sendEmail;
 
 import emailjs from "emailjs-com";
 

@@ -16,7 +16,7 @@ export default function Hero({ timeline, ease}) {
             {/* Typewriter Effect */}
             <span className="primaryText">
               <Typewriter
-                words={["Explore", "Discover", "Sightsee"]}
+                words={["Explore", "Discover", "Experience"]}
                 loop={false}
                 cursor
                 cursorStyle="|"
