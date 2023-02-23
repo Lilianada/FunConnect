@@ -9,10 +9,9 @@ export function SuccessCofirmation({ email, onClose }) {
       <div className="subscribeWrap">
         <AiOutlineClose className="closeIcon" onClick={onClose} />
         <p className="subscribeText">
-          Subscription successful 🎉🎉.
+          Subscription successful 🎉.
           <br />
-          We sent a confirmation email to you. Kindly click the link in the
-          email to confirm your subscription.
+          We've sent you a confirmation email, kindly check your email.
         </p>
       </div>
     </Backdrop>
@@ -32,13 +31,13 @@ export function ErrorCofirmation({ onClose }) {
   );
 }
 
-export function AlreadySubscribed({ email, onClose }) {
+export function AlreadySubscribed({ onClose }) {
   return (
     <Backdrop>
       <div className="subscribeWrap">
         <AiOutlineClose className="closeIcon" onClick={onClose} />
         <p className="subscribeText">
-          You are already subscribed.{email ? `, ${email}` : ""}
+          You've already subscribed.
         </p>
       </div>
     </Backdrop>

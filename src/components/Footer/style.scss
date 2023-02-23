@@ -472,10 +472,10 @@ footer {
     width: 300px;
     height: fit-content;
     background: $white;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
     border-radius: 8px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1000;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -485,13 +485,11 @@ footer {
         color: $black;
         font-size: $sixteen;
         text-align: center;
-        margin-top: 16px;
+        margin-top: 10px;
     }
 
     .closeIcon{
-        position: absolute;
-        top: 10px;
-        right: 10px;
+       align-self: flex-end;
         width: 20px;
         height: 20px;
         padding: 3px;
