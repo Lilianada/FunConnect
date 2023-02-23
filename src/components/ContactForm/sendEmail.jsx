@@ -1,56 +1,64 @@
-import express from 'express';
-import { json, urlencoded } from 'body-parser';
-import { createTransport } from 'nodemailer';
-const app = express();
+// import nodemailer from 'nodemailer';
 
-// Configure body-parser middleware to parse JSON and urlencoded data
-app.use(json());
-app.use(urlencoded({ extended: true }));
+// const sendEmail = async (data) => {
+//   try {
+//     // create reusable transporter object using the default SMTP transport
+//     let transporter = nodemailer.createTransport({
+//       host: 'smtp.gmail.com',
+//       port: 465,
+//       secure: true,
+//       auth: {
+//         user: 'Lilibest30.lb@gmail.com',
+//         pass: 'Lilibest30',
+//       },
+//     });
 
-// Create a route to handle the form submission
-app.post('/submit-form', (req, res) => {
-  // Parse the form data from the request
-  const { firstName, lastName, email, phone, message } = req.body;
+//     // send mail with defined transport object
+//     let info = await transporter.sendMail({
+//       from: `"${data.name}" <${data.email}>`,
+//       to: 'Lilibest30.lb@gmail.com',
+//       subject: 'New message from your website!',
+//       text: `You have received a new message from ${data.name} (${data.email}). Phone: ${data.phone}. Message: ${data.message}`,
+//     });
 
-  // Create a transporter for sending the email
-  const transporter = createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: 'lilibest30.lb@gmail.com',
-      pass: 'Lilibest30'
-    }
-  });
+//     console.log('Message sent: %s', info.messageId);
+//     return 'Thank you for your message! We will get back to you as soon as possible.';
+//   } catch (error) {
+//     console.error('There was an error sending your message:', error);
+//     return 'There was an error sending your message.';
+//   }
+// };
 
-  // Configure the email message
-  const messageBody = `
-    First Name: ${firstName}
-    Last Name: ${lastName}
-    Email: ${email}
-    Phone: ${phone}
-    Message: ${message}
-  `;
-  const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: 'recipient-email@example.com',
-    subject: 'New Form Submission',
-    text: messageBody
-  };
+// export default sendEmail;
 
-  // Send the email
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.status(500).send('Error sending email');
+import emailjs from "emailjs-com";
+
+async function sendEmail(values) {
+  try {
+    const templateParams = {
+      "first-name": values["first-name"],
+      "last-name": values["last-name"],
+      "email-address": values["email-address"],
+      "phone-number": values["phone-number"],
+      "text-area": values["text-area"],
+    };
+
+    const response = await emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      process.env.REACT_APP_EMAILJS_USER_ID
+    );
+
+    if (response.status === 200) {
+      return "Thank you for your message!";
     } else {
-      console.log('Email sent: ' + info.response);
-      res.send('Email sent successfully');
+      return "There was an error sending your message.";
     }
-  });
-});
+  } catch (error) {
+    console.error("There was an error sending your message:", error);
+    return "There was an error sending your message.";
+  }
+}
 
-// Start the server
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
-});
+export default sendEmail;
