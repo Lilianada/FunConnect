@@ -22,7 +22,7 @@ header {
             margin: 1.5rem;
         }
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 1020px) {
             display: none;
         }
 
@@ -65,14 +65,26 @@ header {
                     background: $primary;
                 }
             }
-
+            
             .navList{
                 margin-top: 2.5rem;
-
-                &:last-child{
+                
+                
+                &:nth-of-type(3) {
                     margin-top: 3rem;
-                }
 
+                    li {
+
+                        &:first-child {
+                            
+                            h6{
+                                font-size: $eighteen;
+                            }
+                        }
+
+                    }
+                }
+                
                 .navItem{
                     padding-bottom: 1.5rem;
                     
@@ -82,11 +94,12 @@ header {
                         font-family: $textFont;
                         font-weight: 500;
                         text-transform: none;
+
                     }
                     
                     .navLink{
                         color: $whiteText;
-                        font-size: calc($twentyFour + 4px);
+                        font-size: 24px;
                         font-family: $headFont;
                         font-weight: 500;
                         text-transform: capitalize;
@@ -98,7 +111,7 @@ header {
 
                     .activeLink{
                         color: $primary;
-                        font-size: calc($twentyFour + 4px);
+                        font-size: 24px;
                         font-family: $headFont;
                         font-weight: 500;
                         text-transform: capitalize;
@@ -160,7 +173,7 @@ header {
     .desktopHeader {
         display: none;
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 1020px) {
             display: flex;
             flex-direction: row;
             align-items: center;

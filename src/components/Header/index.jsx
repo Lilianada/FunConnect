@@ -59,6 +59,16 @@ export default function Header() {
                 Contact Us
               </NavLink>
             </li>
+            <li className="navItem">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/"
+              >
+                Partner With Us
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <a href="/" className="headerDownload_btn">
@@ -117,6 +127,16 @@ export default function Header() {
                 to="/contact"
               >
                 Contact Us
+              </NavLink>
+            </li>
+            <li className="navItem">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "activeLink" : "navLink"
+                }
+                to="/"
+              >
+                Partner With Us
               </NavLink>
             </li>
           </ul>

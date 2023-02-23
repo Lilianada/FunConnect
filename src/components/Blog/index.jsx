@@ -14,8 +14,7 @@ export default function Blog() {
       <div className="blogContent">
         <h2 className="blogTitle">Our Latest Blog Posts</h2>
         <p className="blogSubtitle">
-          Explore amazing places in your neighbourhood Lorem ipsum dolor sit
-          amet, consectetur
+          Hey, we're Funconnect. See our thoughts, stories, and ideas.
         </p>
         <div className="blogArticle_wrapMobile">
           {data.slice(0, 3).map((post) => {
