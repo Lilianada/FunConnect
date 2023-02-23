@@ -3,18 +3,31 @@ import { Typewriter } from "react-simple-typewriter";
 import Backdrop from "../Backdrop";
 
 
-export function SubmissionStatus({ onClose }) {
+export function FailedStatus({ status, onClose }) {
     return (
       <Backdrop>
         <div className="subscribeWrap">
           <AiOutlineClose className="closeIcon" onClick={onClose} />
           <p className="subscribeText">
-            You've already subscribed.
+            {status === "error" && "Submission failed. There was an error, please try again."}
           </p>
         </div>
       </Backdrop>
     );
-  }
+}
+
+export function SuccessStatus({ status, onClose }) {
+    return (
+      <Backdrop>
+        <div className="subscribeWrap">
+          <AiOutlineClose className="closeIcon" onClick={onClose} />
+          <p className="subscribeText">
+            {status === "success" && "Submission successful 🎉."}
+          </p>
+        </div>
+      </Backdrop>
+    );
+}
   
   export function SubmissionLoader() {
     return (

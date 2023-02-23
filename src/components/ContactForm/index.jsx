@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.scss";
 import sendEmail from "./sendEmail";
+import { FailedStatus } from "./SubmissionStatus";
 
 export default function ContactForm() {
   const [values, setValues] = useState({});
@@ -85,7 +86,10 @@ export default function ContactForm() {
           from our list at anytime. For further information, read our Privacy
           Policy
         </p>
-        {submitStatus && <p className="formStatus">{submitStatus}</p>}
+        {submitStatus && 
+          <FailedStatus status={submitStatus} onClose={() => setSubmitStatus("")} />
+          // <p className="formStatus">{submitStatus}</p>}
+        }
       </div>
     </section>
   );

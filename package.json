@@ -12,7 +12,6 @@
     "framer-motion": "^8.5.2",
     "gsap": "^3.11.4",
     "node-sass": "^8.0.0",
-    "nodemailer": "^6.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -31,7 +30,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "node-sass --watch scss -o css",
-    "server": "nodemon server.js",
     "homepage": "https://funconnect.vercel.app/",
     "build-localhost": "PUBLIC_URL=/ react-scripts build"
   },
