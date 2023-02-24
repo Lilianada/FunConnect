@@ -67,11 +67,10 @@ header {
             }
             
             .navList{
-                margin-top: 2.5rem;
+                margin-top: 2.35rem;
                 
                 
                 &:nth-of-type(3) {
-                    margin-top: 3rem;
 
                     li {
 
@@ -86,7 +85,7 @@ header {
                 }
                 
                 .navItem{
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 1.35rem;
                     
                     .navTitle{
                         color: $navText;

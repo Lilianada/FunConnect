@@ -7,28 +7,27 @@ import "./style.scss";
 
 
 export default function Slideshow() {
-  const indicators = () => <div className="indicator"></div>;
 
   const responsiveSettings  = [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
       breakpoint: 800,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1
       }
     },
     {
       breakpoint: 700,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -42,8 +41,6 @@ export default function Slideshow() {
   ];
   return (
     <Slide
-      // slidesToScroll={1}
-      // slidesToShow={1}
       autoplay={false}
       responsive={responsiveSettings }
       duration={5000}
@@ -54,9 +51,9 @@ export default function Slideshow() {
       // arrows={false}
       infinite={false}
     >
-      {SlideItems.map((item, id) => {
+      {SlideItems.map((item) => {
         return (
-          <div className="teamSection_profile" key={id}>
+          <div className="teamSection_profile" key={item.id}>
             <div className="profileImage">
               <img src={require("../../assets/images/teamImages/" + item.image + ".jpg") } alt="Team Profile Pic" />
             </div>

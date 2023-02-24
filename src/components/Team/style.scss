@@ -57,14 +57,14 @@
             width: 93vw !important;
             overflow: hidden;
             gap: 1rem;
-            grid-template-columns: repeat(6, 282px);
+            grid-template-columns: repeat(9, 282px);
             grid-template-rows: 300px;
 
             .teamSection_profile {
                 display: grid !important;
                 place-items: center;
                 height: 300px;
-                width: 282px;
+                // width: 282px;
                 background: $black;
                 border-radius: 10px;
                 padding: 19px 16px;

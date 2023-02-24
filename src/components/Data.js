@@ -294,46 +294,55 @@ export const ExploreCards = [
 
 export const SlideItems = [
   {
+    id: 1,
     name: "Amujo Oluwasomidotun",
     image: "Amujo Oluwasomidotun",
     position: "CEO",
   },
   {
+    id: 2,
     name: "Emmanuel Uche",
     image: "Emmanuel Uche",
     position: " C.T.O ",
   },
   {
+    id: 3,
     name: "Agbanimu Oluwamayowa ",
     image: "Agbanimu Oluwamayowa",
     position: "P.M",
   },
   {
+    id: 4,
     name: " Omiwole Emmanuel ",
     image: "Omiwole Emmanuel",
     position: " Creative Lead ",
   },
   {
+    id: 5,
     name: " Odunayo Falade ",
     image: "Odunayo Falade",
     position: " Design Lead ",
   },
   {
+    id: 6,
     name: " Hamzat Mariam ",
     image: "Hamzat Mariam",
     position: " Developer ",
   },
   {
+    id: 7,
     name: "Christopher Madueke",
     image: "Madueke Christopher",
     position: " Developer ",
   },
   {
+    id: 8,
     name: " Kelani Bukola ",
     image: "Kelani Bukola",
     position: " Content Marketer ",
   },
   {
+    id: 9,
     name: "Ayodapo Talabi",
     image: "Emmanuel Uche",
     position: " Digital Marketer ",
