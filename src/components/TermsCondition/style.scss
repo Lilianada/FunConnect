@@ -1,1 +1,23 @@
 @import "../../variable/variable.scss";
+
+.termsSection{
+    background: $white;
+    height: 100vh;
+
+    &_header{
+        background: $primary;
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+
+            img{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50% 50% 50% 10px;
+            }
+        }
+    }
+}

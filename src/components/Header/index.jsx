@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
-import AppStore from "../../assets/images/AppleVector.svg";
-import GooglePlay from "../../assets/images/GoogleVector.svg";
 import Logo from "../../assets/images/Funconnect-logo.svg";
 import "./style.scss";
 import DownloadButtons from "../DownloadButtons";
