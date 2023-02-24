@@ -18,6 +18,7 @@ export default function Team() {
           </p>
         </div>
         <Slideshow/>
+        {/* <TeamSlider/> */}
       </div>
     </section>
   );

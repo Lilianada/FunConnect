@@ -47,8 +47,11 @@ export default function Slideshow() {
       autoplay={false}
       responsive={responsiveSettings }
       duration={5000}
-      indicators={indicators}
-      arrows={false}
+      indicators={false}
+      pagination={true}
+      nextArrow={<div className="nextArrow"></div>}
+      prevArrow={<div className="prevArrow"></div>}
+      // arrows={false}
       infinite={false}
     >
       {SlideItems.map((item, id) => {

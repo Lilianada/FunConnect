@@ -300,7 +300,7 @@ export const SlideItems = [
   },
   {
     name: "Emmanuel Uche",
-    image: "https://unsplash.it/400/300?image=2",
+    image: "Emmanuel Uche",
     position: " C.T.O ",
   },
   {
@@ -335,7 +335,7 @@ export const SlideItems = [
   },
   {
     name: "Ayodapo Talabi",
-    image: "img1",
+    image: "Emmanuel Uche",
     position: " Digital Marketer ",
   },
 ];
