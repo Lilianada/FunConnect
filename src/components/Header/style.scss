@@ -36,8 +36,7 @@ header {
         }
 
         .navbar {
-            display: flex;
-            flex-direction: column;
+            display: grid;
             height: 100vh;
             width: 100vw;
             position: fixed;
@@ -57,7 +56,8 @@ header {
                 align-items: center;
                 background: #F8F8F8;
                 border-radius: 5px;
-                align-self: flex-end;
+                margin-left: auto;
+                margin-right: 0;
                 border: none;
                 outline: none;
 
