@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="footerFlex_body">
             <ul className="footerFlex_listOne">
               <li className="footerFlex_link">
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/privacy-policies">Privacy Policy</a>
               </li>
               <li className="footerFlex_link">
                 <a href="/terms-and-conditions">Terms and condition</a>
@@ -96,10 +96,10 @@ export default function Footer() {
             <div className="footerFlex_body">
               <ul className="footerFlex_listOne">
                 <li className="footerFlex_link">
-                  <a href="/">Privacy Policy</a>
+                  <a href="/privacy-policies">Privacy Policy</a>
                 </li>
                 <li className="footerFlex_link">
-                  <a href="/">Terms and condition</a>
+                  <a href="/terms-and-conditions">Terms and condition</a>
                 </li>
               </ul>
             </div>

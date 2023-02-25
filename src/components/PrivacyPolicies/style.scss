@@ -1,0 +1,59 @@
+@import "../../variable/variable.scss";
+
+.policiesSection{
+    background: $white;
+    height: 100%;
+
+    &_header{
+        padding: 2rem 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .policiesSection_headerText{
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+
+    .policiesSection_content{
+        padding: 1rem;
+        text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+            padding: 1rem 2rem;
+        }
+
+        .policiesSection_contentText{
+            color: $black;
+
+            span{
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+
+        .policiesSection_contentTitle{
+            color: $black;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 1rem 0 0;
+        }
+
+        .policiesSection_contentSubtitle{
+            color: $black;
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin: 1rem 0 0;
+        }
+
+        .policiesSection_contentTitle + .policiesSection_contentSubtitle{
+            margin: 0;
+        }
+    }
+
+
+
+}
