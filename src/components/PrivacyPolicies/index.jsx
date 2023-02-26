@@ -119,164 +119,313 @@ export default function PrivacyPolicies() {
             furnish us with their email address or mobile number and a password.
             Members have display names which can be their own real names or
             other names identifiable.
-            <br /><br />
+            <br />
+            <br />
             We use your email address to communicate with you and for
             verification of account also. We do permit your friend to look you
             up by using a downloadable search engine to search your profile
             while using your username. Also, we do not permit anonymous post, so
             registration is held in high esteem on our platform.
           </p>
-        </div>
-        <div className="policiesSection_contentParagraph">
-          <h3 className="policiesSection_contentTitle">
-            3. Content on our Platform
-          </h3>
+
+          <h4 className="policiesSection_contentSubtitle">2.2 Public Data</h4>
           <p className="policiesSection_contentText">
-            You will be held liable for your disposition concerning your use of
-            services and for any piece which falls within the purview of
-            “content” that you upload on our online platform or during the use
-            of our digital product. You are also expected to be compliant with
-            relevant authorities, laws, legislation, rules and other universal
-            provisions. You are also advised to provide content (at your own
-            risk) if you are comfortable of sharing with other members on the
-            platform. You are also advised to know that you bear the risk or
-            cost if your content causes damage to other members of the platform.
+            Some of the activities on Fun Connect which includes (but not
+            limited to) posting, replying and commenting are public activities
+            which imply that certain information about you would be on the
+            public domain as a users’ post should be visible to only those in
+            related category and friendship circle. That is when I registered
+            and I chose “Africa” as my location category, my post will only be
+            visible to those interested in touring or visiting somewhere in
+            (Nigeria, Rwanda, Ghana, Morocco, South Africa etc…). Also, it will
+            be visible to my friendship circle which I added on the platform,
+            even if they are in different categories. Also, data published by
+            other people and yourself would be made public, for instance,
+            someone tagged you I a post or mentioned you in the comment/ reply
+            session.
             <br />
             <br />
-            Reliance on any piece, write up or any other information that can be
-            classified as content posted on our online platform or derived from
-            our digital services would be at your own personal risk. We,
-            therefore, assert that we do not endorse, represent or support the
-            truthfulness, completeness, accuracy or reliability of any material
-            on our platform or any popular opinion on our platform. We find it
-            necessary to notify you that you might be exposed to some contents
-            that are seemingly offensive, harmful, inaccurate or irrelevant,
-            misleading or deceptive as the case may be, we shall not be liable
-            for such content and the writer or whosoever originates such would
-            bear the risk, liabilities and responsibilities of such content. We
-            may choose not to monitor or regulate some content (of course, for
-            reasons not far-fetched) and we cannot bear the risk, consequences
-            or responsibilities with such content.
-            <br />
-            <br />
-            We shall reserve our right to delete /remove any content that
-            violates the User Agreement or any other content considered as
-            inappropriate by us. Some other principles and fundamental
-            legislations can be taken to cognizances such as copyright
-            infringement, impersonation, trademark violation, cyberbullying,
-            unlawful conduct or harassment. In an instance where you feel that
-            your rights in this rights have been violated, don’t hesitate to
-            contact our help center (apply the link to help center here). Though
-            we still let you keep some rights to your content as stated below;
+            You shall take full responsibilities for your posts and other data
+            you post on our platform, you should therefore examine and reexamine
+            whatever you are going to be posting on your account and the
+            liability that might ensue from your posts/comments/replies are
+            yours to shoulder. You should the conscious lest you post sensitive
+            information that can be used by rogues for illegal/fraudulent means.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">2.3 User Content</h4>
+          <p className="policiesSection_contentText">
+            Ordinarily, everything that falls with the purview or “content” that
+            is posted on our platform should be considered public for it was
+            published for the viewing pleasure of our audience. There is no tool
+            that enables you to post privately as it would defeat the purpose of
+            the platform in the first place. Content which entails but not
+            limited to; title of the post, the category of post, body of the
+            post, date created/updated (time), author number of comments and
+            replies, number of likes, file upload (only images) would be
+            available for public consumption. Please be aware that information
+            shared via direct message can be published publicly by the other
+            user. Just bear in mind that the content you post is in the public
+            domain and might affect your control of your content. Additionally,
+            your post, via reblogging etc. might copy ad shared all over the web
+            space. Do not let this deter you from posting lovely content but
+            bear I mind that it might be herculean if not impossible to remove
+            things that has been reblogged couple of times form the website.
           </p>
 
           <h4 className="policiesSection_contentSubtitle">
-            3.1 Your rights and grant of rights to content
+            2.4 Address Book and Contact Information
           </h4>
           <p className="policiesSection_contentText">
-            On Fun Connect, we let you your reserve your rights to any content
-            you so submit, and also the contents posted or displayed through the
-            services. You should also consider that mere submission of your
-            content to our platform is would be perceived as a form of
-            non-exclusive, universal and royalty to copy transmit, display,
-            modify, adapt, reproduce, and put up such content for distribution.
-            This license gives us the legitimacy to make your contents available
-            to third parties such as organizations, companies, individuals,
-            business partners and affiliates for use though in tandem with the
-            conditions guiding such use. We may also reserve the right to share
-            your content submitted or uploaded on our online platform with these
-            individuals without paying you no compensation.
+            A part of the service we boast of is the occasionally sending you
+            email and other means of communication considered necessary.
+            Normally, some administrative data that relates to your account such
+            as; account recovery messages or account verification messages are
+            usually carried out with the instrumental of the contact information
+            provided to us by you. You may not be enabled to opt out of this
+            service though we might send you a link to opt out of some of our
+            services. In a situation that you receive under the presumption that
+            we require your password via email, you should either discountenance
+            that message or report to us because we would not request such.
             <br />
             <br />
-            Fun Connect has formulated some rules for how members of our
-            platform can seamlessly and constructively communicate on the
-            platform while using our digital products, it also provides for how
-            interactions are made concerning your contents on the platform. The
-            formulation of these rues was necessitated by the dire need to
-            protect your right by granting you the right to your content. You
-            would be perceived to have agreed to the fact that we can adapt or
-            modify your content as it is being distributed, published,
-            syndicated or broadcasted by us and our affiliate legal entity, we
-            can also make changes to adapt the content to other media varieties.
+            To the extent permitted by your country’s law books, we shall use
+            your contact information you made available to market to you. You
+            can decide to use your email address or contact for notification on
+            Fun Connect which you might decide to deactivate whenever you wish.
+            <br />
+            <br />
+            Basically, we send you two forms of emails, one is about new offers,
+            our improved service products and other amazing stuffs happening on
+            Fun Connect while the second is about your account information and
+            strictly for your consumption. While you might be permitted to opt
+            out of former, the latter is outbound and the receipt of the email
+            is considered mandatory.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            2.5 Third Party Information
+          </h4>
+          <p className="policiesSection_contentText">
+            We are privy to information about you when you link our service to a
+            third party. To do so, you would be mandated to produce some
+            personal information such as user identification and a password for
+            the said third party service and also log into that third-party
+            service. This is for no unjust reason but to allow us to access your
+            account with the third party service so that you can we can carry
+            out your request to post your content to the third party platform
+            when you request such. however, we do not consider it obligatory to
+            save your passwords for the third party service accounts.
+            <br />
+            <br />
+            In a situation of partnership or collaboration with the third party
+            service provider, we might generate some information from the
+            latter. That information revealed to the third party about yourself
+            can be generated by us and made available on Fun Connect platform.
+            The major rationale behind generating information about you from the
+            third party is to develop new services and improve the previously
+            existing one just to deliver to you nothing but top-notch digital
+            services.
+            <br />
+            <br />
+            In this data sharing, by connecting other services to your Fun
+            Connect account, they are obliged to share your information with us.
+            Though there are certain restrictions, for instance, they can only
+            share information to the extent permissible by their privacy
+            policies which is usually long and considered uninteresting but is
+            the easiest way to clarify yourself on use of information sharing
+            and data security.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            2.6 Information of Use of Service
+          </h4>
+          <p className="policiesSection_contentText">
+            In the course of discharging our obligations to you, we collect data
+            about how you use our digital services that is; form members of the
+            platform. This kind of data may be generated in our log files each
+            time you make interaction on our platform and use our service. We
+            also use some the third party application tools to analyze such
+            information. Some of this data is affiliated with IP (Internet
+            Protocol) address used to access our services. Some of these log
+            files are in some ways connected to your account or collected in
+            aggregate form. When you make posts on our platform, we generate
+            your IP address and we can use it for a couple of things especially,
+            to improve, enhancing, developing and protecting your data. We use
+            these data to accumulate trending posts, personalize content and
+            provide our users with a target audience, to identify the popular
+            post, fight spam, rectify malware, the identify fraudulent
+            activities, combat spam and to keep our platform safe for our
+            members.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            2.7 DM (Direct Messages) and Non-Public Messages
+          </h4>
+          <p className="policiesSection_contentText">
+            Some of our services include an option to send a direct message and
+            communicate in a non-public medium. For instance, on Fun Connect,
+            you can send DM to start a conversation a member registered on the
+            platform. we will be privy to your message even though it is a
+            private message, we still regulate what type of information is
+            shared via this medium. For instance, Post with @ would not be
+            allowed to post and be automatically deleted to reduce the volume of
+            email and we also have the appropriate tool to scan through DM I
+            order to detect malicious content, prevent blackmail and combat
+            cyberbullying, we also scan and detect inappropriate images which
+            are automatically deleted from the platform.
+            <br />
+            <br />
+            We also have access to your direct messages to better understand
+            your use of service and show you more information considered
+            relevant. We also deliver your direct messages to your friends and
+            whoever you have intended to send them to, however, we do not send
+            you ads via direct messages. Please bear in mind that there are two
+            ways to direct messages, the recipient of the message has a copy of
+            the message you have sent and it would not be deleted if you delete
+            it on your side.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            2.8 Data Generated Using Cookies
+          </h4>
+          <p className="policiesSection_contentText">
+            When you access our online platform, some text files may be sent to
+            your web or in fact be saved on it, those are cookies, your web
+            browser stores these cookies in a distinct way such that they are
+            related to each site you browse and they can be seen in your browser
+            settings segment. We normally use cookies enable our servers to
+            identify your web browser and relate to us how including (but not
+            limited to) the time you use our services. You should note that
+            cookies do not contain information that directly identifies you by
+            themselves and we do not collate data from cookies and other means
+            to identify who you really are.
+            <br />
+            <br />
+            Nevertheless, we still use the cookie to know if you are logged in
+            and that you have gained access to our platform via your web browser
+            and we store distinct identifiers that are related with your account
+            in our cookies. On every browser, there are ways to block cookies
+            but we do not advise ant as a member on Fun Connect because it might
+            block you from enjoying some of our services as primary as logging
+            into your account. With the help of cookies, we can study how you
+            use our service and what improvement you would find relevant and
+            this great feature helps us deliver the best of services to you. Be
+            reminded that our privacy policy only governs our own use of cookies
+            and that of the third parties so if you have some clarifications to
+            make, you might consider looking up the third party’s privacy
+            policy.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            2.9 Web Browser Information
+          </h4>
+          <p className="policiesSection_contentText">
+            There are some automatically generated information from your web
+            browser while using our digital product and engaging or online
+            services, some of this information related to your web address can
+            give out a lot about you, ranging from what sort of device you use,
+            what type and the version of your browser, your operating system,
+            language preference, the date and time of requests to your screen
+            display information just to mention but few. Cookies places in your
+            web browser can give that information about you to us and this
+            information is used to provide and improve our digital product and
+            online services to you.
+          </p>
+        </div>
+
+        <div className="policiesSection_contentParagraph">
+          <h3 className="policiesSection_contentTitle">
+            3. What Information We Share
+          </h3>
+          <p className="policiesSection_contentText">
+            Fun Connect is structured in a way that information can be easily
+            circulated through our platform. you should be informed that we
+            shall reserve the right to disclose or share some of your
+            information even without your control because it is necessary to
+            provide the digital service you requested. Following some legal
+            requirement, we would also be enabled some of your information, some
+            of this information are stated below;
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            3.1 Control Information
+          </h4>
+          <p className="policiesSection_contentText">
+            Some of your personal information to us are considered control
+            information and they are used to carry out your instructions, we
+            share and disclose such information with your consent. For example,
+            if you authorize third-party access into your account r you make a
+            request for feedbacks. Bear I mind that if you have ordered to share
+            your information like direct messages with someone who enters Fun
+            Connect using a third party service, we might be inclined to share
+            your information with the third party.
+            <br />
+            <br />
+            In some cases, your settings or customization of our services, we do
+            offer some control information to the third party to carry out such
+            services. For instance, if you showed interest in an ad, we might
+            share your information with the advertisers to prove the extent or
+            effect of the advertisement. However, the information we share these
+            partner or affiliates is only an indication of your existent in the
+            surface and it does not get to the extent of a name, phone number,
+            email address or user id on Fun Connect. We also acknowledged that
+            some of our partners do link your personal information with ours
+            after they must have sought your permission.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            3.2 Legal Compliance Information
+          </h4>
+          <p className="policiesSection_contentText">
+            We share some legal compliance information about you to appropriate
+            authorities which implies that if we are legally mandated to offer,
+            use or disclose some personal information about you, we would not
+            hesitate to do so. We would comply with the law, regulation,
+            legislation, judicial authorities that binds us. We might have to
+            sacrifice your personal information to save the integrity and safety
+            of our online platform, further points out that some malicious
+            services, fraud security, technical are issues revolving around
+            legal compliance information. We also recognize your rights and
+            defenses that might be worthy enough to estop a third party
+            (including the government and regulatory bodies) from legally
+            retrieving your information from us and she would protect those
+            rights of yours by it release the information.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            3.3 Administrative Data
+          </h4>
+          <p className="policiesSection_contentText">
+            Some of your personal information would be regarded as
+            administrative data and would be shared without any restrictions in
+            the case of a merger, acquisition, reorganization, sale of assets or
+            bankruptcy (we hope it doesn’t happen). The right of ownership or
+            partnership will follow the acquisition of your personal
+            information. We might also share your information with the corporate
+            affairs commission to assist us in the operation of our services and
+            the delivery of the advertisement.
+          </p>
+
+          <h4 className="policiesSection_contentSubtitle">
+            3.4 Non-Personal Information
+          </h4>
+          <p className="policiesSection_contentText">
+            We also share some information regarded as non-personal information
+            such as, the total number of post, likes, comments, and number of
+            things members and some other information that might fall within
+            this purview for purely statistic purpose. We might also share your
+            information as regards the location where you are to know the target
+            audience for our ads.
           </p>
         </div>
         <div className="policiesSection_contentParagraph">
           <h3 className="policiesSection_contentTitle">
-            4. Use of Fun connect
+            4. Who We Share Your Information With
           </h3>
           <p className="policiesSection_contentText">
-            It would be much appreciated if you do well to review Fun Connect
-            Rules which constitute a fragment of User Agreement; it is a
-            comprehensive list of what is prohibited and unaccepted from members
-            of our online community on Fun Connect. However, those rules must be
-            used in tandem and nothing short of full compliance with these
-            policies of service and other relevant legislation as it relates to
-            your jurisdiction.
-            <br />
-            <br />
-            In a bid to satisfy your demands and have a high level of consumer
-            satisfaction, we may consider changing our services
-            constantly/regularly and this change is primarily based on our
-            discretional mandate. At one point or the other, we may decide not
-            to provide a particular service, feature or any of our digital
-            products to you or other members of our online community. We shall
-            also have the right to limit your storage capacity on our platform
-            and this action by us would be categorized as a mere expression of
-            our discretion mandate. We would also retain the right to refuse to
-            send, publish, post or rebroadcast any content on the services. We
-            would also have the right to suspend or terminate users and reclaim
-            username without being liable to you.
-            <br />
-            <br />
-            In exchange for your access to Fun Connect online platform and some
-            of our other digital products, there would be a presumption under
-            the law that you have accented to the policies that permit our
-            third-party affiliates and business partners to place advertisement
-            on our platform in connection with the display of content or other
-            information from the service albeit submitted or not. There would
-            also be a reasonable presumption under this agreement that you have
-            agreed not to misuse our services, we would be highlighting
-            instances that would be tantamount to misuse of service in
-            subsequent paragraphs of this policies of Service.
-            <br />
-            <br />
-            We shall consider it a misuse of our service if you try to access
-            our service via another means other than the interface and the
-            instruction on how to access our services. Some other actions such
-            as; trying or accessing, tampering with or using our non-public
-            areas of services, Fun Connect’s computer systems or the technical
-            delivery system of Fun Connect’s provider, probing, scanning or
-            testing the vulnerability of some or any of our system or network or
-            breaching or circumventing any of Fun Connect’s security or
-            authentication measures. Also, accessing, searching or attempting to
-            do any of both to our services by any other means different from the
-            currently stipulated interfaces that are provided by Fun Connect
-            without any prior agreement to do so would be regarded as a misuse
-            of our services.
-            <br />
-            <br />
-            Some other rogue activities like forging of any TCP/IP packet header
-            or any other compartment of the header data in any sort of email or
-            uploaded contents, or in any way use the service to send altered,
-            malicious, deceptive or other fraudulent misrepresentations would
-            mount to misuse of our service. If you prevent a person from
-            accessing our service, to host our network, sending a virus to our
-            system, flooding, overload, spamming, mail-bombing the services or
-            by composing content in a way to create an undue burden on the
-            service, you shall be presumed to have misused our service. We also
-            retain our right to gain access, to read, to preserve, to disclose
-            any information as we reasonably believe is necessary and under
-            reasonable circumstances. We may disclose your information when
-            doing so would be; in compliance law, legislation or judicial
-            decisions, to enforce policies (including investigations), to
-            detect, prevent or apprehend fraudsters or respond to technical and
-            security threat, to fulfill member’s request, this is all to
-            ultimately ensure that our platform is free from threats and deliver
-            quality service to you. Be informed that we do not share your
-            personal information with third party/affiliates except within the
-            dictates of our privacy policy. We also believe you should be
-            properly guided in some of the certain aspects to be able to enjoy
-            our services;
+          We usually share information to some set of persons, bodies, organizations or corporations but it might fulfill any of our condition precedent which is; if you have granted us the permission to share your information with a third party or if we have duly notified you of such (via our privacy policy) or if such information is just aggregate information as earlier pointed out in this privacy policy. If our reasons for sharing this information of yours is in accordance with any of this conditions, then we shall presume that you have granted requisite consent needed to share your information with a third party.  Those whom your information is shared with are highlighted below;
+          -------here
           </p>
 
           <h4 className="policiesSection_contentSubtitle">4.1 Account</h4>
