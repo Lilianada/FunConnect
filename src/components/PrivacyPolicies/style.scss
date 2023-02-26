@@ -16,7 +16,7 @@
         }
     }
 
-    .policiesSection_content{
+    &_content{
         padding: 1rem;
         text-align: justify;
         font-size: 1.2rem;
@@ -26,32 +26,51 @@
             padding: 1rem 2rem;
         }
 
-        .policiesSection_contentText{
-            color: $black;
+        
+        .policiesSection_contentParagraph{
 
-            span{
-                text-transform: uppercase;
-                font-weight: 700;
+            .policiesSection_contentText{
+                color: $black;
+    
+                span{
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
             }
+
+            .policiesSection_contentTitle{
+                color: $black;
+                font-weight: 600;
+                font-size: 1.5rem;
+                margin: 1rem 0 0;
+            }
+    
+            .policiesSection_contentSubtitle{
+                color: $black;
+                font-weight: 600;
+                font-size: 1.25rem;
+                margin: 1rem 0 0;
+            }
+    
+           .policiesSection_contentTitle +.policiesSection_contentSubtitle{
+                margin: 0;
+            }
+
+           .policiesSection_contentList{
+               margin: 1rem 0 0;
+               padding-left: 1.5rem;
+               
+               .policiesSection_contentListItem{
+                   margin: 0.5rem 0;
+                   color: $black;
+                    list-style: disc;
+                    font-size: $sixteen;
+                }
+            }
+    
         }
 
-        .policiesSection_contentTitle{
-            color: $black;
-            font-weight: 600;
-            font-size: 1.5rem;
-            margin: 1rem 0 0;
-        }
-
-        .policiesSection_contentSubtitle{
-            color: $black;
-            font-weight: 600;
-            font-size: 1.25rem;
-            margin: 1rem 0 0;
-        }
-
-        .policiesSection_contentTitle + .policiesSection_contentSubtitle{
-            margin: 0;
-        }
     }
 
 
