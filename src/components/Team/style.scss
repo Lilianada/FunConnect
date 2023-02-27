@@ -57,7 +57,7 @@
             width: 93vw !important;
             overflow: hidden;
             gap: 1rem;
-            grid-template-columns: repeat(9, 282px);
+            grid-template-columns: repeat(8, 282px);
             grid-template-rows: 300px;
 
             .teamSection_profile {
@@ -153,7 +153,13 @@
     left: 41%;
     bottom: -35px;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
+        left: 43%;
+    }
+    @media screen and (min-width: 700px) {
+        left: 45%;
+    }
+    @media screen and (min-width: 1024px) {
         left: 46%;
     }
 }
@@ -162,7 +168,13 @@
     right: 41%;
     bottom: -35px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 500px) {
+        right: 43%;
+    }
+    @media screen and (min-width: 700px) {
+        right: 45%;
+    }
+    @media screen and (min-width: 1024px) {
         right: 46%;
     }
 }

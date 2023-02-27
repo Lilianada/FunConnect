@@ -293,27 +293,27 @@ export const ExploreCards = [
 ];
 
 export const SlideItems = [
-  {
-    id: 1,
-    name: "Amujo Oluwasomidotun",
-    image: "Amujo Oluwasomidotun",
-    position: "CEO",
-  },
+  // {
+  //   id: 1,
+  //   name: "Oluwasomidotun Amujo",
+  //   image: "Amujo Oluwasomidotun",
+  //   position: "CEO",
+  // },
   {
     id: 2,
-    name: "Emmanuel Uche",
-    image: "Emmanuel Uche",
+    name: "Uche Emmanuel",
+    image: "black",
     position: " C.T.O ",
   },
   {
     id: 3,
-    name: "Agbanimu Oluwamayowa ",
+    name: "Oluwamayowa Agbanimu",
     image: "Agbanimu Oluwamayowa",
     position: "P.M",
   },
   {
     id: 4,
-    name: " Omiwole Emmanuel ",
+    name: "Emmanuel Omiwole",
     image: "Omiwole Emmanuel",
     position: " Creative Lead ",
   },
@@ -325,7 +325,7 @@ export const SlideItems = [
   },
   {
     id: 6,
-    name: " Hamzat Mariam ",
+    name: "Mariam Hamzat",
     image: "Hamzat Mariam",
     position: " Developer ",
   },
@@ -337,14 +337,14 @@ export const SlideItems = [
   },
   {
     id: 8,
-    name: " Kelani Bukola ",
+    name: "Bukola Kelani",
     image: "Kelani Bukola",
     position: " Content Marketer ",
   },
   {
     id: 9,
     name: "Ayodapo Talabi",
-    image: "Emmanuel Uche",
+    image: "black",
     position: " Digital Marketer ",
   },
 ];

@@ -52,13 +52,13 @@ export default function Footer() {
               <a href="/" className="footerFlex_icon">
                 <BsTelegram fill="#FFF1DD" size={24} />
               </a>
-              <a href="/" className="footerFlex_icon">
+              <a href="https://twitter.com/Funconnect_app" target="_blank" rel="noreferrer" className="footerFlex_icon">
                 <AiFillTwitterCircle fill="#FFF1DD" size={24} />
               </a>
-              <a href="/" className="footerFlex_icon linkedinIcon">
+              <a href="https://www.linkedin.com/company/funconnect/" target="_blank" rel="noreferrer" className="footerFlex_icon linkedinIcon">
                 <RiLinkedinFill size={16} fill="#000" />
               </a>
-              <a href="/" className="footerFlex_icon">
+              <a href="https://www.instagram.com/funconnect_app/" target="_blank" rel="noreferrer" className="footerFlex_icon">
                 <RiInstagramFill fill="#FFF1DD" size={24} />
               </a>
             </div>
