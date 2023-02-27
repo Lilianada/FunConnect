@@ -1,6 +1,6 @@
 import React from 'react';
-import CEO from '../../assets/images/Ceo.png';
-import CEOMobile from '../../assets/images/CeoMobile.png';
+import CEO from '../../assets/images/teamImages/Amujo Oluwasomidotun.jpg';
+import Bg from '../../assets/images/Group419.png';
 import './style.scss';
 
 export default function OurCulture() {
@@ -17,8 +17,13 @@ export default function OurCulture() {
           </p>
         </div>
         <div className="ourCulture_bodyImage">
+          <figure>
             <img src={CEO} alt="CEO Profile" className='imgDesktop' />
-            <img src={CEOMobile} alt="CEO Profile" className='imgMobile' />
+            <figcaption>Oluwasomidotun Amujo </figcaption>
+            <img src={Bg} alt="CEO Profile" className='bg' />
+            <p>C.E.O  </p>
+          </figure>
+            <img src={Bg} alt="CEO Profile" className='bg' />
         </div>
       </div>
     </section>
