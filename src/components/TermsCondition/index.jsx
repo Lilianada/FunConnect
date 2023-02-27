@@ -115,7 +115,7 @@ export default function TermsCondition() {
             </div>
 
             <div className="termsSection_contentParagraph">
-                <h3 className='termsSection_contentTitle'>7. Miscellaneous</h3>
+                <h3 className='termsSection_contentTitle'>8. Miscellaneous</h3>
                 <p className="termsSection_contentText">
                     With respect to the subject matter thereof, this agreement (though might be modified from time to time) would be regarded as the entire agreement between Fun Connect and members of the platform (you). This term of service serving as an agreement between us would replace any previous understandings, agreement, terms or understandings, whether written or oral terms with respect to the content of this agreement, this term of service would be regarded as the exclusive and exquisite agreement between us. Any failure to carry out any right, liability or responsibility would not be tantamount to a waiver of any further right expressed or impliedly stated here.
                     <br/><br/>

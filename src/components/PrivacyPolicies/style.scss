@@ -39,6 +39,14 @@
 
             }
 
+            &:nth-last-of-type(1){
+                margin-top: 3rem;
+
+                .policiesSection_contentTitle{
+                    line-height: 30px;
+                }
+            }
+
             .policiesSection_contentTitle{
                 color: $black;
                 font-weight: 600;
