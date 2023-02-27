@@ -26,8 +26,7 @@ export default function Explore() {
         <div className="exploreHead">
           <h2 className="exploreTitle">Explore Exciting Destinations</h2>
           <p className="exploreSubtitle">
-            Explore amazing places in your neighbourhood Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Vel nisl faucibus enim, mauris{" "}
+            Explore amazing places in your neighbourhood.
           </p>
           <svg
             width="70"

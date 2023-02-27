@@ -30,9 +30,6 @@ export default function Header() {
         <nav className="navbar">
           <ul className="navList">
             <li className="navItem">
-              {/* <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
-                Blog
-              </NavLink> */}
               <a href="https://funconnect.app/blog/" className="navLink">
                 Blog
               </a>
@@ -82,6 +79,7 @@ export default function Header() {
         >
           <img src={Logo} alt="FunConnect Logo" />
         </NavLink>
+        
         <button type="button" className="menuButton">
           <FiMenu size={32} stroke="white" fill="white" onClick={isActive} />
         </button>
@@ -99,9 +97,6 @@ export default function Header() {
           {/* Navigation List */}
           <ul className="navList">
             <li className="navItem">
-              {/* <NavLink className={({ isActive }) => (isActive ? "activeLink" : "navLink")} to="/blog">
-                Blog
-              </NavLink> */}
               <a href="https://funconnect.app/blog/" className="navLink">
                 Blog
               </a>
@@ -117,6 +112,7 @@ export default function Header() {
                 About Us
               </NavLink>
             </li>
+
             <li className="navItem">
               <NavLink
                 className={({ isActive }) =>
@@ -127,6 +123,7 @@ export default function Header() {
                 Contact Us
               </NavLink>
             </li>
+
             <li className="navItem">
               <NavLink
                 className={({ isActive }) =>
@@ -137,6 +134,7 @@ export default function Header() {
                 Partner With Us
               </NavLink>
             </li>
+
           </ul>
           <ul className="navList">
             <li className="navItem">
