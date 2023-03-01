@@ -49,9 +49,6 @@ export default function Footer() {
           <h5 className="footerFlex_head">Be Social</h5>
           <div className="footerFlex_body">
             <div className="footerFlex_listTwo">
-              <a href="/" className="footerFlex_icon">
-                <BsTelegram fill="#FFF1DD" size={24} />
-              </a>
               <a href="https://twitter.com/Funconnect_app" target="_blank" rel="noreferrer" className="footerFlex_icon">
                 <AiFillTwitterCircle fill="#FFF1DD" size={24} />
               </a>

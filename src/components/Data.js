@@ -344,7 +344,7 @@ export const SlideItems = [
   {
     id: 9,
     name: "Ayodapo Talabi",
-    image: "black",
+    image: "Talabi Ayodapomola",
     position: " Digital Marketer ",
   },
 ];
