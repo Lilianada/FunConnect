@@ -59,7 +59,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "activeLink" : "navLink"
                 }
-                to="/"
+                to="/partner-with-us"
               >
                 Partner With Us
               </NavLink>
@@ -129,7 +129,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "activeLink" : "navLink"
                 }
-                to="/"
+                to="/partner-with-us"
               >
                 Partner With Us
               </NavLink>

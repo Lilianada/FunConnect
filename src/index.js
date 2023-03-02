@@ -5,10 +5,10 @@ import App from './App';
 import Error from './pages/Error';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
-import './index.css';
 import Terms from './pages/Terms';
 import Policies from './pages/Policies';
 import Partner from './pages/Partner';
+import './index.css';
 
 const router = createBrowserRouter([
   {
