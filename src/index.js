@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import './index.css';
 import Terms from './pages/Terms';
 import Policies from './pages/Policies';
+import Partner from './pages/Partner';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/partner-with-us",
+    element: <Partner/>
   },
   {
     path: "/terms-and-conditions",
