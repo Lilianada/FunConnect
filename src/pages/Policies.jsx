@@ -6,7 +6,7 @@ import PrivacyPolicies from '../components/PrivacyPolicies';
 
 export default function Policies() {
   return (
-    <main className="mainContainer" id="mainContainer">
+    <main className="mainContainer">
       <Header />
       <PrivacyPolicies />
       <Footer/>
