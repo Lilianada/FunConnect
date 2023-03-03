@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../../assets/images/partnerImage/MobilePeople.png'
+import Image from '../../assets/images/partnerImage/Frame 1542.png'
 import './style.scss';
 
 export default function PartnerHero() {
@@ -8,12 +8,11 @@ export default function PartnerHero() {
       <div className="partnerHero_content">
         <div className="partnerHero_texts">
           <h2 className="partnerHero_title">
-            <span className="primaryText">Connect </span>
-            with Us and Let's Talk
+            <span className="primaryText">Partner </span>
+            with us
           </h2>
           <p className="partnerHero_subtitle">
-            Need assistance? Fill out the form and our friendly team will
-            respond to you promptly within 24 hours.
+          Expose your brand to a community of local and international tourists and increase your brands visibility through our channels.
           </p>
         </div>
         <img src={Image} alt="People" className="partnerHero_imageMobile" />
