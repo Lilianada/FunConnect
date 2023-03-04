@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import PartnerAccordion from './PartnerAccordion';
+import { PartnerFaqAccordion } from '../Data';
+import './style.scss'
 
 export default function PartnerFaq() {
   const [isActive, setIsActive] = useState("0");
@@ -26,7 +28,7 @@ export default function PartnerFaq() {
           {
             // Map through the data and render the FAQ-Accordion component
             //when one accordion opens, the other closes
-            Accordion.map((item) => {
+            PartnerFaqAccordion.map((item) => {
               return (
                 <PartnerAccordion
                   key={item.id}

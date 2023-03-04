@@ -1,4 +1,4 @@
-export const Accordion = [
+export const FaqAccordion = [
   {
     id: 1,
     title: "What is FunConnect?",
@@ -28,6 +28,33 @@ export const Accordion = [
     title: "Can I book an event? ",
     content:
       "Yes. You would be able to book public events or private events that you have been invited to attend.periences.",
+  },
+];
+
+export const PartnerFaqAccordion = [
+  {
+    id: 1,
+    title: "What is FunConnect hub?",
+    content:
+      "Funconnect hub is a management platform for businesses to manage their online presence on Funconnect and also manage their bookings and reservations.",
+  },
+  {
+    id: 2,
+    title: "Will I pay to list my business on Funconnect hub?",
+    content:
+      "You do not have to pay to list your business on our mobile app. However, there is a verification process to risdter your business or event.",
+  },
+  {
+    id: 3,
+    title: "Can I partner as a food, lifestyle, or travel blogger??",
+    content:
+      "Fun connectis trying to help more people find places easily, content creators are at the fore of this. Sendus an email at <u><a mailto='partner@funconnect.app'>partner@funconnect.app</a></u>",
+  },
+  {
+    id: 4,
+    title: "Does Funconnect organize community events?",
+    content:
+      "Definitely. Stay up to date by following our social media channels.",
   },
 ];
 

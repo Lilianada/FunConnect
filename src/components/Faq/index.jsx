@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Blob from "../../assets/images/Blob.png";
-import { Accordion } from "../Data";
+import { FaqAccordion } from "../Data";
 import FAQAccordion from "./FaqAccordion";
 import "./style.scss";
 
@@ -29,7 +29,7 @@ export default function FAQ() {
           {
             // Map through the data and render the FAQ-Accordion component
             //when one accordion opens, the other closes
-            Accordion.map((item) => {
+            FaqAccordion.map((item) => {
               return (
                 <FAQAccordion
                   key={item.id}
