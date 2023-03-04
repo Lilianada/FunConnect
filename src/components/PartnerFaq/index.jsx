@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PartnerAccordion from './PartnerAccordion';
 import { PartnerFaqAccordion } from '../Data';
+import Blob from "../../assets/images/Blob.png";
 import './style.scss'
 
 export default function PartnerFaq() {
