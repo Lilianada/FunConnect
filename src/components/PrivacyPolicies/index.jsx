@@ -589,7 +589,7 @@ export default function PrivacyPolicies() {
         </div>
         <div className="policiesSection_contentParagraph">
             <h3 className="policiesSection_contentTitle">
-                If you have clarifications/questions as regards the provision of this
+                If you have clarifications or questions as regards the provision of this
                 privacy policy, please contact us!!!
             </h3>
         </div>

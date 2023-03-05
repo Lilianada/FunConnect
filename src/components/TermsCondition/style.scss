@@ -17,12 +17,16 @@
     }
 
     .termsSection_content{
-        padding: 1rem;
+        padding: .5rem;
         text-align: justify;
         font-size: 1.2rem;
         line-height: 1.5rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 500px) {
+            padding: 1rem;
+        }
+
+        @media screen and (min-width: 768px) {
             padding: 1rem 2rem;
         }
 
@@ -39,14 +43,16 @@
             color: $black;
             font-weight: 600;
             font-size: 1.5rem;
-            margin: 1rem 0 0;
+            margin: 2rem 0 1rem;
+            line-height: 30px;
         }
 
         .termsSection_contentSubtitle{
             color: $black;
             font-weight: 600;
             font-size: 1.25rem;
-            margin: 1rem 0 0;
+            margin: 1rem 0 1rem;
+            line-height: 24px;
         }
 
         .termsSection_contentTitle + .termsSection_contentSubtitle{
