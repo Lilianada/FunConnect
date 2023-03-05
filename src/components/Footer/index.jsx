@@ -49,13 +49,28 @@ export default function Footer() {
           <h5 className="footerFlex_head">Be Social</h5>
           <div className="footerFlex_body">
             <div className="footerFlex_listTwo">
-              <a href="https://twitter.com/Funconnect_app" target="_blank" rel="noreferrer" className="footerFlex_icon">
+              <a
+                href="https://twitter.com/Funconnect_app"
+                target="_blank"
+                rel="noreferrer"
+                className="footerFlex_icon"
+              >
                 <AiFillTwitterCircle fill="#FFF1DD" size={24} />
               </a>
-              <a href="https://www.linkedin.com/company/funconnect/" target="_blank" rel="noreferrer" className="footerFlex_icon linkedinIcon">
+              <a
+                href="https://www.linkedin.com/company/funconnect/"
+                target="_blank"
+                rel="noreferrer"
+                className="footerFlex_icon linkedinIcon"
+              >
                 <RiLinkedinFill size={16} fill="#000" />
               </a>
-              <a href="https://www.instagram.com/funconnect_app/" target="_blank" rel="noreferrer" className="footerFlex_icon">
+              <a
+                href="https://www.instagram.com/funconnect_app/"
+                target="_blank"
+                rel="noreferrer"
+                className="footerFlex_icon"
+              >
                 <RiInstagramFill fill="#FFF1DD" size={24} />
               </a>
             </div>
@@ -66,8 +81,8 @@ export default function Footer() {
       {/* Tablet */}
       <div className="footerContent_tablet">
         {/* Desc */}
+        <div className="footerFlex_item">
           <div className="footerFlex_item">
-            <div className="footerFlex_item">
             <div className="footerFlex_head">
               <img src={Logo} alt="FunConnect Logo" />
             </div>
@@ -84,8 +99,8 @@ export default function Footer() {
             <div className="footerFlex_body">
               <SubscribeForm />
             </div>
-            </div>
           </div>
+        </div>
         {/* Legal */}
         <div className="footerFlex_item">
           <div className="footerFlex_item">
@@ -145,10 +160,10 @@ export default function Footer() {
             <div className="footerFlex_body">
               <ul className="footerFlex_listOne">
                 <li className="footerFlex_link">
-                  <a href="/">Privacy Policy</a>
+                  <a href="/privacy-policies">Privacy Policy</a>
                 </li>
                 <li className="footerFlex_link">
-                  <a href="/">Terms and condition</a>
+                  <a href="/terms-and-conditions">Terms and condition</a>
                 </li>
               </ul>
             </div>
@@ -158,18 +173,32 @@ export default function Footer() {
             <h5 className="footerFlex_head">Be Social</h5>
             <div className="footerFlex_body">
               <div className="footerFlex_listTwo">
-                <a href="/" className="footerFlex_icon">
-                  <BsTelegram fill="#FFF1DD" size={24} />
-                </a>
-                <a href="/" className="footerFlex_icon">
-                  <AiFillTwitterCircle fill="#FFF1DD" size={24} />
-                </a>
-                <a href="/" className="footerFlex_icon linkedinIcon">
-                  <RiLinkedinFill size={16} fill="#000" />
-                </a>
-                <a href="/" className="footerFlex_icon">
-                  <RiInstagramFill fill="#FFF1DD" size={24} />
-                </a>
+                <div className="footerFlex_listTwo">
+                  <a
+                    href="https://twitter.com/Funconnect_app"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footerFlex_icon"
+                  >
+                    <AiFillTwitterCircle fill="#FFF1DD" size={24} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/funconnect/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footerFlex_icon linkedinIcon"
+                  >
+                    <RiLinkedinFill size={16} fill="#000" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/funconnect_app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="footerFlex_icon"
+                  >
+                    <RiInstagramFill fill="#FFF1DD" size={24} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
