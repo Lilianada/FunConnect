@@ -122,9 +122,17 @@
         }
         
         .faqContent_wrap{
-            margin-top: 5rem;
+            margin-top: 4rem;
             margin-bottom: 3rem;
-            
+
+            .faqContent_head{
+    
+                .faqTitle{
+                    font-size: 2rem;
+                    margin-bottom: 0;
+                }
+            }
+
             .faqContent_body{
                 display: flex;
                 flex-direction: column;
@@ -152,6 +160,7 @@
                     margin-top: 1rem;
                     color: $white;
                     font-weight: 500;
+                    font-size: $eighteen;
                     display: grid;
                     place-items: center;
                 }
