@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../../assets/images/partnerImages/Frame 1542.png'
+import Image from '../../assets/images/partnerImages/Frame1542.png'
 import './style.scss';
 
 export default function PartnerHero() {
