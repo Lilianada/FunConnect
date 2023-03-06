@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import PartnerAccordion from './PartnerAccordion';
-import { PartnerFaqAccordion } from '../Data';
+import React, { useState } from "react";
+import PartnerAccordion from "./PartnerAccordion";
+import { PartnerFaqAccordion } from "../Data";
 import Blob from "../../assets/images/Blob.png";
-import './style.scss'
+import "./style.scss";
 
 export default function PartnerFaq() {
   const [isActive, setIsActive] = useState("0");
@@ -42,7 +42,20 @@ export default function PartnerFaq() {
             })
           }
         </div>
+      <div className="faqContent_wrap">
+        <div className="faqContent_head">
+          <h2 className="faqTitle">Still have questions?</h2>
+        </div>
+
+        <div className="faqContent_body">
+          <p className="faqContent_description">
+            Support details to capture customers that might be on the fence.
+          </p>
+          <button className="btnPrimary">Chat with us</button>
+        </div>
       </div>
+      </div>
+
     </section>
   );
 }

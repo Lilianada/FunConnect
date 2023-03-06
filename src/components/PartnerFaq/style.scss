@@ -117,6 +117,46 @@
                     padding-top: 1rem;
                 }
             }
+
+            
+        }
+        
+        .faqContent_wrap{
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            
+            .faqContent_body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 800px;
+                margin: 0 auto; 
+
+
+                .faqContent_description{
+                    font-size: $eighteen;
+                    color: #3a3a3a;
+                    padding-top: 0rem;
+                    letter-spacing: .0;
+                    height: fit-content;
+                    overflow-y: auto;
+                    text-align: center;
+                    transition: none;
+                }
+        
+                .btnPrimary{
+                    background-color: $black;
+                    width: 177px;
+                    height: 53px;
+                    margin-top: 1rem;
+                    color: $white;
+                    font-weight: 500;
+                    display: grid;
+                    place-items: center;
+                }
+            }
+            
         }
     }
 }
