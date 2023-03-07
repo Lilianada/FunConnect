@@ -7,7 +7,7 @@ import "./style.scss";
 export default function RegisterationHeader() {
 
   return (
-    <header>
+    <header className="regHeader">
       {/* Desktop Menu */}
       <div className="desktopHeader">
         <NavLink

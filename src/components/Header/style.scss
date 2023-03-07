@@ -178,7 +178,7 @@ header {
     .desktopHeader {
         display: none;
 
-        @media screen and (min-width: 1020px) {
+        @media screen and (min-width: 1021px) {
             display: flex;
             flex-direction: row;
             align-items: center;
