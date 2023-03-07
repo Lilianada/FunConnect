@@ -90,7 +90,18 @@ header {
                     }
                 }
                 
-                .navLink{
+                .navItem{
+                    padding-bottom: 1.35rem;
+                    
+                    .navTitle{
+                        color: $navText;
+                        font-size: $sixteen;
+                        font-family: $textFont;
+                        font-weight: 500;
+                        text-transform: none;
+                    }
+                    
+                    .navLink{
                         color: $whiteText;
                         font-size: 24px;
                         font-family: $headFont;
@@ -109,6 +120,7 @@ header {
                         font-weight: 500;
                         text-transform: capitalize;
                     }
+                }
 
             }
 
@@ -126,13 +138,14 @@ header {
                     background: $black;
                     border-radius: 10px;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                     margin-bottom: .5rem;
+                    gap: 1rem;
 
-                    .appleLogo{
-                        margin-right: 16px;
-                    }
+                    // .appleLogo{
+                    //     margin-right: 16px;
+                    // }
                     
                     .downloadText{
                         font-family: $altFont;

@@ -33,6 +33,11 @@
         height: calc(100vh - 110px);
         padding: 1rem;
         margin: auto;
+
+        img{
+            width: 45px;
+            height: 56px;
+        }
         
         .errorPage__title {
             margin: 1rem 0;

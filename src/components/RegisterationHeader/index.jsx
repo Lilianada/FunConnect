@@ -17,17 +17,15 @@ export default function RegisterationHeader() {
         </NavLink>
 
         <div className="navItems">
-          <p className="loginLink">Already have an account?</p>
-          <a href="/" className="loginBtn">
+          <p className="loginText">Already have an account?</p>
+          <NavLink to="/" className="loginLink">
             Log in
-          </a>
+          </NavLink>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div className="mobileHead">
-        <Header/>
-      </div>
+        <Header className="mobileHead"/>
     </header>
   );
 }

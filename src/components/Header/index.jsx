@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
-import DownloadButtons from "../DownloadButtons";
 import Logo from "../../assets/images/Funconnect-logo.svg";
+import DownloadButtons from "../DownloadButtons";
 import "./style.scss";
 
 export default function Header() {
@@ -141,7 +141,7 @@ export default function Header() {
               <h6 className="navTitle" style={{color: "#FF9100"}}>Get in touch</h6>
             </li>
             <li className="navItem">
-              <h6 className="navTitle">Info@funconnect.app</h6>
+              <h6 className="navTitle">Connectwithfunconnect@gmail.com</h6>
             </li>
           </ul>
 
