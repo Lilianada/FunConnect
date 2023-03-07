@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./style.scss";
 import sendEmail from "./sendEmail";
 import { SubmissionStatus } from "./SubmissionStatus";
+import "./style.scss";
 
 export default function ContactForm() {
   const [values, setValues] = useState({});
