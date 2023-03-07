@@ -1,0 +1,54 @@
+header {
+    width: 100vw;
+    background-color: $black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    // Mobile Menu
+    .mobileHead{
+        display: block;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    // Desktop Menu 
+    .desktopHeader {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1.5rem;
+        }
+
+        .navLink{
+            color: $whiteText;
+            font-size: 24px;
+            font-family: $headFont;
+            font-weight: 500;
+            text-transform: capitalize;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+
+        
+        .navItems{
+            .loginLink{
+                color: $primary;
+                font-size: $sixteen;
+                font-family: $headFont;
+                font-weight: 800;
+                text-transform: capitalize;
+            }
+
+        }
+    }
+
+}

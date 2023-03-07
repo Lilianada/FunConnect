@@ -9,6 +9,7 @@ import Terms from './pages/Terms';
 import Policies from './pages/Policies';
 import Partner from './pages/Partner';
 import './index.css';
+import Registration from './pages/Registration';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/partner-with-us",
     element: <Partner/>
+  },
+  {
+    path: "/registration",
+    element: <Registration/>
   },
   {
     path: "/terms-and-conditions",

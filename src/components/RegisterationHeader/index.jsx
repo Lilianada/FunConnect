@@ -11,22 +11,21 @@ export default function RegisterationHeader() {
       {/* Desktop Menu */}
       <div className="desktopHeader">
         <NavLink
-          className={({ isActive }) => (isActive ? "activeLink" : "navLink")}
           to="/"
         >
           <img src={Logo} alt="FunConnect Logo" />
         </NavLink>
 
-        <nav className="navbar">
-          <p>Already have an account?</p>
-          <a href="/" className="headerDownload_btn">
+        <div className="navItems">
+          <p className="loginLink">Already have an account?</p>
+          <a href="/" className="loginBtn">
             Log in
           </a>
-        </nav>
+        </div>
       </div>
 
       {/* Mobile Menu */}
-      <div className="mobileHeader">
+      <div className="mobileHead">
         <Header/>
       </div>
     </header>
