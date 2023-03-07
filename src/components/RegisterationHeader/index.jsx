@@ -25,7 +25,9 @@ export default function RegisterationHeader() {
       </div>
 
       {/* Mobile Menu */}
-        <Header className="mobileHead"/>
+      <div className="mobileHead">
+        <Header />
+      </div>
     </header>
   );
 }
