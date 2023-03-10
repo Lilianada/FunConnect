@@ -1,4 +1,7 @@
 import React from "react";
+import Clipboard from "../../assets/images/partnerImages/ClipboardText.png";
+import GivingHands from "../../assets/images/partnerImages/GivingHands.png";
+import Award from "../../assets/images/partnerImages/Award.png"
 import { Link } from "react-router-dom";
 import "./style.scss";
 
@@ -20,7 +23,10 @@ export default function PartnerRegisteration() {
         </div>
         <div className="prContainer_row">
           <div className="prRow_row">
-            <div className="rowIcon"></div>
+            <div className="rowIcon">
+            <img src={Clipboard} alt="Clipboard" />
+              <div className="bar"></div>
+            </div>
             <div className="rowTexts">
               <h6 className="head">Register</h6>
               <p className="texts">
@@ -31,7 +37,10 @@ export default function PartnerRegisteration() {
             </div>
           </div>
           <div className="prRow_row">
-            <div className="rowIcon"></div>
+            <div className="rowIcon">
+              <img src={GivingHands} alt="Clipboard" />
+              <div className="bar"></div>
+            </div>
             <div className="rowTexts">
               <h6 className="head">Onboard</h6>
               <p className="texts">
@@ -41,7 +50,9 @@ export default function PartnerRegisteration() {
             </div>
           </div>
           <div className="prRow_row">
-            <div className="rowIcon"></div>
+            <div className="rowIcon">
+            <img src={Award} alt="Clipboard" />
+            </div>
             <div className="rowTexts">
               <h6 className="head">Enjoy the Benefits</h6>
               <p className="texts">

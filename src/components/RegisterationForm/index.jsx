@@ -154,6 +154,9 @@ export default function RegisterationForm() {
             </Link>
             .
           </p>
+          <p>
+            Already have an account? <Link>Log in</Link>
+          </p>
         </div>
         <div className="registerForm_image">
           <img src={PartnersImage} alt="partners" />
