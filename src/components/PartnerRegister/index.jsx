@@ -7,9 +7,10 @@ export default function PartnerRegisteration() {
     <section className="partnerRegister">
       <div className="prContainer">
         <div className="prContainer_row">
-          <p>How it works</p>
+          <small>How it works</small>
           <h2>
-            Register as a<span className="primaryText">Partner</span>
+            Register as a {" "}
+            <span className="primaryText">Partner</span> {" "}
             on Funconnect
           </h2>
           <p>We partner with hospitality and tourist industry</p>
@@ -17,7 +18,7 @@ export default function PartnerRegisteration() {
             Get Started Today
           </Link>
         </div>
-        <div className="prConteiner_row">
+        <div className="prContainer_row">
           <div className="prRow_row">
             <div className="rowIcon"></div>
             <div className="rowTexts">
