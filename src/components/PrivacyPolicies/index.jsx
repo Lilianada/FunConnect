@@ -10,7 +10,7 @@ export default function PrivacyPolicies() {
       <div className="policiesSection_content">
         <div className="policiesSection_contentParagraph">
           <p className="policiesSection_contentText">
-            <span>FUN CONNECT</span> which would be regarded as “we” “us” “our”
+            <span>FUNCONNECT</span> which would be regarded as “we” “us” “our”
             in this policy is convinced that as members of our online platform,
             you should be abreast of the kinds of information we generate,
             collect or receive from you and most importantly, what we do to the
@@ -22,7 +22,7 @@ export default function PrivacyPolicies() {
           </p>
           <ul className="policiesSection_contentList">
             <li className="policiesSection_contentListItem">
-              FUN CONNECT is public which implies that everyone has access to
+              FUNCONNECT is public which implies that everyone has access to
               view your post, however, the definition of “everyone” in this
               instance is restricted to everyone on your circle of friends and
               related subject category as they are also allowed to view not only
@@ -32,7 +32,7 @@ export default function PrivacyPolicies() {
               primarily viewable to them are posts in their category.
             </li>
             <li className="policiesSection_contentListItem">
-              While using Fun Connect, even by simply reading up posts, we can
+              While using Funconnect, even by simply reading up posts, we can
               generate some important data from you such as; your IP address.
               You are also required to provide us with requisite information
               which includes (but not limited to) email address, phone number
@@ -52,7 +52,7 @@ export default function PrivacyPolicies() {
               utilized. You might be permitted to exercise control over things
               like marketing preferences, an address book contact or account
               security. Also, we informed that we might download data of you
-              shared on Fun Connect platform.
+              shared on Funconnect platform.
             </li>
             <li className="policiesSection_contentListItem">
               In an instance where you have certain clarifications to make about
@@ -98,7 +98,7 @@ export default function PrivacyPolicies() {
           <p className="policiesSection_contentText">
             In a bid to deliver quality services to you, we
             generate/collect/receive various types of data. These important data
-            collected by Fun Connect is considered necessary and inevitable to
+            collected by Funconnect is considered necessary and inevitable to
             use our services. For us to deliver and allow you to customize your
             profile to your specifications and to further improve our service to
             meet your ever-increasing need. By combining the information we have
@@ -111,7 +111,7 @@ export default function PrivacyPolicies() {
             2.1 Account Information
           </h4>
           <p className="policiesSection_contentText">
-            On Fun Connect, you would be mandated to create an account in order
+            On Funconnect, you would be mandated to create an account in order
             to use some of our high-level services as well as the basic service
             of posting, replying and commenting. An offer to open a membership
             account is often followed by some personal information from you to
@@ -130,7 +130,7 @@ export default function PrivacyPolicies() {
 
           <h4 className="policiesSection_contentSubtitle">2.2 Public Data</h4>
           <p className="policiesSection_contentText">
-            Some of the activities on Fun Connect which includes (but not
+            Some of the activities on Funconnect which includes (but not
             limited to) posting, replying and commenting are public activities
             which imply that certain information about you would be on the
             public domain as a users’ post should be visible to only those in
@@ -192,12 +192,12 @@ export default function PrivacyPolicies() {
             To the extent permitted by your country’s law books, we shall use
             your contact information you made available to market to you. You
             can decide to use your email address or contact for notification on
-            Fun Connect which you might decide to deactivate whenever you wish.
+            Funconnect which you might decide to deactivate whenever you wish.
             <br />
             <br />
             Basically, we send you two forms of emails, one is about new offers,
             our improved service products and other amazing stuffs happening on
-            Fun Connect while the second is about your account information and
+            Funconnect while the second is about your account information and
             strictly for your consumption. While you might be permitted to opt
             out of former, the latter is outbound and the receipt of the email
             is considered mandatory.
@@ -221,7 +221,7 @@ export default function PrivacyPolicies() {
             In a situation of partnership or collaboration with the third party
             service provider, we might generate some information from the
             latter. That information revealed to the third party about yourself
-            can be generated by us and made available on Fun Connect platform.
+            can be generated by us and made available on Funconnect platform.
             The major rationale behind generating information about you from the
             third party is to develop new services and improve the previously
             existing one just to deliver to you nothing but top-notch digital
@@ -264,7 +264,7 @@ export default function PrivacyPolicies() {
           </h4>
           <p className="policiesSection_contentText">
             Some of our services include an option to send a direct message and
-            communicate in a non-public medium. For instance, on Fun Connect,
+            communicate in a non-public medium. For instance, on Funconnect,
             you can send DM to start a conversation a member registered on the
             platform. we will be privy to your message even though it is a
             private message, we still regulate what type of information is
@@ -306,7 +306,7 @@ export default function PrivacyPolicies() {
             and that you have gained access to our platform via your web browser
             and we store distinct identifiers that are related with your account
             in our cookies. On every browser, there are ways to block cookies
-            but we do not advise ant as a member on Fun Connect because it might
+            but we do not advise ant as a member on Funconnect because it might
             block you from enjoying some of our services as primary as logging
             into your account. With the help of cookies, we can study how you
             use our service and what improvement you would find relevant and
@@ -339,7 +339,7 @@ export default function PrivacyPolicies() {
             3. What Information We Share
           </h3>
           <p className="policiesSection_contentText">
-            Fun Connect is structured in a way that information can be easily
+            Funconnect is structured in a way that information can be easily
             circulated through our platform. you should be informed that we
             shall reserve the right to disclose or share some of your
             information even without your control because it is necessary to
@@ -369,7 +369,7 @@ export default function PrivacyPolicies() {
             effect of the advertisement. However, the information we share these
             partner or affiliates is only an indication of your existent in the
             surface and it does not get to the extent of a name, phone number,
-            email address or user id on Fun Connect. We also acknowledged that
+            email address or user id on Funconnect. We also acknowledged that
             some of our partners do link your personal information with ours
             after they must have sought your permission.
           </p>
@@ -471,7 +471,7 @@ export default function PrivacyPolicies() {
             We may share some of your information with the third party services
             by using our service through theirs or vice versa. You can decide to
             share your user content personally with third-party services such as
-            Twitter or Facebook from Fun Connect. This privacy policy only
+            Twitter or Facebook from Funconnect. This privacy policy only
             governs activities within our jurisdiction (our online platform),
             therefore, we do not take responsibilities for any post made on
             third parties services. We suggest that you check the third party’s
@@ -513,7 +513,7 @@ export default function PrivacyPolicies() {
             5. Liability Limitation
           </h3>
           <p className="policiesSection_contentText">
-            When you are registered as a member on Fun Connect, you would be
+            When you are registered as a member on Funconnect, you would be
             privy to some of your information especially the ones closely
             associated to your account by simply logging into our platform and
             checking the account settings option. You can also take the ultimate
