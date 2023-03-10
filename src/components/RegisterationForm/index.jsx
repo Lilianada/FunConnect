@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PartnersImage from "../../assets/images/partnerImages/Partners.png";
 import { PhoneInput } from "react-international-phone";
+import { PartnerOptions } from "../Data";
+import Select from 'react-select';
 import "react-international-phone/style.css";
 import "./style.scss";
 
@@ -42,10 +44,6 @@ export default function RegisterationForm() {
     }
   };
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
   return (
     <section className="registerForm">
       <div className="registerForm_container">
@@ -83,41 +81,14 @@ export default function RegisterationForm() {
               className="formField"
               placeholder="Email Address"
             />
-            <div>
-              <label htmlFor="options">Select options:</label>
-              <select id="options" multiple>
-                <option value="In-App Listing" onChange={handleOptionSelect}>
-                  In-App Listing
-                </option>
-                <option
-                  value="In-App Advertisement"
-                  onChange={handleOptionSelect}
-                >
-                  In-App Advertisement
-                </option>
-                <option
-                  value="Social Media Advertisement"
-                  onChange={handleOptionSelect}
-                >
-                  Social Media Advertisement
-                </option>
-                <option value="Content Creation" onChange={handleOptionSelect}>
-                  Content Creation
-                </option>
-              </select>
-              <input
-                type="text"
-                value={inputValue}
-                onChange={handleInputChange}
-              />
-              <div>
-                {selectedOptions.map((option) => (
-                  <span key={option} style={{ marginRight: "10px" }}>
-                    {option}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <Select
+              isMulti
+              name="multi-select"
+              options={PartnerOptions}
+              className="formField"
+              // classNamePrefix="Interest in Advertising (Select multiple)"
+              placeholder="Interest in Advertising (Select multiple)"
+            />
             <PhoneInput
               initialCountry="ng"
               value={phone}

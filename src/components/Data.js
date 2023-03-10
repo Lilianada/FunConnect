@@ -375,3 +375,11 @@ export const SlideItems = [
     position: " Digital Marketer ",
   },
 ];
+
+
+export const PartnerOptions = [
+  { label: 'In App listing with Funconnect Hub'},
+  { label: 'Content Creation '},
+  { label: 'Social Media Ads '},
+  { label: 'In-App Advertising' }
+]
