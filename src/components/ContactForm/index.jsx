@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import sendEmail from "../../hooks/sendEmail";
 import { SubmissionStatus } from "./SubmissionStatus";
+import {HiArrowUpRight} from 'react-icons/hi2'
 import "./style.scss";
 
 export default function ContactForm() {
@@ -19,13 +20,13 @@ export default function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setIsSubmitting(true); // set isSubmitting to true
+    setIsSubmitting(true); 
     const status = await sendEmail(values);
     setSubmitStatus(status);
     setValues({});
     setActive(false);
-    setIsSubmitting(false); // set isSubmitting to false
-    event.target.reset(); // this line will reset the form after submission
+    setIsSubmitting(false); 
+    event.target.reset(); 
   };
 
   return (
@@ -82,6 +83,8 @@ export default function ContactForm() {
             className={active ? "activeButton" : "inactiveButton"}
           >
             {isSubmitting ? "Submitting..." : "Send Message"}
+            {isSubmitting ? "" : <HiArrowUpRight className="formBtnIcon" />
+}
           </button>
         </form>
         <p className="formInform">

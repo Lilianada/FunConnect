@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PartnersImage from "../../assets/images/partnerImages/Partners.png";
+import {HiArrowUpRight} from 'react-icons/hi2'
 import { PhoneInput } from "react-international-phone";
 import { EstablishmentOptions, AdvertOptions } from "../Data";
-import Select from "react-select";
-import "react-international-phone/style.css";
-import "./style.scss";
+import PartnersImage from "../../assets/images/partnerImages/Partners.png";
 import registerUser from "../../hooks/registerUser";
 import SuccessModal from "../Modals/SuccessModal";
 import FailureModal from "../Modals/FailureModal";
+import "react-international-phone/style.css";
+import Select from "react-select";
+import "./style.scss";
 
 export default function RegisterationForm() {
   const [values, setValues] = useState({});
   const [active, setActive] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event) => {
     if (!event || !event.target) {
       return;
     }
-  
     const { name, type, value, checked } = event.target;
     const newValue = type === "checkbox" ? checked : value;
-  
     setValues((values) => ({
       ...values,
       [name]: newValue,
@@ -34,14 +34,15 @@ export default function RegisterationForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true); 
     const status = await registerUser(values);
     setSubmitStatus(status);
     console.log(status);
-
+    setIsSubmitting(false); 
     setValues({});
     setPhone("")
     setActive(false);
-    event.target.reset(); // this line will reset the form after submission
+    event.target.reset(); 
   };
 
   const [phone, setPhone] = useState("");
@@ -123,12 +124,13 @@ export default function RegisterationForm() {
               rows="10"
             ></textarea>
             <button
-              type="submit"
-              disabled={!active}
-              className={active ? "activeButton" : "inactiveButton"}
-            >
-              Register
-            </button>
+            type="submit"
+            disabled={!active || isSubmitting}
+            className={active ? "activeButton" : "inactiveButton"}
+          >
+            {isSubmitting ? "Submitting..." : "Register"}
+            {isSubmitting ? '' : <HiArrowUpRight className="formBtnIcon" />}
+          </button>
           </form>
           <p className="formInform">
             When creating a new account, you agree to the{" "}

@@ -31,7 +31,6 @@ async function registerUser(values, phone) {
         return "Submission Failed.";
       }
     } catch (error) {
-      console.error("Submission Failed:", error);
       return "Submission Failed.";
     }
   }
