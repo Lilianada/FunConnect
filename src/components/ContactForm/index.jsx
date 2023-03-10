@@ -7,6 +7,7 @@ export default function ContactForm() {
   const [values, setValues] = useState({});
   const [active, setActive] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event) => {
     setValues((values) => ({
@@ -18,10 +19,12 @@ export default function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true); // set isSubmitting to true
     const status = await sendEmail(values);
     setSubmitStatus(status);
     setValues({});
     setActive(false);
+    setIsSubmitting(false); // set isSubmitting to false
     event.target.reset(); // this line will reset the form after submission
   };
 
@@ -75,10 +78,10 @@ export default function ContactForm() {
           {/* onclick state for button */}
           <button
             type="submit"
-            disabled={!active}
+            disabled={!active || isSubmitting}
             className={active ? "activeButton" : "inactiveButton"}
           >
-            Send Message
+            {isSubmitting ? "Submitting..." : "Send Message"}
           </button>
         </form>
         <p className="formInform">

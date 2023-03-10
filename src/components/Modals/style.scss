@@ -1,0 +1,54 @@
+@import '../../variable/variable.scss';
+
+.modalWrap{
+    background: $white;
+    padding: 1rem 2rem 2rem;
+    max-width: 518px;
+    max-height: 305px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    
+    .modalHead{
+        display: flex;
+        justify-content: flex-end;
+        
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            gap: 10px;
+            width: 24px;
+            height: 24px;
+            background: #E5E5E5;
+            border-radius: 29px;
+            border: none;
+        }
+    }
+    
+    .modalBody{
+        display: grid;
+        place-items: center;
+
+        img{
+            height: 84px;
+            margin-bottom: 2rem;
+        }
+
+        .headText{
+            font-size: $twentyFour;
+            text-align: center;
+            color: $black;
+            line-height: 24px;
+            margin-bottom: .5rem;
+        }
+
+        .bodyText{
+            font-size: $sixteen;
+            color: #848484;
+            text-align: center;
+        }
+    }
+}
