@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import sendEmail from "./sendEmail";
+import sendEmail from "../../hooks/sendEmail";
 import { SubmissionStatus } from "./SubmissionStatus";
 import "./style.scss";
 

@@ -25,7 +25,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 1.5rem;
+            margin: 1.5rem auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 85%;
         }
 
         .navLink{

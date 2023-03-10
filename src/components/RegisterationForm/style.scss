@@ -8,7 +8,7 @@
     padding: 2rem 1rem;
 
     @media screen and (min-width: 768px) {
-        padding: 1.5rem;
+        padding: 3rem  1.5rem;
     }
 
     @media screen and (min-width: 1024px) {
@@ -215,6 +215,25 @@
                 text-align: justify;
                 line-height: 22px;
 
+                @media screen and (max-width: 900px) {
+                    &:nth-of-type(2){
+                        display: block;
+                        color: $black;
+                        text-align: center;
+                        width: 100%;
+                        margin-top: 1rem;
+    
+                        .formInform_link {
+                            text-decoration: underline;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2){
+                    display: none;
+                }
+
                 @media screen and (min-width: 1024px) and (max-width: 1270px) {
                     width: 100%;
                 }
@@ -222,11 +241,13 @@
                 @media screen and (min-width: 1280px) {
                     width: 475px;
                 }
+
+
+                .formInform_link {
+                    text-decoration: underline;
+                    text-decoration-color: #bdbdbd;
+                }
             }
-        }
-        .formInform_link {
-            text-decoration: underline;
-            text-decoration-color: #bdbdbd;
         }
     }
 

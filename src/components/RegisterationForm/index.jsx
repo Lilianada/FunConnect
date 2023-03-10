@@ -1,4 +1,3 @@
-import { sendForm } from "emailjs-com";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PartnersImage from "../../assets/images/partnerImages/Partners.png";
@@ -6,6 +5,10 @@ import { PhoneInput } from "react-international-phone";
 import { EstablishmentOptions, AdvertOptions } from "../Data";
 import Select from "react-select";
 import "react-international-phone/style.css";
+import sendEmail from "../../hooks/sendEmail";
+import { SubmissionStatus } from "../ContactForm/SubmissionStatus";
+import SuccessModal from "../Modals/SuccessModal";
+import FailureModal from "../Modals/FailureModal";
 import "./style.scss";
 
 export default function RegisterationForm() {
@@ -20,9 +23,10 @@ export default function RegisterationForm() {
     }));
     setActive(true);
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const status = await sendForm(values);
+    const status = await sendEmail(values);
     setSubmitStatus(status);
     setValues({});
     setActive(false);
@@ -30,19 +34,6 @@ export default function RegisterationForm() {
   };
 
   const [phone, setPhone] = useState("");
-
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [inputValue, setInputValue] = useState("");
-
-  const handleOptionSelect = (event) => {
-    const value = event.target.value;
-    const isChecked = event.target.checked;
-    if (isChecked) {
-      setSelectedOptions([...selectedOptions, value]);
-    } else {
-      setSelectedOptions(selectedOptions.filter((option) => option !== value));
-    }
-  };
 
   return (
     <section className="registerForm">
@@ -59,6 +50,7 @@ export default function RegisterationForm() {
               onChange={handleChange}
               className="formField"
               placeholder="Full Name"
+              required
             />
             <input
               type="text"
@@ -66,6 +58,7 @@ export default function RegisterationForm() {
               onChange={handleChange}
               className="formField"
               placeholder="Business Name"
+              required
             />
             <input
               type="text"
@@ -73,6 +66,7 @@ export default function RegisterationForm() {
               onChange={handleChange}
               className="formField"
               placeholder="Business Address"
+              required
             />
             <PhoneInput
               initialCountry="ng"
@@ -81,13 +75,15 @@ export default function RegisterationForm() {
               className="formField"
               forceDialCode={true}
               placeholder="Mobile Number"
+              required
             />
             <Select
-              isMulti
+              // isMulti
               name="establishment-select"
               options={EstablishmentOptions}
               className="formField multi-select"
               placeholder="Type of Establishment"
+              required
             />
             <input
               type="text"
@@ -95,6 +91,7 @@ export default function RegisterationForm() {
               onChange={handleChange}
               className="formField"
               placeholder="Email Address"
+              required
             />
             <Select
               isMulti
@@ -102,6 +99,7 @@ export default function RegisterationForm() {
               options={AdvertOptions}
               className="formField multi-select"
               placeholder="Interest in Advertising (Select multiple)"
+              required
             />
             <textarea
               name="text-area"
@@ -116,7 +114,7 @@ export default function RegisterationForm() {
               disabled={!active}
               className={active ? "activeButton" : "inactiveButton"}
             >
-              Send Message
+              Register
             </button>
           </form>
           <p className="formInform">
@@ -131,13 +129,20 @@ export default function RegisterationForm() {
             .
           </p>
           <p className="formInform">
-            Already have an account? <Link to='/login' className="formInform_link">Log in</Link>
+            Already have an account?{" "}
+            <Link to="/login" className="formInform_link">
+              Log in
+            </Link>
           </p>
         </div>
         <div className="registerForm_image">
           <img src={PartnersImage} alt="partners" />
         </div>
       </div>
+      {
+        submitStatus === "400" ? <FailureModal /> : <SuccessModal />
+        // <SubmissionStatus status={submitStatus} onClose={() => setSubmitStatus("")} />
+      }
     </section>
   );
 }
