@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {HiArrowUpRight} from 'react-icons/hi2'
+import { HiArrowUpRight } from "react-icons/hi2";
 import { PhoneInput } from "react-international-phone";
 import { EstablishmentOptions, AdvertOptions } from "../Data";
-import PartnersImage from "../../assets/images/partnerImages/Partners.png";
 import registerUser from "../../hooks/registerUser";
 import SuccessModal from "../Modals/SuccessModal";
 import FailureModal from "../Modals/FailureModal";
@@ -27,22 +26,21 @@ export default function RegisterationForm() {
       ...values,
       [name]: newValue,
     }));
-  
+
     setActive(true);
   };
 
-
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setIsSubmitting(true); 
+    setIsSubmitting(true);
     const status = await registerUser(values);
     setSubmitStatus(status);
     console.log(status);
-    setIsSubmitting(false); 
+    setIsSubmitting(false);
     setValues({});
-    setPhone("")
+    setPhone("");
     setActive(false);
-    event.target.reset(); 
+    event.target.reset();
   };
 
   const [phone, setPhone] = useState("");
@@ -124,13 +122,13 @@ export default function RegisterationForm() {
               rows="10"
             ></textarea>
             <button
-            type="submit"
-            disabled={!active || isSubmitting}
-            className={active ? "activeButton" : "inactiveButton"}
-          >
-            {isSubmitting ? "Submitting..." : "Register"}
-            {isSubmitting ? '' : <HiArrowUpRight className="formBtnIcon" />}
-          </button>
+              type="submit"
+              disabled={!active || isSubmitting}
+              className={active ? "activeButton" : "inactiveButton"}
+            >
+              {isSubmitting ? "Submitting..." : "Register"}
+              {isSubmitting ? "" : <HiArrowUpRight className="formBtnIcon" />}
+            </button>
           </form>
           <p className="formInform">
             When creating a new account, you agree to the{" "}
@@ -151,15 +149,28 @@ export default function RegisterationForm() {
           </p>
         </div>
         <div className="registerForm_image">
-          <img src={PartnersImage} alt="partners" />
+          <h4 className="registerForm_imageHead">
+            Join our ever growing community of partners
+          </h4>
+          <p className="registerForm_imageText">
+            We'd be thrilled to have you! Join our 100% partner program to gain
+            access to hospitality industry platforms and expert assistance. With
+            Funconnect, you can gain a competitive advantage and increase the
+            value of your offer.
+          </p>
         </div>
       </div>
-      {submitStatus === 'Submission Complete!' ? (
-  <SuccessModal closeModal={() => setSubmitStatus("")} status={submitStatus} />
-) : submitStatus === 'Submission Failed.' ? (
-  <FailureModal closeModal={() => setSubmitStatus("")} status={submitStatus} />
-) : null}
-
+      {submitStatus === "Submission Complete!" ? (
+        <SuccessModal
+          closeModal={() => setSubmitStatus("")}
+          status={submitStatus}
+        />
+      ) : submitStatus === "Submission Failed." ? (
+        <FailureModal
+          closeModal={() => setSubmitStatus("")}
+          status={submitStatus}
+        />
+      ) : null}
     </section>
   );
 }

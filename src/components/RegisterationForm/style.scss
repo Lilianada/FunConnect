@@ -20,10 +20,14 @@
         margin: 0 auto;
 
         @media screen and (min-width: 1024px) {
-            width: 90%;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 4rem;
+        }
+
+        @media screen and (min-width: 1240px) {
+            width: 90%;
             gap: 6rem;
         }
 
@@ -257,15 +261,27 @@
         display: none;
 
         @media screen and (min-width: 1024px) {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem 1rem;
             max-width: 612px;
             width: 47%;
-            max-height: 712px;
+            height: 712px;
             border-radius: 1rem;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.32%, #000000 96.65%), url(../../assets/images/partnerImages/Partners.png), $assets;
+            background-size: cover;
+            background-position: center;
+            
+            .registerForm_imageHead {
+                font-size: $twentyFour;
+                line-height: 1.5rem;
+                margin-bottom: .75rem;
+                color: $white;
+            }
 
-            img {
-                border-radius: 1rem;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.32%, #000000 96.65%);
+            .registerForm_imageText{
+                color: $white;
             }
         }
     }
