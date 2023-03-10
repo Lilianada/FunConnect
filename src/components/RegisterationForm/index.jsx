@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PartnersImage from "../../assets/images/partnerImages/Partners.png";
 import { PhoneInput } from "react-international-phone";
-import { PartnerOptions } from "../Data";
-import Select from 'react-select';
+import { EstablishmentOptions, AdvertOptions } from "../Data";
+import Select from "react-select";
 import "react-international-phone/style.css";
 import "./style.scss";
 
@@ -74,6 +74,21 @@ export default function RegisterationForm() {
               className="formField"
               placeholder="Business Address"
             />
+            <PhoneInput
+              initialCountry="ng"
+              value={phone}
+              onChange={(phone) => setPhone(phone)}
+              className="formField"
+              forceDialCode={true}
+              placeholder="Mobile Number"
+            />
+            <Select
+              isMulti
+              name="establishment-select"
+              options={EstablishmentOptions}
+              className="formField multi-select"
+              placeholder="Type of Establishment"
+            />
             <input
               type="text"
               name="email-address"
@@ -83,19 +98,10 @@ export default function RegisterationForm() {
             />
             <Select
               isMulti
-              name="multi-select"
-              options={PartnerOptions}
-              className="formField"
-              // classNamePrefix="Interest in Advertising (Select multiple)"
+              name="advert-selection"
+              options={AdvertOptions}
+              className="formField multi-select"
               placeholder="Interest in Advertising (Select multiple)"
-            />
-            <PhoneInput
-              initialCountry="ng"
-              value={phone}
-              onChange={(phone) => setPhone(phone)}
-              className="formField"
-              forceDialCode={true}
-              placeholder="Mobile Number"
             />
             <textarea
               name="text-area"
@@ -105,7 +111,6 @@ export default function RegisterationForm() {
               cols="30"
               rows="10"
             ></textarea>
-            {/* onclick state for button */}
             <button
               type="submit"
               disabled={!active}
@@ -125,8 +130,8 @@ export default function RegisterationForm() {
             </Link>
             .
           </p>
-          <p>
-            Already have an account? <Link>Log in</Link>
+          <p className="formInform">
+            Already have an account? <Link to='/login' className="formInform_link">Log in</Link>
           </p>
         </div>
         <div className="registerForm_image">

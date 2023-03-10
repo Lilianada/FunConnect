@@ -377,9 +377,87 @@ export const SlideItems = [
 ];
 
 
-export const PartnerOptions = [
-  { label: 'In App listing with Funconnect Hub'},
-  { label: 'Content Creation '},
-  { label: 'Social Media Ads '},
-  { label: 'In-App Advertising' }
+export const AdvertOptions = [
+  { value: 'one',
+  label: 'In App listing with Funconnect Hub'},
+  { value: 'two',
+  label: 'Content Creation '},
+  { value: 'three',
+  label: 'Social Media Ads '},
+  { value: 'four',
+  label: 'In-App Advertising' }
 ]
+
+export const EstablishmentOptions = [
+  { value: 'one',
+  label: 'Restaurant'},
+  { value: 'two',
+  label: 'Beach House & Resort'},
+  { value: 'three',
+  label: 'Art Gallery & Museum'},
+  { value: 'four',
+  label: 'Park' },
+  {
+    value: 'five',
+    label: 'Cinema'
+  },
+  {
+    value: 'six',
+    label: 'Malls'
+  },
+  {
+    value: 'seven',
+    label: 'Wine lab'
+  },
+  {
+    value: 'eight',
+    label: 'Pizza & Burger Store'
+  },
+  {
+    value: 'nine',
+    label: 'Hotel & Airbnb/ Service Apartment '
+  },
+  {
+    value: 'ten',
+    label: 'Café/Coffee Shop'
+  },
+  {
+    value: 'eleven',
+    label: 'Spa spot'
+  },
+  {
+    value: 'twelve',
+    label: 'Sports Recreational Center'
+  },
+  {
+    value: 'thirteen',
+    label: 'Lounge & Bar'
+  },
+  {
+    value: 'fourteen',
+    label: 'Cafeteria'
+  },
+  {
+    value: 'fifteen',
+    label: 'Casino'
+  },
+  {
+    value: 'sixteen',
+    label: 'Pub'
+  },
+  {
+    value: 'seventeen',
+    label: 'Club'
+  },
+  {
+    value: 'eighteen',
+    label: 'Co-working space'
+  },
+]
+
+
+
+ 
+ 
+
+
