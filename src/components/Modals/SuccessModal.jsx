@@ -4,12 +4,12 @@ import { IoClose } from 'react-icons/io5';
 import SuccessVector from '../../assets/images/SuccessVector.png';
 import './style.scss';
 
-export default function SuccessModal() {
+export default function SuccessModal({closeModal}) {
   return (
     <Backdrop>
       <section className="successModal">
         <div className="modalHead">
-          <button type='button'>
+          <button type='button' onClick={closeModal}>
             <IoClose />
           </button>
         </div>

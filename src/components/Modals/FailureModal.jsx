@@ -4,12 +4,12 @@ import FailureVector from "../../assets/images/FailureVector.png";
 import Backdrop from "../Backdrop";
 import './style.scss';
 
-export default function FailureModal() {
+export default function FailureModal({closeModal}) {
   return (
     <Backdrop>
     <section className="failureModal">
       <div className="modalHead">
-        <button type='button'>
+        <button type='button' onClick={closeModal}>
           <IoClose />
         </button>
       </div>

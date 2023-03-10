@@ -89,7 +89,7 @@ export default function ContactForm() {
         </p>
       </div>
         {submitStatus && 
-          <SubmissionStatus status={submitStatus} onClose={() => setSubmitStatus("")} />
+          <SubmissionStatus status={submitStatus} closeModal={() => setSubmitStatus("")} />
         }
     </section>
   );

@@ -5,11 +5,10 @@ import { PhoneInput } from "react-international-phone";
 import { EstablishmentOptions, AdvertOptions } from "../Data";
 import Select from "react-select";
 import "react-international-phone/style.css";
-import sendEmail from "../../hooks/sendEmail";
-import { SubmissionStatus } from "../ContactForm/SubmissionStatus";
-import SuccessModal from "../Modals/SuccessModal";
-import FailureModal from "../Modals/FailureModal";
 import "./style.scss";
+import sendEmail from "../../hooks/sendEmail";
+import SuccessModal from "../Modals/SuccessModal";
+import { SubmissionStatus } from "../ContactForm/SubmissionStatus";
 
 export default function RegisterationForm() {
   const [values, setValues] = useState({});
@@ -129,20 +128,17 @@ export default function RegisterationForm() {
             .
           </p>
           <p className="formInform">
-            Already have an account?{" "}
-            <Link to="/login" className="formInform_link">
-              Log in
-            </Link>
+            Already have an account? <Link to='/login' className="formInform_link">Log in</Link>
           </p>
         </div>
         <div className="registerForm_image">
           <img src={PartnersImage} alt="partners" />
         </div>
       </div>
-      {
-        submitStatus === "400" ? <FailureModal /> : <SuccessModal />
-        // <SubmissionStatus status={submitStatus} onClose={() => setSubmitStatus("")} />
-      }
+      {submitStatus && 
+          <SuccessModal />
+          // <SubmissionStatus status={submitStatus} onClose={() => setSubmitStatus("")} />
+        }
     </section>
   );
 }

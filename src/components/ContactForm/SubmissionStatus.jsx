@@ -2,15 +2,15 @@ import { AiOutlineClose } from "react-icons/ai";
 import Backdrop from "../Backdrop";
 
 
-export function SubmissionStatus({ status, onClose }) {
+export function SubmissionStatus({  closeModal, status }) {
     return (
-      <Backdrop>
-        <div className="submissionWrap">
-          <AiOutlineClose className="closeIcon" onClick={onClose} />
-          <p className="submissionText">
-            {status}
-          </p>
-        </div>
-      </Backdrop>
+        <Backdrop>
+          <div className="submissionWrap">
+            <AiOutlineClose className="closeIcon" onClick={closeModal} />
+            <p className="submissionText">
+              {status}
+            </p>
+          </div>
+        </Backdrop>
     );
 }
