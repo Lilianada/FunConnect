@@ -364,100 +364,90 @@ export const SlideItems = [
   },
   {
     id: 8,
-    name: "Bukola Kelani",
-    image: "Kelani Bukola",
-    position: " Content Marketer ",
-  },
-  {
-    id: 9,
     name: "Ayodapo Talabi",
     image: "Talabi Ayodapomola",
     position: " Digital Marketer ",
   },
 ];
 
-
 export const AdvertOptions = [
-  { value: 'one',
-  label: 'In App listing with Funconnect Hub'},
-  { value: 'two',
-  label: 'Content Creation '},
-  { value: 'three',
-  label: 'Social Media Ads '},
-  { value: 'four',
-  label: 'In-App Advertising' }
-]
+  { value: "one", label: "In App listing with Funconnect Hub" },
+  { value: "two", label: "Content Creation " },
+  { value: "three", label: "Social Media Ads " },
+  { value: "four", label: "In-App Advertising" },
+];
 
 export const EstablishmentOptions = [
-  { value: 'one',
-  label: 'Restaurant'},
-  { value: 'two',
-  label: 'Beach House & Resort'},
-  { value: 'three',
-  label: 'Art Gallery & Museum'},
-  { value: 'four',
-  label: 'Park' },
-  {
-    value: 'five',
-    label: 'Cinema'
+  { 
+    value: "one", 
+    label: "Restaurant" 
+  },
+  { 
+    value: "two", 
+    label: "Beach House & Resort" 
+  },
+  { 
+    value: "three", 
+    label: "Art Gallery & Museum" 
+  },
+  { 
+    value: "four", 
+    label: "Park" 
   },
   {
-    value: 'six',
-    label: 'Malls'
+    value: "five",
+    label: "Cinema",
   },
   {
-    value: 'seven',
-    label: 'Wine lab'
+    value: "six",
+    label: "Malls",
   },
   {
-    value: 'eight',
-    label: 'Pizza & Burger Store'
+    value: "seven",
+    label: "Wine lab",
   },
   {
-    value: 'nine',
-    label: 'Hotel & Airbnb/ Service Apartment '
+    value: "eight",
+    label: "Pizza & Burger Store",
   },
   {
-    value: 'ten',
-    label: 'Café/Coffee Shop'
+    value: "nine",
+    label: "Hotel & Airbnb/ Service Apartment ",
   },
   {
-    value: 'eleven',
-    label: 'Spa spot'
+    value: "ten",
+    label: "Café/Coffee Shop",
   },
   {
-    value: 'twelve',
-    label: 'Sports Recreational Center'
+    value: "eleven",
+    label: "Spa spot",
   },
   {
-    value: 'thirteen',
-    label: 'Lounge & Bar'
+    value: "twelve",
+    label: "Sports Recreational Center",
   },
   {
-    value: 'fourteen',
-    label: 'Cafeteria'
+    value: "thirteen",
+    label: "Lounge & Bar",
   },
   {
-    value: 'fifteen',
-    label: 'Casino'
+    value: "fourteen",
+    label: "Cafeteria",
   },
   {
-    value: 'sixteen',
-    label: 'Pub'
+    value: "fifteen",
+    label: "Casino",
   },
   {
-    value: 'seventeen',
-    label: 'Club'
+    value: "sixteen",
+    label: "Pub",
   },
   {
-    value: 'eighteen',
-    label: 'Co-working space'
+    value: "seventeen",
+    label: "Club",
   },
-]
-
-
-
- 
- 
-
-
+  {
+    value: "eighteen",
+    label: "Co-working space",
+  },
+];
