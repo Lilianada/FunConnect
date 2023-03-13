@@ -244,7 +244,8 @@
         }
 
         .viewMore {
-            width: 120px;
+            min-width: 120px;
+            width: fit-content;
             height: 38px;
             align-self: center;
             padding: 10px 15px;
